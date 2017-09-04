@@ -2,8 +2,6 @@ package com.example.zero.activity;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -13,11 +11,7 @@ import com.ashokvarma.bottomnavigation.BadgeItem;
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 
-import com.example.zero.fragment.AdvFragment;
 import com.example.zero.fragment.FragmentController;
-import com.example.zero.fragment.MsgFragment;
-import com.example.zero.fragment.RouteFragment;
-import com.example.zero.fragment.SaleFragment;
 
 import com.example.zero.greentravel.R;
 
