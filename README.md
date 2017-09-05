@@ -18,7 +18,7 @@ Android App GreenTravel
 	</tr>
 	<tr>
 		<th>170905</th>
-		<th></th>
+		<th>路线——单人搜索栏</th>
 	 	<th></th>
 	 	<th></th>
 	 </tr>
@@ -40,13 +40,13 @@ Android App GreenTravel
 	</tr>
 	<tr>
 		<th>170904</th>
-		<th>路线——Fragment中嵌套Fragment与Activity中嵌套Fragment不同，开发时遇到了难点</th>
+		<th>路线——Fragment中嵌套Fragment</th>
 		<th></th>
 		<th></th>
 	</tr>
 	<tr>
 		<th>170905</th>
-		<th></th>
+		<th>路线——搜索匹配算法</th>
 	 	<th></th>
 	 	<th></th>
 	 </tr>
@@ -74,7 +74,7 @@ Android App GreenTravel
 	</tr>
 	<tr>
 		<th>170905</th>
-		<th></th>
+		<th>http://blog.csdn.net/jdsjlzx/article/details/46514761/</th>
 	 	<th></th>
 	 	<th></th>
 	 </tr>
