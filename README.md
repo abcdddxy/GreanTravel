@@ -1,3 +1,87 @@
 # GreenTravel
 
 Android App GreenTravel
+
+##工作总结
+<table>
+	<tr>
+		<th>工作人员</th>
+		<th>单傲</th>
+		<th>吴姿颖</th>
+		<th>舒星源</th>
+	</tr>
+	<tr>
+		<th>170904</th>
+		<th>路线——单双人Fragment切换</th>
+		<th></th>
+		<th></th>
+	</tr>
+	<tr>
+		<th>170905</th>
+		<th></th>
+	 	<th></th>
+	 	<th></th>
+	 </tr>
+	 <tr>
+	 	<th>170906</th>
+	 	<th></th>
+	 	<th></th>
+	 	<th></th>
+	 </tr>
+</table>
+
+##遇到bug或难点
+<table>
+	<tr>
+		<th>工作人员</th>
+		<th>单傲</th>
+		<th>吴姿颖</th>
+		<th>舒星源</th>
+	</tr>
+	<tr>
+		<th>170904</th>
+		<th>路线——Fragment中嵌套Fragment与Activity中嵌套Fragment不同，开发时遇到了难点</th>
+		<th></th>
+		<th></th>
+	</tr>
+	<tr>
+		<th>170905</th>
+		<th></th>
+	 	<th></th>
+	 	<th></th>
+	 </tr>
+	 <tr>
+	 	<th>170906</th>
+	 	<th></th>
+	 	<th></th>
+	 	<th></th>
+	 </tr>
+</table>
+
+##参考
+<table>
+	<tr>
+		<th>工作人员</th>
+		<th>单傲</th>
+		<th>吴姿颖</th>
+		<th>舒星源</th>
+	</tr>
+	<tr>
+		<th>170904</th>
+		<th>http://blog.csdn.net/jifashihan/article/details/50370066</th>
+		<th></th>
+		<th></th>
+	</tr>
+	<tr>
+		<th>170905</th>
+		<th></th>
+	 	<th></th>
+	 	<th></th>
+	 </tr>
+	 <tr>
+	 	<th>170906</th>
+	 	<th></th>
+	 	<th></th>
+	 	<th></th>
+	 </tr>
+</table>
