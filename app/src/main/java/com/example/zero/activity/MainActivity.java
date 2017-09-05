@@ -17,8 +17,14 @@ import com.example.zero.greentravel.R;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationBar.OnTabSelectedListener {
 
-    private LinearLayout bottom_nav_content;//内容区域
-    private BottomNavigationBar bottom_navigation_bar_container;//底部导航栏
+    /**
+     * 内容区域
+     */
+    private LinearLayout bottom_nav_content;
+    /**
+     * 底部导航栏
+     */
+    private BottomNavigationBar bottom_navigation_bar_container;
 
     private BottomNavigationItem msgItem;
     private BottomNavigationItem adviceItem;
@@ -26,6 +32,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
     private BottomNavigationItem salesItem;
     private BadgeItem badgeItem;
 
+    /**
+     * Fragment控制类
+     */
     private FragmentController fragmentController;
 
     private static final String TAG = "MainActivity";
@@ -42,14 +51,18 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
         Log.d(TAG, "onCreate: success");
     }
 
-    /*初始化视图*/
+    /**
+     * 初始化视图
+     */
     private void initView() {
         bottom_nav_content = (LinearLayout) findViewById(R.id.bottom_nav_content);
         bottom_navigation_bar_container = (BottomNavigationBar) findViewById(R.id.bottom_navigation_bar_container);
 
     }
 
-    /*初始化底部导航栏*/
+    /**
+     * 初始化底部导航栏
+     */
     private void initBottomNavBar() {
         bottom_navigation_bar_container.setAutoHideEnabled(true);//自动隐藏
 
@@ -79,7 +92,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
         fragmentController.showFragment(0);
     }
 
-    /*底部NaV监听*/
+    /**
+     * 底部NaV监听
+     * @param position Fragment位置
+     */
     @Override
     public void onTabSelected(int position) {
         fragmentController.hideFragments();//先隐藏所有frag

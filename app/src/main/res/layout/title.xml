@@ -6,7 +6,7 @@
     android:weightSum="1">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/title_icon"
+        android:id="@+id/title_civ_icon"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_centerInParent="true"
@@ -15,7 +15,7 @@
         android:src="@drawable/title_icon" />
 
     <TextView
-        android:id="@+id/title_text"
+        android:id="@+id/title_tv_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -25,7 +25,7 @@
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/title_more"
+        android:id="@+id/title_btn_more"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -9,10 +9,22 @@ import java.util.ArrayList;
 
 public class FragmentController {
 
+    /**
+     * 容器
+     */
     private int containerId;
+    /**
+     * RouteFragment管理
+     */
     private FragmentManager fm;
+    /**
+     * RouteFragment列表
+     */
     private ArrayList<Fragment> fragments;
 
+    /**
+     * RouteFragment控制器类
+     */
     private static FragmentController controller;
 
     public static FragmentController getInstance(FragmentActivity activity, int containerId) {
@@ -28,7 +40,9 @@ public class FragmentController {
         initFragment();
     }
 
-    //初始化Fragment
+    /**
+     * 初始化Fragment
+     */
     private void initFragment() {
         fragments = new ArrayList<Fragment>();
         fragments.add(new RouteFragment());
@@ -43,7 +57,9 @@ public class FragmentController {
         ft.commit();
     }
 
-    //隐藏Fragmentag
+    /**
+     * 隐藏Fragment
+     */
     public void hideFragments() {
         FragmentTransaction ft = fm.beginTransaction();
         for(Fragment fragment : fragments) {
@@ -54,7 +70,10 @@ public class FragmentController {
         ft.commit();
     }
 
-    //显示Fragment
+    /**
+     * 显示Fragment
+     * @param position Fragment位置
+     */
     public void showFragment(int position) {
         hideFragments();
         Fragment fragment = fragments.get(position);

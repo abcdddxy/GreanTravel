@@ -19,7 +19,7 @@ public class TitleLayout extends LinearLayout {
         super(context,attrs);
         LayoutInflater.from(context).inflate(R.layout.title, this);
 
-        Button more = (Button) findViewById(R.id.title_more);
+        Button more = (Button) findViewById(R.id.title_btn_more);
         more.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
