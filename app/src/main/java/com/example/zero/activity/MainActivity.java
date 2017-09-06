@@ -67,14 +67,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
         bottom_navigation_bar_container.setAutoHideEnabled(true);//自动隐藏
 
         bottom_navigation_bar_container.setMode(BottomNavigationBar.MODE_FIXED);
-
         bottom_navigation_bar_container.setBackgroundStyle(BottomNavigationBar.BACKGROUND_STYLE_STATIC);
-
 
         bottom_navigation_bar_container.setBarBackgroundColor(R.color.white);//背景颜色
         bottom_navigation_bar_container.setInActiveColor(R.color.nav_gray);//未选中时的颜色
         bottom_navigation_bar_container.setActiveColor(R.color.colorPrimaryDark);//选中时的颜色
-
 
         badgeItem = new BadgeItem().setBackgroundColor(Color.RED).setText("99").setHideOnSelect(true);//角标
 
@@ -94,6 +91,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
 
     /**
      * 底部NaV监听
+     *
      * @param position Fragment位置
      */
     @Override
