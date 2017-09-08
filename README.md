@@ -28,6 +28,18 @@ Android App GreenTravel
 	 	<th></th>
 	 	<th></th>
 	 </tr>
+	<tr>
+	 	<th>170907</th>
+	 	<th>路线——整理git文件结构</th>
+	 	<th>销售——学习git和熟悉demo</th>
+	 	<th>建议——两个Fragment切换</th>
+	 </tr>
+	<tr>
+	 	<th>170908</th>
+	 	<th>路线——修正单人搜索栏切换时bug</th>
+	 	<th>销售——已有优惠券fragment界面完成</th>
+	 	<th>建议——两个Fragment布局</th>
+	</tr>
 </table>
 
 ##遇到bug或难点
@@ -52,9 +64,21 @@ Android App GreenTravel
 	 </tr>
 	 <tr>
 	 	<th>170906</th>
+	 	<th>路线——报到太累了</th>
 	 	<th></th>
 	 	<th></th>
-	 	<th></th>
+	 </tr>
+	 <tr>
+	 	<th>170907</th>
+	 	<th>路线——划分功能领域</th>
+	 	<th>销售——git基本操作还不熟练</th>
+	 	<th>建议——关键字流动标签样式</th>
+	 </tr>
+	 <tr>
+	 	<th>170908</th>
+	 	<th>路线——Fragment中接口调用</th>
+	 	<th>销售——java加载布局和adapter的使用</th>
+	 	<th>建议——TimePicker样式</th>
 	 </tr>
 </table>
 
@@ -80,8 +104,20 @@ Android App GreenTravel
 	 </tr>
 	 <tr>
 	 	<th>170906</th>
+	 	<th>http://my.bupt.edu.cn</th>
 	 	<th></th>
 	 	<th></th>
-	 	<th></th>
+	 </tr>
+	 <tr>
+	 	<th>170907</th>
+	 	<th>https://www.liaoxuefeng.com/wiki/git</th>
+	 	<th>http://www.runoob.com/git/git-basic-operations.html</th>
+	 	<th>http://blog.csdn.net/u010177022/article/details/60324117</th>
+	 </tr>
+	 <tr>
+	 	<th>170908</th>
+	 	<th>http://blog.csdn.net/lmj623565791/article/details/37970961/</th>
+	 	<th>http://www.runoob.com/w3cnote/android-tutorial-adapter.html</th>
+	 	<th>http://blog.csdn.net/zt_ls/article/details/52097157</th>
 	 </tr>
 </table>
