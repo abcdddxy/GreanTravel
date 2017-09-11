@@ -19,11 +19,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.zero.adapter.RouteSearchAdapter;
 import com.example.zero.greentravel.R;
-
-/**
- * Created by zero on 2017/9/5.
- */
 
 public class SearchView extends LinearLayout implements View.OnClickListener {
 
@@ -74,15 +71,17 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
         mContext = context;
         LayoutInflater.from(context).inflate(R.layout.route_search, this);
 
-        // TODO: 2017/9/5  设置提示文本
-        initViews("123");
+        initViews();
+    }
+
+    public void setHintText(String str){
+        etInput.setHint(str);
     }
 
     /**
      * 初始化View
-     * @param hintStr 提示文本
      */
-    private void initViews(String hintStr) {
+    private void initViews() {
         etInput = (EditText) findViewById(R.id.route_et_search);
         ivDelete = (ImageView) findViewById(R.id.route_iv_delete);
         btnBack = (Button) findViewById(R.id.route_btn_back);
@@ -103,8 +102,6 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
 
         ivDelete.setOnClickListener(this);
         btnBack.setOnClickListener(this);
-
-        etInput.setHint(hintStr);
 
         etInput.addTextChangedListener(new EditChangedListener());
         etInput.setOnClickListener(this);
@@ -150,11 +147,12 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
         this.mAutoCompleteAdapter = adapter;
     }
 
+    /**
+     * 重写text change类
+     */
     private class EditChangedListener implements TextWatcher {
         @Override
-        public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
-
-        }
+        public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {}
 
         @Override
         public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
@@ -175,12 +173,10 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
                 }
                 lvTips.setVisibility(GONE);
             }
-
         }
 
         @Override
-        public void afterTextChanged(Editable editable) {
-        }
+        public void afterTextChanged(Editable editable) {}
     }
 
     @Override
@@ -191,12 +187,25 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
                 break;
             case R.id.route_iv_delete:
                 etInput.setText("");
+                mListener.onBack();
                 ivDelete.setVisibility(GONE);
                 break;
             case R.id.route_btn_back:
-                ((Activity) mContext).finish();
+                etInput.setText("");
+                mListener.onBack();
+                ivDelete.setVisibility(GONE);
+//                ((Activity) mContext).finish();
+                break;
+            default:
                 break;
         }
+    }
+
+    /**
+     * 返回搜索框内容
+     */
+    public String getText(){
+        return etInput.getText().toString();
     }
 
     /**
@@ -218,10 +227,10 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
          */
         void onSearch(String text);
 
-//        /**
-//         * 提示列表项点击时回调方法 (提示/自动补全)
-//         */
-//        void onTipsItemClick(String text);
+        /**
+         * 设置返回操作
+         */
+        void onBack();
     }
 
 }

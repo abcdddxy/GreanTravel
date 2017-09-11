@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -31,17 +32,43 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
      */
     private SearchView searchView;
     /**
+     * 搜索结果列表view
+     */
+    private ListView lvResults2;
+    /**
+     * 搜索view
+     */
+    private SearchView searchView2;
+    /**
+     * 搜索按钮
+     */
+    private Button btnsearch;
+
+    /**
      * 热搜框列表adapter
      */
     private ArrayAdapter<String> hintAdapter;
+    /**
+     * 热搜框列表adapter
+     */
+    private ArrayAdapter<String> hintAdapter2;
     /**
      * 自动补全列表adapter
      */
     private ArrayAdapter<String> autoCompleteAdapter;
     /**
+     * 自动补全列表adapter
+     */
+    private ArrayAdapter<String> autoCompleteAdapter2;
+    /**
      * 搜索结果列表adapter
      */
     private RouteSearchAdapter resultAdapter;
+    /**
+     * 搜索结果列表adapter
+     */
+    private RouteSearchAdapter resultAdapter2;
+
     /**
      * 数据库数据，总数据
      */
@@ -96,15 +123,39 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
      * 初始化视图
      */
     private void initViews() {
-        lvResults = (ListView) getView().findViewById(R.id.route_lv_search_single_results);
         searchView = (SearchView) getView().findViewById(R.id.route_search_single);
+        lvResults = (ListView) getView().findViewById(R.id.route_lv_search_single_results);
+        searchView2 = (SearchView) getView().findViewById(R.id.route_search_single2);
+        lvResults2 = (ListView) getView().findViewById(R.id.route_lv_search_single_results2);
+        btnsearch = (Button) getView().findViewById(R.id.route_btn_single_search);
+
+        searchView.setHintText("请输入起点：");
+        searchView2.setHintText("请输入终点：");
+
+        btnsearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO: 2017/9/11 具体搜索
+                Toast.makeText(getActivity(), "开始搜索", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         //设置监听
         searchView.setSearchViewListener(this);
+        searchView2.setSearchViewListener(this);
         //设置adapter
         searchView.setTipsHintAdapter(hintAdapter);
         searchView.setAutoCompleteAdapter(autoCompleteAdapter);
+        searchView2.setTipsHintAdapter(hintAdapter2);
+        searchView2.setAutoCompleteAdapter(autoCompleteAdapter2);
 
         lvResults.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                Toast.makeText(getActivity(), position + "", Toast.LENGTH_SHORT).show();
+            }
+        });
+        lvResults2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Toast.makeText(getActivity(), position + "", Toast.LENGTH_SHORT).show();
@@ -133,8 +184,8 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
         int size = 100;
         dbData = new ArrayList<>(size);
         for (int i = 0; i < size; i++) {
-            dbData.add(new RouteSearchBean(R.drawable.title_icon, "android开发必备技能" + (i + 1),
-                    "Android自定义view——自定义搜索view", i * 20 + 2 + ""));
+            dbData.add(new RouteSearchBean(R.drawable.title_icon, "站点" + (i + 1),
+                    "周围简介\n热门吃、喝、玩、乐", i * 20 + 2 + ""));
         }
     }
 
@@ -144,9 +195,10 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
     private void getHintData() {
         hintData = new ArrayList<>(hintSize);
         for (int i = 1; i <= hintSize; i++) {
-            hintData.add("热搜版" + i + "：Android自定义View");
+            hintData.add("热搜版" + i + "：热门起终点站");
         }
         hintAdapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, hintData);
+        hintAdapter2 = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, hintData);
     }
 
     /**
@@ -172,6 +224,11 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
         } else {
             autoCompleteAdapter.notifyDataSetChanged();
         }
+        if (autoCompleteAdapter2 == null) {
+            autoCompleteAdapter2 = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, autoCompleteData);
+        } else {
+            autoCompleteAdapter2.notifyDataSetChanged();
+        }
     }
 
     /**
@@ -184,7 +241,7 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
         } else {
             resultData.clear();
             for (int i = 0; i < dbData.size(); i++) {
-                if (dbData.get(i).getTitle().contains(text.trim())) {
+                if (dbData.get(i).getTitle().equals(text.trim())) {
                     resultData.add(dbData.get(i));
                 }
             }
@@ -193,6 +250,12 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
             resultAdapter = new RouteSearchAdapter(getActivity(), resultData, R.layout.route_search_item_list);
         } else {
             resultAdapter.notifyDataSetChanged();
+        }
+
+        if (resultAdapter2 == null) {
+            resultAdapter2 = new RouteSearchAdapter(getActivity(), resultData, R.layout.route_search_item_list);
+        } else {
+            resultAdapter2.notifyDataSetChanged();
         }
     }
 
@@ -216,15 +279,44 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
     public void onSearch(String text) {
         //更新result数据
         getResultData(text);
-        lvResults.setVisibility(View.VISIBLE);
-        //第一次获取结果 还未配置适配器
-        if (lvResults.getAdapter() == null) {
-            //获取搜索数据 设置适配器
-            lvResults.setAdapter(resultAdapter);
-        } else {
-            //更新搜索数据
-            resultAdapter.notifyDataSetChanged();
+        if (searchView.getText().equals("")) {
+            lvResults2.setVisibility(View.VISIBLE);
+        } else if (searchView2.getText().equals("")) {
+            lvResults.setVisibility(View.VISIBLE);
         }
-        Toast.makeText(getActivity(), "完成搜素", Toast.LENGTH_SHORT).show();
+
+        //第一次获取结果 还未配置适配器
+        if (lvResults.getVisibility() == View.VISIBLE) {
+            if (lvResults.getAdapter() == null) {
+                //获取搜索数据 设置适配器
+                lvResults.setAdapter(resultAdapter);
+            } else {
+                //更新搜索数据
+                resultAdapter.notifyDataSetChanged();
+            }
+        }
+        if (lvResults2.getVisibility() == View.VISIBLE) {
+            if (lvResults2.getAdapter() == null) {
+                //获取搜索数据 设置适配器
+                lvResults2.setAdapter(resultAdapter2);
+            } else {
+                //更新搜索数据
+                resultAdapter2.notifyDataSetChanged();
+            }
+        }
+
+        Toast.makeText(getActivity(), "完成搜索", Toast.LENGTH_SHORT).show();
+    }
+
+    /**
+     * 点击返回键触发回调
+     */
+    @Override
+    public void onBack() {
+        if (lvResults.getVisibility() == View.VISIBLE) {
+            lvResults.setVisibility(View.GONE);
+        } else if (lvResults2.getVisibility() == View.VISIBLE) {
+            lvResults2.setVisibility(View.GONE);
+        }
     }
 }

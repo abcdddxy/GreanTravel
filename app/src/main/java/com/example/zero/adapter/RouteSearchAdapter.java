@@ -9,9 +9,6 @@ import com.example.zero.util.ViewHolder;
 
 import java.util.List;
 
-/**
- * Created by zero on 2017/9/5.
- */
 
 public class RouteSearchAdapter extends CommonAdapter<RouteSearchBean> {
     public RouteSearchAdapter(Context context, List<RouteSearchBean> data, int layoutId) {
