@@ -40,6 +40,12 @@ Android App GreenTravel
 	 	<th>销售——已有优惠券fragment界面完成</th>
 	 	<th>建议——两个Fragment布局</th>
 	</tr>
+	<tr>
+	 	<th>170911</th>
+	 	<th>路线——单人界面增加第二个搜索栏</th>
+	 	<th>销售——已有优惠券和热门优惠券布局完成，SaleAdapter基本完成</th>
+	 	<th>建议——两个Fragment控件细化</th>
+	 </tr>
 </table>
 
 ##遇到bug或难点
@@ -79,6 +85,12 @@ Android App GreenTravel
 	 	<th>路线——Fragment中接口调用</th>
 	 	<th>销售——java加载布局和adapter的使用</th>
 	 	<th>建议——TimePicker样式</th>
+	 </tr>
+	<tr>
+	 	<th>170911</th>
+	 	<th>路线——多个Adapter响应出现bug</th>
+	 	<th>销售——SaleAdapter加载多布局</th>
+	 	<th>建议——标签选中处理</th>
 	 </tr>
 </table>
 
@@ -120,4 +132,10 @@ Android App GreenTravel
 	 	<th>http://www.runoob.com/w3cnote/android-tutorial-adapter.html</th>
 	 	<th>http://blog.csdn.net/zt_ls/article/details/52097157</th>
 	 </tr>
+	<tr>
+		<th>170911</th>
+		<th>http://blog.csdn.net/wkw1125/article/details/48466735</th>
+		<th>http://www.jianshu.com/p/83a6336b60f1</th>
+		<th>http://blog.csdn.net/zt_ls/article/details/52097157</th>
+	</tr>
 </table>
