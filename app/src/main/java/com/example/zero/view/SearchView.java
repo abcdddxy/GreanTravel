@@ -203,15 +203,29 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
     }
 
     /**
-     * 返回搜索框内容
+     * 返回输入框文本内容
+     * @return
      */
     public String getText(){
         return etInput.getText().toString();
     }
 
+    /**
+     * 返回是否有焦点
+     * @return
+     */
     public boolean isFocus(){
         return etInput.hasFocus();
     }
+
+    /**
+     * 返回提示框可见性
+     * @return
+     */
+    public int getLvTipsVisible(){
+        return lvTips.getVisibility();
+    }
+
 
     /**
      * search view回调方法

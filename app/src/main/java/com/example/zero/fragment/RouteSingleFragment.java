@@ -49,10 +49,6 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
      */
     private ArrayAdapter<String> hintAdapter;
     /**
-     * 热搜框列表adapter
-     */
-    private ArrayAdapter<String> hintAdapter2;
-    /**
      * 自动补全列表adapter
      */
     private ArrayAdapter<String> autoCompleteAdapter;
@@ -145,19 +141,19 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
         //设置adapter
         searchView.setTipsHintAdapter(hintAdapter);
         searchView.setAutoCompleteAdapter(autoCompleteAdapter);
-        searchView2.setTipsHintAdapter(hintAdapter2);
+        searchView2.setTipsHintAdapter(hintAdapter);
         searchView2.setAutoCompleteAdapter(autoCompleteAdapter2);
 
         lvResults.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Toast.makeText(getActivity(), position + "", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "1-" + position + "", Toast.LENGTH_SHORT).show();
             }
         });
         lvResults2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Toast.makeText(getActivity(), position + "", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "2-" + position + "", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -194,10 +190,10 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
     private void getHintData() {
         hintData = new ArrayList<>(hintSize);
         for (int i = 1; i <= hintSize; i++) {
-            hintData.add("热搜版" + i + "：热门起终点站");
+            hintData.add("站点" + i*10);
         }
+
         hintAdapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, hintData);
-        hintAdapter2 = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, hintData);
     }
 
     /**
@@ -218,15 +214,21 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
                 }
             }
         }
+
         if (autoCompleteAdapter == null) {
             autoCompleteAdapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, autoCompleteData);
         } else {
-            autoCompleteAdapter.notifyDataSetChanged();
+            if (searchView.hasFocus()) {
+                autoCompleteAdapter.notifyDataSetChanged();
+            }
         }
+
         if (autoCompleteAdapter2 == null) {
             autoCompleteAdapter2 = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, autoCompleteData);
         } else {
-            autoCompleteAdapter2.notifyDataSetChanged();
+            if (searchView2.hasFocus()) {
+                autoCompleteAdapter2.notifyDataSetChanged();
+            }
         }
     }
 
@@ -292,7 +294,6 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
                 resultAdapter.notifyDataSetChanged();
             }
         }
-
         if (searchView2.hasFocus()) {
             if (lvResults2.getAdapter() == null) {
                 //获取搜索数据 设置适配器
@@ -302,6 +303,7 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
                 resultAdapter2.notifyDataSetChanged();
             }
         }
+
         Toast.makeText(getActivity(), "完成搜索", Toast.LENGTH_SHORT).show();
     }
 
@@ -312,10 +314,15 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
     public void onBack() {
         if (searchView.getText().equals("")) {
             lvResults.setVisibility(View.GONE);
+            autoCompleteAdapter.notifyDataSetChanged();
+            resultAdapter.notifyDataSetChanged();
         }
         if (searchView2.getText().equals("")) {
             lvResults2.setVisibility(View.GONE);
+            autoCompleteAdapter2.notifyDataSetChanged();
+            resultAdapter2.notifyDataSetChanged();
         }
+        hintAdapter.notifyDataSetChanged();
     }
 
     /**
@@ -325,9 +332,14 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
     public void isFocus() {
         if (searchView.hasFocus()) {
             lvResults.setVisibility(View.GONE);
+            autoCompleteAdapter.notifyDataSetChanged();
+            resultAdapter.notifyDataSetChanged();
         }
         if (searchView2.hasFocus()) {
             lvResults2.setVisibility(View.GONE);
+            autoCompleteAdapter2.notifyDataSetChanged();
+            resultAdapter2.notifyDataSetChanged();
         }
+        hintAdapter.notifyDataSetChanged();
     }
 }

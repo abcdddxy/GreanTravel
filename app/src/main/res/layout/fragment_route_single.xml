@@ -26,7 +26,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp">
+        android:layout_marginTop="180dp">
 
         <com.example.zero.view.SearchView
             android:id="@+id/route_search_single2"
