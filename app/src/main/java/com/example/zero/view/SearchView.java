@@ -184,6 +184,7 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
         switch (view.getId()) {
             case R.id.route_et_search:
                 lvTips.setVisibility(VISIBLE);
+                mListener.isFocus();
                 break;
             case R.id.route_iv_delete:
                 etInput.setText("");
@@ -206,6 +207,10 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
      */
     public String getText(){
         return etInput.getText().toString();
+    }
+
+    public boolean isFocus(){
+        return etInput.hasFocus();
     }
 
     /**
@@ -231,6 +236,11 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
          * 设置返回操作
          */
         void onBack();
+
+        /**
+         * 提示框出现
+         */
+        void isFocus();
     }
 
 }

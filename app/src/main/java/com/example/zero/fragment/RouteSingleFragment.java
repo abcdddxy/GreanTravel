@@ -85,7 +85,6 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
      * 搜索结果的数据
      */
     private List<RouteSearchBean> resultData;
-
     /**
      * 默认提示框显示项的个数
      */
@@ -246,16 +245,13 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
                 }
             }
         }
+
         if (resultAdapter == null) {
             resultAdapter = new RouteSearchAdapter(getActivity(), resultData, R.layout.route_search_item_list);
-        } else {
-            resultAdapter.notifyDataSetChanged();
         }
 
         if (resultAdapter2 == null) {
             resultAdapter2 = new RouteSearchAdapter(getActivity(), resultData, R.layout.route_search_item_list);
-        } else {
-            resultAdapter2.notifyDataSetChanged();
         }
     }
 
@@ -279,14 +275,15 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
     public void onSearch(String text) {
         //更新result数据
         getResultData(text);
-        if (searchView.getText().equals("")) {
-            lvResults2.setVisibility(View.VISIBLE);
-        } else if (searchView2.getText().equals("")) {
+        if (!searchView.getText().equals("")) {
             lvResults.setVisibility(View.VISIBLE);
+        }
+        if (!searchView2.getText().equals("")) {
+            lvResults2.setVisibility(View.VISIBLE);
         }
 
         //第一次获取结果 还未配置适配器
-        if (lvResults.getVisibility() == View.VISIBLE) {
+        if (searchView.hasFocus()) {
             if (lvResults.getAdapter() == null) {
                 //获取搜索数据 设置适配器
                 lvResults.setAdapter(resultAdapter);
@@ -295,7 +292,8 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
                 resultAdapter.notifyDataSetChanged();
             }
         }
-        if (lvResults2.getVisibility() == View.VISIBLE) {
+
+        if (searchView2.hasFocus()) {
             if (lvResults2.getAdapter() == null) {
                 //获取搜索数据 设置适配器
                 lvResults2.setAdapter(resultAdapter2);
@@ -304,7 +302,6 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
                 resultAdapter2.notifyDataSetChanged();
             }
         }
-
         Toast.makeText(getActivity(), "完成搜索", Toast.LENGTH_SHORT).show();
     }
 
@@ -313,9 +310,23 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
      */
     @Override
     public void onBack() {
-        if (lvResults.getVisibility() == View.VISIBLE) {
+        if (searchView.getText().equals("")) {
             lvResults.setVisibility(View.GONE);
-        } else if (lvResults2.getVisibility() == View.VISIBLE) {
+        }
+        if (searchView2.getText().equals("")) {
+            lvResults2.setVisibility(View.GONE);
+        }
+    }
+
+    /**
+     * 自动补全提示框出现触发回调
+     */
+    @Override
+    public void isFocus() {
+        if (searchView.hasFocus()) {
+            lvResults.setVisibility(View.GONE);
+        }
+        if (searchView2.hasFocus()) {
             lvResults2.setVisibility(View.GONE);
         }
     }
