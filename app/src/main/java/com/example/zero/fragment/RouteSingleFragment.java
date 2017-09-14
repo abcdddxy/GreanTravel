@@ -189,8 +189,9 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
      */
     private void getHintData() {
         hintData = new ArrayList<>(hintSize);
-        for (int i = 1; i <= hintSize; i++) {
-            hintData.add("站点" + i*10);
+        hintData.add("***热搜站点***");
+        for (int i = 1; i <= hintSize - 1; i++) {
+            hintData.add("站点" + i * 10);
         }
 
         hintAdapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, hintData);
@@ -341,5 +342,20 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
             resultAdapter2.notifyDataSetChanged();
         }
         hintAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public boolean onSearchResult(String text) {
+        int JUD = 0;
+        for (int i = 0; i < dbData.size(); i++) {
+            if (dbData.get(i).getTitle().equals(text.trim())) {
+                JUD = 1;
+            }
+        }
+        if (JUD == 1) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
