@@ -40,11 +40,22 @@ Android App GreenTravel
 	 	<th>销售——已有优惠券fragment界面完成</th>
 	 	<th>建议——两个Fragment布局</th>
 	</tr>
-	<tr>
-	 	<th>170911</th>
+		<th>170911</th>
 	 	<th>路线——单人界面增加第二个搜索栏</th>
 	 	<th>销售——已有优惠券和热门优惠券布局完成，SaleAdapter基本完成</th>
 	 	<th>建议——两个Fragment控件细化</th>
+	 </tr>
+	<tr>
+		<th>170912</th>
+		<th>路线——单人界面搜索栏bug修复</th>
+	 	<th>销售——完成adapter的编写</th>
+	 	<th>建议——添加搜索细节</th>
+	 </tr>
+	 <tr>
+	 	<th>170913</th>
+	 	<th>路线——完成单人搜索界面开发</th>
+	 	<th>销售——完成已有优惠券和热门优惠券两个frag切换的基本布局</th>
+	 	<th>建议——看别人代码，没有输出</th>
 	 </tr>
 </table>
 
@@ -92,6 +103,18 @@ Android App GreenTravel
 	 	<th>销售——SaleAdapter加载多布局</th>
 	 	<th>建议——标签选中处理</th>
 	 </tr>
+	 <tr>
+		<th>170912</th>
+		<th>路线——Adapter与Context消息通讯机制</th>
+	 	<th>销售——同一布局中的两个RecyclerView无法共同滑动</th>
+		<th>建议——搜索提示实现</th>
+	 </tr>
+	 <tr>
+	 	<th>170913</th>
+	 	<th>路线——单人界面综合调试</th>
+	 	<th>销售——SaleFragmentController还无法控制切换，具体原因还未知</th>
+	 	<th>建议——PopupWindow不能和SearchView一起用</th>
+	 </tr>
 </table>
 
 ##参考
@@ -138,4 +161,15 @@ Android App GreenTravel
 		<th>http://www.jianshu.com/p/83a6336b60f1</th>
 		<th>http://blog.csdn.net/zt_ls/article/details/52097157</th>
 	</tr>
+	<tr>
+		<th>170912</th>
+		<th>http://blog.csdn.net/jdsjlzx/article/details/18084017</th>
+	 	<th>http://blog.csdn.net/u014434080/article/details/70256098</th>
+	 	<th>>http://blog.csdn.net/lxl403853563/article/details/49800231</th>
+	 </tr>
+	 <tr>
+	 	<th>170913</th>
+	 	<th>http://www.jianshu.com/p/011eb88f4e0d</th>
+	 	<th>无</th>
+	 	<th>http://www.apkbus.com/forum.php?mod=viewthread&tid=312394</th>
 </table>
