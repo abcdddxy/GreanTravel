@@ -57,6 +57,12 @@ Android App GreenTravel
 	 	<th>销售——完成已有优惠券和热门优惠券两个frag切换的基本布局</th>
 	 	<th>建议——看别人代码，没有输出</th>
 	 </tr>
+	 <tr>
+	 	<th>170914</th>
+	 	<th>路线——多人界面搜索框添加</th>
+	 	<th></th>
+	 	<th>建议——做了下拉框式的搜索框（未完成自动补全）</th>
+	 </tr>
 </table>
 
 ##遇到bug或难点
@@ -115,6 +121,12 @@ Android App GreenTravel
 	 	<th>销售——SaleFragmentController还无法控制切换，具体原因还未知</th>
 	 	<th>建议——PopupWindow不能和SearchView一起用</th>
 	 </tr>
+	 <tr>
+	 	<th>170914</th>
+	 	<th>路线——按钮动态调整Fragment布局</th>
+	 	<th></th>
+	 	<th>建议——ListPopupWindow弹出后输入框不能改变</th>
+	 </tr>
 </table>
 
 ##参考
@@ -172,4 +184,10 @@ Android App GreenTravel
 	 	<th>http://www.jianshu.com/p/011eb88f4e0d</th>
 	 	<th>无</th>
 	 	<th>http://www.apkbus.com/forum.php?mod=viewthread&tid=312394</th>
+	 <tr>
+	 	<th>170914</th>
+	 	<th>http://www.cnblogs.com/liqw/p/4084282.html</th>
+	 	<th></th>
+	 	<th>http://blog.csdn.net/aqi00/article/details/52352745（modal设置false）</th>
+	 </tr>
 </table>
