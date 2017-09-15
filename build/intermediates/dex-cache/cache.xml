@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/zero/.android/build-cache/321e6c5dc215ca409aebc2e2ea1d45f1adaa87eb/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fd822cc34025d1109e78eb7dfbcc4a5f28005309">
+        <dex dex="/Users/zero/AndroidStudioProjects/GreenTravel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dcb8f563899c6700de6ff307d05ecfeaa4cb9ef8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zero/AndroidStudioProjects/GreenTravel/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/zero/AndroidStudioProjects/GreenTravel/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9ac85675d222543fdd81a55df14f9e77c04bfca8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zero/AndroidStudioProjects/GreenTravel/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5ea7f99485821a67012655091f7b06356ac39223">
+        <dex dex="/Users/zero/AndroidStudioProjects/GreenTravel/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_a1c23739187b5324253fb440331e6fbea1918007/classes.dex" />
+    </item>
+
+</items>

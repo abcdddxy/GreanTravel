@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="LabelsView-1.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/321e6c5dc215ca409aebc2e2ea1d45f1adaa87eb/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/321e6c5dc215ca409aebc2e2ea1d45f1adaa87eb/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.donkingliang/LabelsView/1.2.0/900fd5a2cc86af78ee5e6545dd17f857beae8abe/LabelsView-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
