@@ -295,6 +295,7 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
                 resultAdapter.notifyDataSetChanged();
             }
         }
+
         if (searchView2.hasFocus()) {
             if (lvResults2.getAdapter() == null) {
                 //获取搜索数据 设置适配器
@@ -314,14 +315,14 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
     @Override
     public void onBack() {
         if (searchView.getText().equals("")) {
-            lvResults.setVisibility(View.GONE);
             autoCompleteAdapter.notifyDataSetChanged();
             resultAdapter.notifyDataSetChanged();
+            lvResults.setVisibility(View.GONE);
         }
         if (searchView2.getText().equals("")) {
-            lvResults2.setVisibility(View.GONE);
             autoCompleteAdapter2.notifyDataSetChanged();
             resultAdapter2.notifyDataSetChanged();
+            lvResults2.setVisibility(View.GONE);
         }
         hintAdapter.notifyDataSetChanged();
     }
@@ -332,14 +333,14 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
     @Override
     public void isFocus() {
         if (searchView.hasFocus()) {
-            lvResults.setVisibility(View.GONE);
             autoCompleteAdapter.notifyDataSetChanged();
             resultAdapter.notifyDataSetChanged();
+            lvResults.setVisibility(View.GONE);
         }
         if (searchView2.hasFocus()) {
-            lvResults2.setVisibility(View.GONE);
             autoCompleteAdapter2.notifyDataSetChanged();
             resultAdapter2.notifyDataSetChanged();
+            lvResults2.setVisibility(View.GONE);
         }
         hintAdapter.notifyDataSetChanged();
     }
@@ -353,10 +354,11 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
     public boolean onHintClick(String text) {
         boolean JUD = false;
         for (int i = 0; i < dbData.size(); i++) {
-            if (dbData.get(i).getTitle().contains(text.trim())) {
+            if (dbData.get(i).getTitle().equals(text.trim())) {
                 JUD = true;
             }
         }
+        hintAdapter.notifyDataSetChanged();
         return JUD;
     }
 }

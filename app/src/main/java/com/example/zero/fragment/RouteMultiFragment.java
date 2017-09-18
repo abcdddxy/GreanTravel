@@ -320,10 +320,11 @@ public class RouteMultiFragment extends Fragment implements SimpleSearchView.Sim
     public boolean onHintClick(String text) {
         boolean JUD = false;
         for (int i = 0; i < dbData.size(); i++) {
-            if (dbData.get(i).getTitle().contains(text.trim())) {
+            if (dbData.get(i).getTitle().equals(text.trim())) {
                 JUD = true;
             }
         }
+        hintAdapter.notifyDataSetChanged();
         return JUD;
     }
 }

@@ -114,8 +114,14 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
             @Override
             public boolean onEditorAction(TextView textView, int actionId, KeyEvent keyEvent) {
                 if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+                    String text = etInput.getText().toString();
                     lvTips.setVisibility(GONE);
-                    notifyStartSearching(etInput.getText().toString());
+                    if (mListener.onHintClick(text)) {
+                        notifyStartSearching(text);
+                    } else {
+                        etInput.setText("");
+                        Toast.makeText(getContext(), "站点在数据库中不存在", Toast.LENGTH_SHORT).show();
+                    }
                 }
                 return true;
             }
@@ -196,13 +202,13 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
                 break;
             case R.id.route_iv_delete:
                 etInput.setText("");
-                mListener.onBack();
                 ivDelete.setVisibility(GONE);
+                mListener.onBack();
                 break;
             case R.id.route_btn_back:
                 etInput.setText("");
-                mListener.onBack();
                 ivDelete.setVisibility(GONE);
+                mListener.onBack();
 //                ((Activity) mContext).finish();
                 break;
             default:
