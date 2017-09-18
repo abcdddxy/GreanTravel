@@ -189,8 +189,9 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
      */
     private void getHintData() {
         hintData = new ArrayList<>(hintSize);
+        hintData.add("热门搜索站点");
         for (int i = 1; i <= hintSize; i++) {
-            hintData.add("站点" + i*10);
+            hintData.add("站点" + i * 10);
         }
 
         hintAdapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, hintData);
@@ -260,7 +261,7 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
     /**
      * 当搜索框文本改变时触发的回调 ,更新自动补全数据
      *
-     * @param text
+     * @param text 搜索栏文本
      */
     @Override
     public void onRefreshAutoComplete(String text) {
@@ -271,7 +272,7 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
     /**
      * 点击搜索键时edit text触发的回调
      *
-     * @param text
+     * @param text 搜索栏文本
      */
     @Override
     public void onSearch(String text) {
@@ -341,5 +342,21 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
             resultAdapter2.notifyDataSetChanged();
         }
         hintAdapter.notifyDataSetChanged();
+    }
+
+    /**
+     * 热门提示数据在数据库中是否存在
+     * @param text 热门提示
+     * @return true存在，false不存在
+     */
+    @Override
+    public boolean onHintClick(String text) {
+        boolean JUD = false;
+        for (int i = 0; i < dbData.size(); i++) {
+            if (dbData.get(i).getTitle().contains(text.trim())) {
+                JUD = true;
+            }
+        }
+        return JUD;
     }
 }
