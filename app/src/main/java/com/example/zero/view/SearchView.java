@@ -5,6 +5,7 @@ import android.content.Context;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -58,6 +59,8 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
      */
     private SearchViewListener mListener;
 
+    private static final String TAG = "SearchView";
+
     /**
      * 设置搜索回调接口
      *
@@ -93,6 +96,7 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 //设置提示文本
                 String text = lvTips.getAdapter().getItem(i).toString();
+                Log.d(TAG, "onItemClick: " + i + " " + text);
                 if (mListener.onHintClick(text)) {
                     etInput.setText(text);
                     etInput.setSelection(text.length());

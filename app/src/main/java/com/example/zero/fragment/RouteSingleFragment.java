@@ -231,6 +231,7 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
                 autoCompleteAdapter2.notifyDataSetChanged();
             }
         }
+        Log.d(TAG, "getAutoCompleteData: finish");
     }
 
     /**
@@ -256,6 +257,7 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
         if (resultAdapter2 == null) {
             resultAdapter2 = new RouteSearchAdapter(getActivity(), resultData, R.layout.route_search_item_list);
         }
+        Log.d(TAG, "getResultData: finish");
     }
 
     /**
@@ -314,6 +316,7 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
      */
     @Override
     public void onBack() {
+        Log.d(TAG, "onBack: start");
         if (searchView.getText().equals("")) {
             autoCompleteAdapter.notifyDataSetChanged();
             resultAdapter.notifyDataSetChanged();
@@ -325,6 +328,7 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
             lvResults2.setVisibility(View.GONE);
         }
         hintAdapter.notifyDataSetChanged();
+        Log.d(TAG, "onBack: finish");
     }
 
     /**
@@ -332,6 +336,7 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
      */
     @Override
     public void isFocus() {
+        Log.d(TAG, "isFocus: start");
         if (searchView.hasFocus()) {
             autoCompleteAdapter.notifyDataSetChanged();
             resultAdapter.notifyDataSetChanged();
@@ -343,10 +348,12 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
             lvResults2.setVisibility(View.GONE);
         }
         hintAdapter.notifyDataSetChanged();
+        Log.d(TAG, "isFocus: finish");
     }
 
     /**
      * 热门提示数据在数据库中是否存在
+     *
      * @param text 热门提示
      * @return true存在，false不存在
      */
