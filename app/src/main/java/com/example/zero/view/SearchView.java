@@ -39,13 +39,13 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
      */
     private Button btnBack;
     /**
-     * 上下文对象
-     */
-    private Context mContext;
-    /**
      * 弹出列表
      */
     private ListView lvTips;
+    /**
+     * 上下文对象
+     */
+    private Context mContext;
     /**
      * 提示adapter （推荐adapter）
      */
