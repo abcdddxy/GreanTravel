@@ -21,19 +21,19 @@ Android App GreenTravel
 		<th>路线——单人搜索栏</th>
 	 	<th></th>
 	 	<th></th>
-	 </tr>
-	 <tr>
+	</tr>
+	<tr>
 	 	<th>170906</th>
 	 	<th>路线——颓了一天</th>
 	 	<th></th>
 	 	<th></th>
-	 </tr>
+	</tr>
 	<tr>
 	 	<th>170907</th>
 	 	<th>路线——整理git文件结构</th>
 	 	<th>销售——学习git和熟悉demo</th>
 	 	<th>建议——两个Fragment切换</th>
-	 </tr>
+	</tr>
 	<tr>
 	 	<th>170908</th>
 	 	<th>路线——修正单人搜索栏切换时bug</th>
@@ -44,41 +44,47 @@ Android App GreenTravel
 	 	<th>路线——单人界面增加第二个搜索栏</th>
 	 	<th>销售——已有优惠券和热门优惠券布局完成，SaleAdapter基本完成</th>
 	 	<th>建议——两个Fragment控件细化</th>
-	 </tr>
+	</tr>
 	<tr>
 		<th>170912</th>
 		<th>路线——单人界面搜索栏bug修复</th>
 	 	<th>销售——完成adapter的编写</th>
 	 	<th>建议——添加搜索细节</th>
-	 </tr>
-	 <tr>
+	</tr>
+	<tr>
 	 	<th>170913</th>
 	 	<th>路线——完成单人搜索界面开发</th>
 	 	<th>销售——完成已有优惠券和热门优惠券两个frag切换的基本布局</th>
 	 	<th>建议——看别人代码，没有输出</th>
-	 </tr>
-	 <tr>
+	</tr>
+	<tr>
 	 	<th>170914</th>
 	 	<th>路线——多人界面搜索框添加</th>
 	 	<th></th>
 	 	<th>建议——做了下拉框式的搜索框（未完成自动补全）</th>
-	 </tr>
-	 <tr>
+	</tr>
+	<tr>
 	 	<th>170915</th>
 	 	<th colspan="3">第一次程序和并</th>
-	 </tr>
-     <tr>
+	</tr>
+    <tr>
 		<th>170918</th>
 		<th>路线——多人界面初步开发</th>
 		<th>销售——美化优惠券样式，完成四个radiobutton的切换</th>
-		<th>>建议——页面效果完善，添加注释</th>
-	 </tr>
-	 <tr>
+		<th>建议——页面效果完善，添加注释</th>
+	</tr>
+	<tr>
 		<th>170920</th>
 		<th>路线——多人界面基本开发完成</th>
 		<th>消息——完成msg_item布局,修改adapter和fragment代码</th>
 		<th>建议——页面效果完善，修改类图</th>
-	 </tr>
+	</tr>
+	<tr>
+		<th>170921</th>
+		<th>路线——规范路线推荐主界面</th>
+		<th>销售——美化界面，规范代码</th>
+		<th>建议——添加搜索结果</th>
+	</tr>
 </table>
 
 ##遇到bug或难点
@@ -100,65 +106,71 @@ Android App GreenTravel
 		<th>路线——搜索匹配算法</th>
 	 	<th></th>
 	 	<th></th>
-	 </tr>
-	 <tr>
+	</tr>
+	<tr>
 	 	<th>170906</th>
 	 	<th>路线——报到太累了</th>
 	 	<th></th>
 	 	<th></th>
-	 </tr>
-	 <tr>
+	</tr>
+	<tr>
 	 	<th>170907</th>
 	 	<th>路线——划分功能领域</th>
 	 	<th>销售——git基本操作还不熟练</th>
 	 	<th>建议——关键字流动标签样式</th>
-	 </tr>
-	 <tr>
+	</tr>
+	<tr>
 	 	<th>170908</th>
 	 	<th>路线——Fragment中接口调用</th>
 	 	<th>销售——java加载布局和adapter的使用</th>
 	 	<th>建议——TimePicker样式</th>
-	 </tr>
+	</tr>
 	<tr>
 	 	<th>170911</th>
 	 	<th>路线——多个Adapter响应出现bug</th>
 	 	<th>销售——SaleAdapter加载多布局</th>
 	 	<th>建议——标签选中处理</th>
-	 </tr>
-	 <tr>
+	</tr>
+	<tr>
 		<th>170912</th>
 		<th>路线——Adapter与Context消息通讯机制</th>
 	 	<th>销售——同一布局中的两个RecyclerView无法共同滑动</th>
 		<th>建议——搜索提示实现</th>
-	 </tr>
-	 <tr>
+	</tr>
+	<tr>
 	 	<th>170913</th>
 	 	<th>路线——单人界面综合调试</th>
 	 	<th>销售——SaleFragmentController还无法控制切换，具体原因还未知</th>
 	 	<th>建议——PopupWindow不能和SearchView一起用</th>
-	 </tr>
-	 <tr>
+	</tr>
+	<tr>
 	 	<th>170914</th>
 	 	<th>路线——按钮动态调整Fragment布局</th>
 	 	<th></th>
 	 	<th>建议——ListPopupWindow弹出后输入框不能改变</th>
-	 </tr>
-	 <tr>
+	</tr>
+	<tr>
 	 	<th>170915</th>
 	 	<th colspan="3">暂时没有发现bug</th>
-	 </tr>
-     <tr>
+	</tr>
+    <tr>
 		<th>170918</th>
 		<th>路线——点击按钮改变组件可见性</th>
 		<th>销售——实现边缘凹凸（锯齿形）的优惠券效果</th>
 		<th>建议——下拉框频闪</th>
-	 </tr>
-	 <tr>
+	</tr>
+	<tr>
 		<th>170920</th>
 		<th>路线——单人多人界面切换效果</th>
 		<th>无</th>
 		<th>建议——xml均匀布局</th>
-	 </tr>
+	</tr>
+	<tr>
+		<th>170921</th>
+		<th>路线——注释与TODO形式</th>
+		<th>无</th>
+		<th>建议——结果和补全的两个Adapter同时更新</th>
+	</tr>
 </table>
 
 ##参考
@@ -237,5 +249,11 @@ Android App GreenTravel
 		<th>http://blog.csdn.net/qq_33000225/article/details/53540263</th>
 		<th>无</th>
 		<th>http://blog.csdn.net/zhouyingge1104/article/details/43971597</th>
+	</tr>
+	<tr>
+		<th>170921</th>
+		<th>http://www.jianshu.com/p/99239b9c1630</th>
+		<th>无</th>
+		<th>无</th>
 	</tr>
 </table>
