@@ -72,7 +72,13 @@ Android App GreenTravel
 		<th>路线——多人界面初步开发</th>
 		<th>销售——美化优惠券样式，完成四个radiobutton的切换</th>
 		<th>>建议——页面效果完善，添加注释</th>
-	</tr>
+	 </tr>
+	 <tr>
+		<th>170920</th>
+		<th>路线——多人界面基本开发完成</th>
+		<th>消息——完成msg_item布局,修改adapter和fragment代码</th>
+		<th>建议——页面效果完善，修改类图</th>
+	 </tr>
 </table>
 
 ##遇到bug或难点
@@ -146,7 +152,13 @@ Android App GreenTravel
 		<th>路线——点击按钮改变组件可见性</th>
 		<th>销售——实现边缘凹凸（锯齿形）的优惠券效果</th>
 		<th>建议——下拉框频闪</th>
-	</tr>
+	 </tr>
+	 <tr>
+		<th>170920</th>
+		<th>路线——单人多人界面切换效果</th>
+		<th>无</th>
+		<th>建议——xml均匀布局</th>
+	 </tr>
 </table>
 
 ##参考
@@ -218,6 +230,12 @@ Android App GreenTravel
 		<th>170918</th>
 		<th>http://blog.csdn.net/zuolongsnail/article/details/7106104</th>
 		<th>http://blog.csdn.net/yissan/article/details/51429281</th>
-		<th>http://web.mit.edu/ruggles/MacData/afs/sipb/project/android/docs/reference/android/widget/ListPopupWindow.htm</th>
+		<th>http://web.mit.edu/ruggles/MacData/afs/sipb/project/android/docs/reference/android/widget/ListPopupWindow.html</th>
+	</tr>
+    <tr>
+		<th>170920</th>
+		<th>http://blog.csdn.net/qq_33000225/article/details/53540263</th>
+		<th>无</th>
+		<th>http://blog.csdn.net/zhouyingge1104/article/details/43971597</th>
 	</tr>
 </table>
