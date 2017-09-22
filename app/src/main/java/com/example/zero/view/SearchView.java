@@ -5,6 +5,7 @@ import android.content.Context;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.zero.adapter.RouteSearchAdapter;
 import com.example.zero.greentravel.R;
@@ -37,13 +39,13 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
      */
     private Button btnBack;
     /**
-     * 上下文对象
-     */
-    private Context mContext;
-    /**
      * 弹出列表
      */
     private ListView lvTips;
+    /**
+     * 上下文对象
+     */
+    private Context mContext;
     /**
      * 提示adapter （推荐adapter）
      */
@@ -56,6 +58,8 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
      * 搜索回调接口
      */
     private SearchViewListener mListener;
+
+    private static final String TAG = "SearchView";
 
     /**
      * 设置搜索回调接口
@@ -74,7 +78,7 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
         initViews();
     }
 
-    public void setHintText(String str){
+    public void setHintText(String str) {
         etInput.setHint(str);
     }
 
@@ -92,11 +96,16 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 //设置提示文本
                 String text = lvTips.getAdapter().getItem(i).toString();
-                etInput.setText(text);
-                etInput.setSelection(text.length());
-                //提示列表
-                lvTips.setVisibility(View.GONE);
-                notifyStartSearching(text);
+                Log.d(TAG, "onItemClick: " + i + " " + text);
+                if (mListener.onHintClick(text)) {
+                    etInput.setText(text);
+                    etInput.setSelection(text.length());
+                    //提示列表
+                    lvTips.setVisibility(View.GONE);
+                    notifyStartSearching(text);
+                } else {
+                    Toast.makeText(getContext(), "站点在数据库中不存在", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -109,8 +118,14 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
             @Override
             public boolean onEditorAction(TextView textView, int actionId, KeyEvent keyEvent) {
                 if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+                    String text = etInput.getText().toString();
                     lvTips.setVisibility(GONE);
-                    notifyStartSearching(etInput.getText().toString());
+                    if (mListener.onHintClick(text)) {
+                        notifyStartSearching(text);
+                    } else {
+                        etInput.setText("");
+                        Toast.makeText(getContext(), "站点在数据库中不存在", Toast.LENGTH_SHORT).show();
+                    }
                 }
                 return true;
             }
@@ -119,9 +134,10 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
 
     /**
      * 通知监听者 进行搜索操作
+     *
      * @param text 搜索文本
      */
-    private void notifyStartSearching(String text){
+    private void notifyStartSearching(String text) {
         if (mListener != null) {
             mListener.onSearch(etInput.getText().toString());
         }
@@ -152,7 +168,8 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
      */
     private class EditChangedListener implements TextWatcher {
         @Override
-        public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {}
+        public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
+        }
 
         @Override
         public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
@@ -176,7 +193,8 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
         }
 
         @Override
-        public void afterTextChanged(Editable editable) {}
+        public void afterTextChanged(Editable editable) {
+        }
     }
 
     @Override
@@ -188,13 +206,13 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
                 break;
             case R.id.route_iv_delete:
                 etInput.setText("");
-                mListener.onBack();
                 ivDelete.setVisibility(GONE);
+                mListener.onBack();
                 break;
             case R.id.route_btn_back:
                 etInput.setText("");
-                mListener.onBack();
                 ivDelete.setVisibility(GONE);
+                mListener.onBack();
 //                ((Activity) mContext).finish();
                 break;
             default:
@@ -204,28 +222,30 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
 
     /**
      * 返回输入框文本内容
-     * @return
+     *
+     * @return 搜索栏文本
      */
-    public String getText(){
+    public String getText() {
         return etInput.getText().toString();
     }
 
     /**
      * 返回是否有焦点
-     * @return
+     *
+     * @return true有焦点
      */
-    public boolean isFocus(){
+    public boolean isFocus() {
         return etInput.hasFocus();
     }
 
     /**
      * 返回提示框可见性
-     * @return
+     *
+     * @return true可见
      */
-    public int getLvTipsVisible(){
+    public int getLvTipsVisible() {
         return lvTips.getVisibility();
     }
-
 
     /**
      * search view回调方法
@@ -255,6 +275,13 @@ public class SearchView extends LinearLayout implements View.OnClickListener {
          * 提示框出现
          */
         void isFocus();
+
+        /**
+         * 提示框搜索项点击
+         *
+         * @return true 数据库存在
+         */
+        boolean onHintClick(String text);
     }
 
 }

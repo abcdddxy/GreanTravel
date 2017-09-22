@@ -189,8 +189,9 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
      */
     private void getHintData() {
         hintData = new ArrayList<>(hintSize);
+        hintData.add("热门搜索站点");
         for (int i = 1; i <= hintSize; i++) {
-            hintData.add("站点" + i*10);
+            hintData.add("站点" + i * 10);
         }
 
         hintAdapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, hintData);
@@ -230,6 +231,7 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
                 autoCompleteAdapter2.notifyDataSetChanged();
             }
         }
+        Log.d(TAG, "getAutoCompleteData: finish");
     }
 
     /**
@@ -255,12 +257,13 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
         if (resultAdapter2 == null) {
             resultAdapter2 = new RouteSearchAdapter(getActivity(), resultData, R.layout.route_search_item_list);
         }
+        Log.d(TAG, "getResultData: finish");
     }
 
     /**
      * 当搜索框文本改变时触发的回调 ,更新自动补全数据
      *
-     * @param text
+     * @param text 搜索栏文本
      */
     @Override
     public void onRefreshAutoComplete(String text) {
@@ -271,7 +274,7 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
     /**
      * 点击搜索键时edit text触发的回调
      *
-     * @param text
+     * @param text 搜索栏文本
      */
     @Override
     public void onSearch(String text) {
@@ -294,6 +297,7 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
                 resultAdapter.notifyDataSetChanged();
             }
         }
+
         if (searchView2.hasFocus()) {
             if (lvResults2.getAdapter() == null) {
                 //获取搜索数据 设置适配器
@@ -312,17 +316,19 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
      */
     @Override
     public void onBack() {
+        Log.d(TAG, "onBack: start");
         if (searchView.getText().equals("")) {
-            lvResults.setVisibility(View.GONE);
             autoCompleteAdapter.notifyDataSetChanged();
             resultAdapter.notifyDataSetChanged();
+            lvResults.setVisibility(View.GONE);
         }
         if (searchView2.getText().equals("")) {
-            lvResults2.setVisibility(View.GONE);
             autoCompleteAdapter2.notifyDataSetChanged();
             resultAdapter2.notifyDataSetChanged();
+            lvResults2.setVisibility(View.GONE);
         }
         hintAdapter.notifyDataSetChanged();
+        Log.d(TAG, "onBack: finish");
     }
 
     /**
@@ -330,16 +336,36 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
      */
     @Override
     public void isFocus() {
+        Log.d(TAG, "isFocus: start");
         if (searchView.hasFocus()) {
-            lvResults.setVisibility(View.GONE);
             autoCompleteAdapter.notifyDataSetChanged();
             resultAdapter.notifyDataSetChanged();
+            lvResults.setVisibility(View.GONE);
         }
         if (searchView2.hasFocus()) {
-            lvResults2.setVisibility(View.GONE);
             autoCompleteAdapter2.notifyDataSetChanged();
             resultAdapter2.notifyDataSetChanged();
+            lvResults2.setVisibility(View.GONE);
         }
         hintAdapter.notifyDataSetChanged();
+        Log.d(TAG, "isFocus: finish");
+    }
+
+    /**
+     * 热门提示数据在数据库中是否存在
+     *
+     * @param text 热门提示
+     * @return true存在，false不存在
+     */
+    @Override
+    public boolean onHintClick(String text) {
+        boolean JUD = false;
+        for (int i = 0; i < dbData.size(); i++) {
+            if (dbData.get(i).getTitle().equals(text.trim())) {
+                JUD = true;
+            }
+        }
+        hintAdapter.notifyDataSetChanged();
+        return JUD;
     }
 }
