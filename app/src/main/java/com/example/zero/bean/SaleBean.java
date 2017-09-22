@@ -13,13 +13,10 @@ public class SaleBean {
     private String content;
     private int img;
 
-    public void setText(String name, String price, String content) {
+    public void setText(String name, String price, String content, int imgId) {
         this.name = name;
         this.price = price;
         this.content = content;
-    }
-
-    public void setImage(int imgId) {
         this.img = imgId;
     }
 

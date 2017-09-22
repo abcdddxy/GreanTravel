@@ -2,52 +2,68 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D3D3D3"
     android:orientation="vertical">
 
-    <LinearLayout
+    <RadioGroup
+        android:id="@+id/sale_hot_rg"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_height="40dp"
+        android:background="#FFFFFF"
         android:layout_marginTop="5dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingLeft="25dp">
 
-        <TextView
+        <RadioButton
+            android:id="@+id/sale_hot_food"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/food"
+            android:drawablePadding="10dp"
             android:text="餐饮"
-            android:textColor="#FF0000"
+            android:textColor="@drawable/sale_hot_rg_color_select"
             android:textSize="16sp" />
 
-        <TextView
+        <RadioButton
+            android:id="@+id/sale_hot_entertainment"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
+            android:button="@null"
+            android:drawableLeft="@drawable/entertainment"
+            android:drawablePadding="10dp"
             android:text="娱乐"
-            android:textColor="#708090"
+            android:textColor="@drawable/sale_hot_rg_color_select"
             android:textSize="16sp" />
 
-        <TextView
+        <RadioButton
+            android:id="@+id/sale_hot_shopping"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
+            android:button="@null"
+            android:drawableLeft="@drawable/shopping"
+            android:drawablePadding="10dp"
             android:text="购物"
-            android:textColor="#708090"
+            android:textColor="@drawable/sale_hot_rg_color_select"
             android:textSize="16sp" />
 
-        <TextView
+        <RadioButton
+            android:id="@+id/sale_hot_travel"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
+            android:button="@null"
+            android:drawableLeft="@drawable/travel"
+            android:drawablePadding="10dp"
             android:text="旅游"
-            android:textColor="#708090"
+            android:textColor="@drawable/sale_hot_rg_color_select"
             android:textSize="16sp" />
 
-    </LinearLayout>
+    </RadioGroup>
 
     <View
         android:layout_width="match_parent"
