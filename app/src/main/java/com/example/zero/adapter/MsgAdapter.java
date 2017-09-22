@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.zero.bean.MsgBean;
@@ -29,7 +30,10 @@ public class MsgAdapter extends RecyclerView.Adapter<MsgAdapter.MsgViewHolder> {
 
     @Override
     public void onBindViewHolder(MsgViewHolder holder, int position) {
-        holder.text.setText(dataList.get(position).getText());
+        holder.title.setText(dataList.get(position).getTitle());
+        holder.content.setText(dataList.get(position).getContent());
+        holder.time.setText(dataList.get(position).getTime());
+        holder.img.setImageResource(dataList.get(position).getImg());
     }
 
     @Override
@@ -38,11 +42,17 @@ public class MsgAdapter extends RecyclerView.Adapter<MsgAdapter.MsgViewHolder> {
     }
 
     static class MsgViewHolder extends RecyclerView.ViewHolder {
-        private TextView text;
+        private TextView title;
+        private TextView content;
+        private TextView time;
+        private ImageView img;
 
         public MsgViewHolder(View itemView) {
             super(itemView);
-            text = (TextView) itemView.findViewById(R.id.msg_text);
+            title = (TextView) itemView.findViewById(R.id.msg_title);
+            content = (TextView) itemView.findViewById(R.id.msg_content);
+            time = (TextView) itemView.findViewById(R.id.msg_time);
+            img = (ImageView) itemView.findViewById(R.id.msg_img);
         }
     }
 }

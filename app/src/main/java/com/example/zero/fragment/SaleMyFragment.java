@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.zero.adapter.SaleMyDiscountAdapter;
+import com.example.zero.adapter.SaleMyCouponAdapter;
 import com.example.zero.bean.SaleBean;
 import com.example.zero.greentravel.R;
 
@@ -26,10 +26,10 @@ public class SaleMyFragment extends Fragment {
     private RecyclerView my_recv;
     private List<SaleBean> dataList = new ArrayList<>();
     private Context context;
-    private String[] sale_my_name = new String[]{"海底捞枫蓝店", "麦当劳", "肯德基", "麦当劳", "肯德基"};
-    private String[] sale_my_price = new String[]{"¥ 20", "¥ 30", "¥ 40", "¥ 50", "¥ 60"};
-    private String[] sale_my_content = new String[]{"  无门槛优惠券", "  无门槛优惠券", "  无门槛优惠券", "  无门槛优惠券", "  无门槛优惠券"};
-    private int[] sale_my_img = new int[]{R.drawable.sale_img1, R.drawable.sale_img2, R.drawable.sale_img3, R.drawable.sale_img2, R.drawable.sale_img3};
+    private String[] sale_my_name = new String[]{"海底捞枫蓝店", "麦当劳", "肯德基", "麦当劳", "肯德基", "肯德基", "肯德基"};
+    private String[] sale_my_price = new String[]{"¥ 20", "¥ 30", "¥ 40", "¥ 50", "¥ 60", "¥ 60", "¥ 60"};
+    private String[] sale_my_content = new String[]{"券1", "券2", "券3", "券4", "券5", "券6", "券7"};
+    private int[] sale_my_img = new int[]{R.drawable.haidilao, R.drawable.mcdonald, R.drawable.kfc, R.drawable.mcdonald, R.drawable.kfc, R.drawable.kfc, R.drawable.kfc};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -42,6 +42,9 @@ public class SaleMyFragment extends Fragment {
         return sale_my_frag;
     }
 
+    /**
+     * 初始化view
+     */
     private void innitView() {
         my_recv = (RecyclerView) sale_my_frag.findViewById(R.id.sale_my_recv);
         my_recv.setLayoutManager(new LinearLayoutManager(context));
@@ -50,16 +53,13 @@ public class SaleMyFragment extends Fragment {
     /**
      * 优惠券内容加载
      */
-
     private void showMyDiscount() {
         for (int i = 0; i < sale_my_name.length; i++) {
             SaleBean saleBean = new SaleBean();
-            saleBean.setText(sale_my_name[i], sale_my_price[i], sale_my_content[i]);
-            saleBean.setImage(sale_my_img[i]);
+            saleBean.setText(sale_my_name[i], sale_my_price[i], sale_my_content[i], sale_my_img[i]);
             dataList.add(saleBean);
         }
-
-        SaleMyDiscountAdapter adapter = new SaleMyDiscountAdapter(sale_my_frag.getContext(), dataList);
+        SaleMyCouponAdapter adapter = new SaleMyCouponAdapter(sale_my_frag.getContext(), dataList);
         my_recv.setAdapter(adapter);
     }
 

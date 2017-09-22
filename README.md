@@ -2,7 +2,8 @@
 
 Android App GreenTravel
 
-##工作总结
+## 工作总结
+
 <table>
 	<tr>
 		<th>工作人员</th>
@@ -87,7 +88,8 @@ Android App GreenTravel
 	</tr>
 </table>
 
-##遇到bug或难点
+## 遇到bug或难点
+
 <table>
 	<tr>
 		<th>工作人员</th>
@@ -173,7 +175,8 @@ Android App GreenTravel
 	</tr>
 </table>
 
-##参考
+## 参考
+
 <table>
 	<tr>
 		<th>工作人员</th>

@@ -1,14 +1,31 @@
 package com.example.zero.bean;
 
 public class MsgBean {
-    private String text;
+    private String title;
+    private String content;
+    private String time;
+    private int img;
 
-    public void setText(String text) {
-        this.text = text;
+    public void setText(String title, String content, String time, int imgId) {
+        this.title = title;
+        this.content = content;
+        this.time = time;
+        this.img = imgId;
     }
 
-    public String getText() {
+    public String getTitle() {
+        return title;
+    }
 
-        return text;
+    public String getContent() {
+        return content;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public int getImg() {
+        return img;
     }
 }

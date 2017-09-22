@@ -42,8 +42,8 @@ public class MsgFragment extends Fragment {
 
     private void showData() {
         MsgBean msgBean = new MsgBean();
-        msgBean.setText("内容");
-        for (int i = 0; i < 20; i++) {
+        msgBean.setText("肯德基超值优惠", "国庆放价来袭，让你抢不停。", "17/09/20", R.drawable.kfc);
+        for (int i = 0; i < 5; i++) {
             dataList.add(msgBean);
         }
         MsgAdapter adapter = new MsgAdapter(msg_frag.getContext(), dataList);
