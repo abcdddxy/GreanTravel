@@ -1,7 +1,7 @@
-#Fri Sep 15 11:14:03 CST 2017
-base.0=/Users/zero/AndroidStudioProjects/GreenTravel/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_a1c23739187b5324253fb440331e6fbea1918007
+#Sat Sep 23 10:07:50 CST 2017
+base.0=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_2e67ac67286a89fd636512be2f4c5c9935303657
 renamed.1=classes.dex
 renamed.0=classes2.dex
-file.1=/Users/zero/AndroidStudioProjects/GreenTravel/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9ac85675d222543fdd81a55df14f9e77c04bfca8/classes.dex
-base.1=/Users/zero/AndroidStudioProjects/GreenTravel/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9ac85675d222543fdd81a55df14f9e77c04bfca8
-file.0=/Users/zero/AndroidStudioProjects/GreenTravel/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_a1c23739187b5324253fb440331e6fbea1918007/classes.dex
+file.1=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_e4ab6b9e0ebcd876cd6409702ff6af38acbafcf6\\classes.dex
+base.1=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_e4ab6b9e0ebcd876cd6409702ff6af38acbafcf6
+file.0=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_2e67ac67286a89fd636512be2f4c5c9935303657\\classes.dex
