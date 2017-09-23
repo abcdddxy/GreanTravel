@@ -11,21 +11,30 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <SearchView
+        <com.example.zero.view.SearchPopView
             android:id="@+id/plan_search_start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:iconifiedByDefault="false"
-            android:queryHint="起点" />
+            android:iconifiedByDefault="false" />
 
-        <SearchView
+        <com.example.zero.view.SearchPopView
             android:id="@+id/plan_search_end"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:iconifiedByDefault="false"
             android:queryHint="终点" />
+
+        <ListView
+            android:id="@+id/plan_search_results1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/plan_search_results2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,10 +45,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:layout_marginLeft="15dp"
+                android:layout_marginVertical="15dp"
                 android:text="出行时间段"
                 android:textAlignment="center"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <TextView
                 android:id="@+id/plan_search_time"
@@ -52,8 +61,9 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
 
             <Button
                 android:id="@+id/plan_search_commit"

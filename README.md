@@ -86,6 +86,10 @@ Android App GreenTravel
 		<th>销售——美化界面，规范代码</th>
 		<th>建议——添加搜索结果</th>
 	</tr>
+	<tr>
+	 	<th>170922</th>
+	 	<th colspan="3">第二次程序和并</th>
+	</tr>
 </table>
 
 ## 遇到bug或难点
@@ -173,6 +177,10 @@ Android App GreenTravel
 		<th>无</th>
 		<th>建议——结果和补全的两个Adapter同时更新</th>
 	</tr>
+	<tr>
+	 	<th>170922</th>
+	 	<th colspan="3">暂时没有发现bug</th>
+	</tr>
 </table>
 
 ## 参考
@@ -258,5 +266,9 @@ Android App GreenTravel
 		<th>http://www.jianshu.com/p/99239b9c1630</th>
 		<th>无</th>
 		<th>无</th>
+	</tr>
+	<tr>
+	 	<th>170922</th>
+	 	<th colspan="3">无</th>
 	</tr>
 </table>
