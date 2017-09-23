@@ -72,12 +72,12 @@
         "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_switch_thumb_material.xml"
-    },
-    {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
         "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cinema.png",
