@@ -90,6 +90,12 @@ Android App GreenTravel
 	 	<th>170922</th>
 	 	<th colspan="3">第二次程序和并</th>
 	</tr>
+	<tr>
+		<th>170925</th>
+		<th>路线——单人搜索结果界面编写</th>
+		<th>个人中心——基本布局完成</th>
+		<th>建议——添加搜索结果页面</th>
+	</tr>
 </table>
 
 ## 遇到bug或难点
@@ -181,6 +187,12 @@ Android App GreenTravel
 	 	<th>170922</th>
 	 	<th colspan="3">暂时没有发现bug</th>
 	</tr>
+	<tr>
+		<th>170925</th>
+		<th>路线——套用百度地图API</th>
+		<th>个人中心——动态加载fragment</th>
+		<th>>建议——打分星星框</th>
+	</tr>
 </table>
 
 ## 参考
@@ -270,5 +282,11 @@ Android App GreenTravel
 	<tr>
 	 	<th>170922</th>
 	 	<th colspan="3">无</th>
+	</tr>
+	<tr>
+		<th>170925</th>
+		<th>http://lbsyun.baidu.com/index.php?title=androidsdk/guide/retrieval</th>
+		<th>http://www.cnblogs.com/android-host/p/5284455.html</th>
+		<th>http://www.jianshu.com/p/28fe1335bfde</th>
 	</tr>
 </table>
