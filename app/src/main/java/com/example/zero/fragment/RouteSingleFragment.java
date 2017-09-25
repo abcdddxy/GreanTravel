@@ -1,5 +1,6 @@
 package com.example.zero.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -13,6 +14,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.zero.activity.RouteResultActivity;
 import com.example.zero.adapter.RouteSearchAdapter;
 import com.example.zero.bean.RouteSearchBean;
 import com.example.zero.greentravel.R;
@@ -131,7 +133,20 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
             @Override
             public void onClick(View view) {
                 // TODO: 2017/9/11 具体搜索
-                Toast.makeText(getActivity(), "开始搜索", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "开始搜索", Toast.LENGTH_SHORT).show();
+                String beginStation = searchView.getText();
+                String endStation = searchView2.getText();
+                Bundle mBundle = new Bundle();
+                mBundle.putString("origin", "Single");
+                mBundle.putString("beginStation", beginStation);
+                mBundle.putString("endStation", endStation);
+                if ((!beginStation.equals("")) & (!endStation.equals(""))) {
+                    Intent intent = new Intent(getActivity(), RouteResultActivity.class);
+                    intent.putExtras(mBundle);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(getActivity(), "搜索框消息不完善，请填充完整后在开始搜索！", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
@@ -178,6 +193,10 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
     private void getDbData() {
         int size = 100;
         dbData = new ArrayList<>(size);
+        dbData.add(new RouteSearchBean(R.drawable.title_icon, "北京站",
+                "周围简介\n热门吃、喝、玩、乐", 99 + ""));
+        dbData.add(new RouteSearchBean(R.drawable.title_icon, "北京南站",
+                "周围简介\n热门吃、喝、玩、乐", 99 + ""));
         for (int i = 0; i < size; i++) {
             dbData.add(new RouteSearchBean(R.drawable.title_icon, "站点" + (i + 1),
                     "周围简介\n热门吃、喝、玩、乐", i * 20 + 2 + ""));
@@ -189,7 +208,9 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
      */
     private void getHintData() {
         hintData = new ArrayList<>(hintSize);
-        hintData.add("热门搜索站点");
+//        hintData.add("热门搜索站点");
+        hintData.add("北京站");
+        hintData.add("北京南站");
         for (int i = 1; i <= hintSize; i++) {
             hintData.add("站点" + i * 10);
         }

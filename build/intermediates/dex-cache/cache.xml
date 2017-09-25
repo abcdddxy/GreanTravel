@@ -7,8 +7,17 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="0d810848264d78096ead0e1c1a8a1da3c5afac76">
+        sha1="0a09b38cc660c105aa6d60336c422164e5cb89aa">
         <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_2e67ac67286a89fd636512be2f4c5c9935303657\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\libs\BaiduLBS_Android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e78796be1b1ae15391b2213bd340bbf04cd85923">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\transforms\dex\debug\folders\1000\2\BaiduLBS_Android_7d7a4383edd3f38fe7d71070359a63bcfc869b50\classes.dex" />
     </item>
     <item
         is-multidex="true"
