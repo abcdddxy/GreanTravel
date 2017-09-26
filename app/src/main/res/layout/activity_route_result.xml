@@ -1,18 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.zero.activity.RouteResultActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
 
-    <com.example.zero.view.TitleLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+    <!--<com.example.zero.view.TitleLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:layout_editor_absoluteY="0dp"-->
+        <!--tools:layout_editor_absoluteX="8dp" />-->
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal" android:weightSum="1">
+
+        <Button
+            android:id="@+id/mass"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:onClick="searchButtonProcess"
+            android:text="跨城" />
+
+        <Button
+            android:id="@+id/drive"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:onClick="searchButtonProcess"
+            android:text="驾车" />
+
+        <Button
+            android:id="@+id/transit"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:onClick="searchButtonProcess"
+            android:text="公交" />
+
+        <Button
+            android:id="@+id/walk"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:onClick="searchButtonProcess"
+            android:text="步行" />
+
+        <Button
+            android:id="@+id/bike"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:onClick="searchButtonProcess"
+            android:text="骑行" />
+    </LinearLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent" >
 
         <com.baidu.mapapi.map.MapView
             android:id="@+id/route_result_map"
@@ -36,10 +90,10 @@
                 android:layout_height="fill_parent"
                 android:layout_marginTop="10dip"
                 android:layout_weight="1.0"
-                android:onClick="searchButtonProcess"
-                android:text="绘制路线" />
+                android:text="绘制路线"
+                android:visibility="invisible"/>
 
         </LinearLayout>
     </RelativeLayout>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

@@ -33,8 +33,7 @@ public class TransitRouteOverlay extends OverlayManager {
     /**
      * 构造函数
      *
-     * @param baiduMap
-     *            该TransitRouteOverlay引用的 BaiduMap 对象
+     * @param baiduMap 该TransitRouteOverlay引用的 BaiduMap 对象
      */
     public TransitRouteOverlay(BaiduMap baiduMap) {
         super(baiduMap);
@@ -128,8 +127,7 @@ public class TransitRouteOverlay extends OverlayManager {
     /**
      * 设置路线数据
      *
-     * @param routeOverlay
-     *            路线数据
+     * @param routeOverlay 路线数据
      */
     public void setData(TransitRouteLine routeOverlay) {
         this.mRouteLine = routeOverlay;
@@ -156,13 +154,13 @@ public class TransitRouteOverlay extends OverlayManager {
     public int getLineColor() {
         return 0;
     }
+
     /**
      * 覆写此方法以改变起默认点击行为
      *
-     * @param i
-     *            被点击的step在
-     *            {@link com.baidu.mapapi.search.route.TransitRouteLine#getAllStep()}
-     *            中的索引
+     * @param i 被点击的step在
+     *          {@link com.baidu.mapapi.search.route.TransitRouteLine#getAllStep()}
+     *          中的索引
      * @return 是否处理了该点击事件
      */
     public boolean onRouteNodeClick(int i) {

@@ -96,7 +96,6 @@ public abstract class OverlayManager implements BaiduMap.OnMarkerClickListener, 
      * <p>
      * 注： 该方法只对Marker类型的overlay有效
      * </p>
-     *
      */
     public void zoomToSpan() {
         if (mBaiduMap == null) {

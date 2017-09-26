@@ -12,17 +12,18 @@ import com.baidu.mapapi.search.route.DrivingRouteLine;
 import com.baidu.mapapi.search.route.MassTransitRouteLine;
 
 import java.util.List;
+
 import com.example.zero.greentravel.R;
 
 public class RouteLineAdapter extends BaseAdapter {
 
-    private List<? extends  RouteLine> routeLines;
+    private List<? extends RouteLine> routeLines;
     private LayoutInflater layoutInflater;
     private Type mtype;
 
-    public RouteLineAdapter(Context context, List<?extends RouteLine> routeLines, Type type) {
+    public RouteLineAdapter(Context context, List<? extends RouteLine> routeLines, Type type) {
         this.routeLines = routeLines;
-        layoutInflater = LayoutInflater.from( context);
+        layoutInflater = LayoutInflater.from(context);
         mtype = type;
     }
 
@@ -55,30 +56,52 @@ public class RouteLineAdapter extends BaseAdapter {
             holder = (NodeViewHolder) convertView.getTag();
         }
 
+        int time = 0;
         switch (mtype) {
-            case  TRANSIT_ROUTE:
-            case WALKING_ROUTE:
-            case BIKING_ROUTE:
-                holder.name.setText("路线" + (position + 1));
-                int time = routeLines.get(position).getDuration();
-                if ( time / 3600 == 0 ) {
-                    holder.lightNum.setText( "大约需要：" + time / 60 + "分钟" );
+            case TRANSIT_ROUTE:
+                holder.name.setText("地铁路线" + (position + 1));
+                time = routeLines.get(position).getDuration();
+                if (time / 3600 == 0) {
+                    holder.lightNum.setText("大约需要：" + time / 60 + "分钟");
                 } else {
-                    holder.lightNum.setText( "大约需要：" + time / 3600 + "小时" + (time % 3600) / 60 + "分钟" );
+                    holder.lightNum.setText("大约需要：" + time / 3600 + "小时" + (time % 3600) / 60 + "分钟");
+                }
+                holder.dis.setText("距离大约是：" + routeLines.get(position).getDistance() + "米");
+                break;
+
+            case WALKING_ROUTE:
+                holder.name.setText("步行路线" + (position + 1));
+                time = routeLines.get(position).getDuration();
+                if (time / 3600 == 0) {
+                    holder.lightNum.setText("大约需要：" + time / 60 + "分钟");
+                } else {
+                    holder.lightNum.setText("大约需要：" + time / 3600 + "小时" + (time % 3600) / 60 + "分钟");
+                }
+                holder.dis.setText("距离大约是：" + routeLines.get(position).getDistance() + "米");
+                break;
+
+            case BIKING_ROUTE:
+                holder.name.setText("骑行路线" + (position + 1));
+                time = routeLines.get(position).getDuration();
+                if (time / 3600 == 0) {
+                    holder.lightNum.setText("大约需要：" + time / 60 + "分钟");
+                } else {
+                    holder.lightNum.setText("大约需要：" + time / 3600 + "小时" + (time % 3600) / 60 + "分钟");
                 }
                 holder.dis.setText("距离大约是：" + routeLines.get(position).getDistance() + "米");
                 break;
 
             case DRIVING_ROUTE:
                 DrivingRouteLine drivingRouteLine = (DrivingRouteLine) routeLines.get(position);
-                holder.name.setText( "线路" + (position + 1));
-                holder.lightNum.setText( "红绿灯数：" + drivingRouteLine.getLightNum());
+                holder.name.setText("驾驶路线" + (position + 1));
+                holder.lightNum.setText("红绿灯数：" + drivingRouteLine.getLightNum());
                 holder.dis.setText("拥堵距离为：" + drivingRouteLine.getCongestionDistance() + "米");
                 break;
+
             case MASS_TRANSIT_ROUTE:
                 MassTransitRouteLine massTransitRouteLine = (MassTransitRouteLine) routeLines.get(position);
-                holder.name.setText("线路" + (position + 1));
-                holder.lightNum.setText( "预计达到时间：" + massTransitRouteLine.getArriveTime() );
+                holder.name.setText("跨城线路" + (position + 1));
+                holder.lightNum.setText("预计达到时间：" + massTransitRouteLine.getArriveTime());
                 holder.dis.setText("总票价：" + massTransitRouteLine.getPrice() + "元");
                 break;
 
@@ -91,7 +114,6 @@ public class RouteLineAdapter extends BaseAdapter {
     }
 
     private class NodeViewHolder {
-
         private TextView name;
         private TextView lightNum;
         private TextView dis;
