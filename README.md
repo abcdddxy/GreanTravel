@@ -96,6 +96,12 @@ Android App GreenTravel
 		<th>个人中心——基本布局完成</th>
 		<th>建议——添加搜索结果页面</th>
 	</tr>
+	<tr>
+		<th>170926</th>
+		<th>路线——单人搜索结果界面增加自驾、跨城选项</th>
+		<th>个人中心——MsgActivity和SettingActivity</th>
+		<th>建议——店家关键字标签</th>
+	</tr>
 </table>
 
 ## 遇到bug或难点
@@ -193,6 +199,12 @@ Android App GreenTravel
 		<th>个人中心——动态加载fragment</th>
 		<th>>建议——打分星星框</th>
 	</tr>
+	<tr>
+		<th>170926</th>
+		<th>路线——步行和骑行查询存在问题</th>
+		<th>个人中心——ScrollView滚动时无法滚动到最底部（未解决）</th>
+		<th>无</th>
+	</tr>
 </table>
 
 ## 参考
@@ -288,5 +300,11 @@ Android App GreenTravel
 		<th>http://lbsyun.baidu.com/index.php?title=androidsdk/guide/retrieval</th>
 		<th>http://www.cnblogs.com/android-host/p/5284455.html</th>
 		<th>http://www.jianshu.com/p/28fe1335bfde</th>
+	</tr>
+	<tr>
+		<th>170926</th>
+		<th>http://lbsyun.baidu.com/index.php?title=androidsdk/guide/retrieval</th>
+		<th>http://blog.csdn.net/codenoodles/article/details/50904274</th>
+		<th>无</th>
 	</tr>
 </table>

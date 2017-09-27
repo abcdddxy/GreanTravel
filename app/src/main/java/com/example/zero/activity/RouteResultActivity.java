@@ -20,13 +20,18 @@ import android.widget.Toast;
 import com.baidu.mapapi.map.BaiduMap;
 import com.baidu.mapapi.map.BitmapDescriptor;
 import com.baidu.mapapi.map.BitmapDescriptorFactory;
+import com.baidu.mapapi.map.InfoWindow;
 import com.baidu.mapapi.map.MapPoi;
+import com.baidu.mapapi.map.MapStatusUpdateFactory;
 import com.baidu.mapapi.map.MapView;
 import com.baidu.mapapi.model.LatLng;
 import com.baidu.mapapi.search.core.RouteLine;
 import com.baidu.mapapi.search.core.SearchResult;
+import com.baidu.mapapi.search.district.DistrictSearch;
+import com.baidu.mapapi.search.route.BikingRouteLine;
 import com.baidu.mapapi.search.route.BikingRoutePlanOption;
 import com.baidu.mapapi.search.route.BikingRouteResult;
+import com.baidu.mapapi.search.route.DrivingRouteLine;
 import com.baidu.mapapi.search.route.DrivingRoutePlanOption;
 import com.baidu.mapapi.search.route.DrivingRouteResult;
 import com.baidu.mapapi.search.route.IndoorRouteResult;
@@ -36,8 +41,10 @@ import com.baidu.mapapi.search.route.MassTransitRouteResult;
 import com.baidu.mapapi.search.route.OnGetRoutePlanResultListener;
 import com.baidu.mapapi.search.route.PlanNode;
 import com.baidu.mapapi.search.route.RoutePlanSearch;
+import com.baidu.mapapi.search.route.TransitRouteLine;
 import com.baidu.mapapi.search.route.TransitRoutePlanOption;
 import com.baidu.mapapi.search.route.TransitRouteResult;
+import com.baidu.mapapi.search.route.WalkingRouteLine;
 import com.baidu.mapapi.search.route.WalkingRoutePlanOption;
 import com.baidu.mapapi.search.route.WalkingRouteResult;
 import com.example.zero.adapter.RouteLineAdapter;
@@ -54,9 +61,15 @@ import java.util.List;
 public class RouteResultActivity extends AppCompatActivity implements BaiduMap.OnMapClickListener, OnGetRoutePlanResultListener {
 
     // 路线节点
+    // 浏览路线节点相关
+    Button mBtnPre = null; // 上一个节点
+    Button mBtnNext = null; // 下一个节点
+    int nodeIndex = -1; // 节点索引,供浏览节点时使用
     RouteLine route = null;
     MassTransitRouteLine massroute = null;
     OverlayManager routeOverlay = null;
+    boolean useDefaultIcon = false;
+    private TextView popupText = null; // 泡泡view
 
     MapView mMapView = null;// 地图View
     BaiduMap mBaidumap = null;
@@ -67,11 +80,14 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
 
     // 搜索模块
     RoutePlanSearch mSearch = null;
+
     WalkingRouteResult nowResultwalk = null;
     BikingRouteResult nowResultbike = null;
     TransitRouteResult nowResultransit = null;
     DrivingRouteResult nowResultdrive = null;
     MassTransitRouteResult nowResultmass = null;
+
+    int nowSearchType = -1; // 当前节点
 
     boolean hasShownDialogue = false;
 
@@ -91,6 +107,13 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
         // 初始化地图
         mMapView = (MapView) findViewById(R.id.route_result_map);
         mBaidumap = mMapView.getMap();
+
+
+        mBtnPre = (Button) findViewById(R.id.route_result_pre);
+        mBtnNext = (Button) findViewById(R.id.route_result_next);
+        mBtnPre.setVisibility(View.INVISIBLE);
+        mBtnNext.setVisibility(View.INVISIBLE);
+
         // 地图点击事件处理
         mBaidumap.setOnMapClickListener(this);
         // 初始化搜索模块，注册事件监听
@@ -113,27 +136,155 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
     public void searchButtonProcess(View v) {
         // 重置浏览节点的路线数据
         route = null;
+        mBtnPre.setVisibility(View.INVISIBLE);
+        mBtnNext.setVisibility(View.INVISIBLE);
         mBaidumap.clear();
+
         // 处理搜索按钮响应
         PlanNode stNode = PlanNode.withCityNameAndPlaceName("北京", beginStation);
         PlanNode enNode = PlanNode.withCityNameAndPlaceName("北京", endStation);
         if (v.getId() == R.id.mass) {
             PlanNode stMassNode = PlanNode.withCityNameAndPlaceName("北京", "天安门");
             PlanNode enMassNode = PlanNode.withCityNameAndPlaceName("上海", "东方明珠");
+
             mSearch.masstransitSearch(new MassTransitRoutePlanOption().from(stMassNode).to(enMassNode));
+            nowSearchType = 0;
         } else if (v.getId() == R.id.drive) {
             mSearch.drivingSearch((new DrivingRoutePlanOption())
                     .from(stNode).to(enNode));
+            nowSearchType = 1;
         } else if (v.getId() == R.id.transit) {
             mSearch.transitSearch((new TransitRoutePlanOption())
                     .from(stNode).city("北京").to(enNode));
+            nowSearchType = 2;
         } else if (v.getId() == R.id.walk) {
+            PlanNode stNode2 = PlanNode.withCityNameAndPlaceName("北京", "西二旗地铁站");
+            PlanNode enNode2 = PlanNode.withCityNameAndPlaceName("北京", "百度科技园");
+
             mSearch.walkingSearch((new WalkingRoutePlanOption())
-                    .from(stNode).to(enNode));
+                    .from(stNode2).to(enNode2));
+            nowSearchType = 3;
         } else if (v.getId() == R.id.bike) {
+            PlanNode stNode2 = PlanNode.withCityNameAndPlaceName("北京", "西二旗地铁站");
+            PlanNode enNode2 = PlanNode.withCityNameAndPlaceName("北京", "百度科技园");
+
             mSearch.bikingSearch((new BikingRoutePlanOption())
-                    .from(stNode).to(enNode));
+                    .from(stNode2).to(enNode2));
+            nowSearchType = 4;
         }
+    }
+
+    /**
+     * 节点浏览示例
+     *
+     * @param v
+     */
+    public void nodeClick(View v) {
+        LatLng nodeLocation = null;
+        String nodeTitle = null;
+        Object step = null;
+
+        if (nowSearchType != 0 && nowSearchType != -1) {
+            // 非跨城综合交通
+            if (route == null || route.getAllStep() == null) {
+                return;
+            }
+            if (nodeIndex == -1 && v.getId() == R.id.route_result_pre) {
+                return;
+            }
+            // 设置节点索引
+            if (v.getId() == R.id.route_result_next) {
+                if (nodeIndex < route.getAllStep().size() - 1) {
+                    nodeIndex++;
+                } else {
+                    return;
+                }
+            } else if (v.getId() == R.id.route_result_pre) {
+                if (nodeIndex > 0) {
+                    nodeIndex--;
+                } else {
+                    return;
+                }
+            }
+            // 获取节结果信息
+            step = route.getAllStep().get(nodeIndex);
+            if (step instanceof DrivingRouteLine.DrivingStep) {
+                nodeLocation = ((DrivingRouteLine.DrivingStep) step).getEntrance().getLocation();
+                nodeTitle = ((DrivingRouteLine.DrivingStep) step).getInstructions();
+            } else if (step instanceof WalkingRouteLine.WalkingStep) {
+                nodeLocation = ((WalkingRouteLine.WalkingStep) step).getEntrance().getLocation();
+                nodeTitle = ((WalkingRouteLine.WalkingStep) step).getInstructions();
+            } else if (step instanceof TransitRouteLine.TransitStep) {
+                nodeLocation = ((TransitRouteLine.TransitStep) step).getEntrance().getLocation();
+                nodeTitle = ((TransitRouteLine.TransitStep) step).getInstructions();
+            } else if (step instanceof BikingRouteLine.BikingStep) {
+                nodeLocation = ((BikingRouteLine.BikingStep) step).getEntrance().getLocation();
+                nodeTitle = ((BikingRouteLine.BikingStep) step).getInstructions();
+            }
+        } else if (nowSearchType == 0) {
+            // 跨城综合交通  综合跨城公交的结果判断方式不一样
+
+            if (massroute == null || massroute.getNewSteps() == null) {
+                return;
+            }
+            if (nodeIndex == -1 && v.getId() == R.id.route_result_pre) {
+                return;
+            }
+            boolean isSamecity = nowResultmass.getOrigin().getCityId() == nowResultmass.getDestination().getCityId();
+            int size = 0;
+            if (isSamecity) {
+                size = massroute.getNewSteps().size();
+            } else {
+                for (int i = 0; i < massroute.getNewSteps().size(); i++) {
+                    size += massroute.getNewSteps().get(i).size();
+                }
+            }
+
+            // 设置节点索引
+            if (v.getId() == R.id.route_result_next) {
+                if (nodeIndex < size - 1) {
+                    nodeIndex++;
+                } else {
+                    return;
+                }
+            } else if (v.getId() == R.id.route_result_pre) {
+                if (nodeIndex > 0) {
+                    nodeIndex--;
+                } else {
+                    return;
+                }
+            }
+            if (isSamecity) {
+                // 同城
+                step = massroute.getNewSteps().get(nodeIndex).get(0);
+            } else {
+                // 跨城
+                int num = 0;
+                for (int j = 0; j < massroute.getNewSteps().size(); j++) {
+                    num += massroute.getNewSteps().get(j).size();
+                    if (nodeIndex - num < 0) {
+                        int k = massroute.getNewSteps().get(j).size() + nodeIndex - num;
+                        step = massroute.getNewSteps().get(j).get(k);
+                        break;
+                    }
+                }
+            }
+            nodeLocation = ((MassTransitRouteLine.TransitStep) step).getStartLocation();
+            nodeTitle = ((MassTransitRouteLine.TransitStep) step).getInstructions();
+        }
+
+        if (nodeLocation == null || nodeTitle == null) {
+            return;
+        }
+
+        // 移动节点至中心
+        mBaidumap.setMapStatus(MapStatusUpdateFactory.newLatLng(nodeLocation));
+        // show popup
+        popupText = new TextView(RouteResultActivity.this);
+        popupText.setBackgroundResource(R.drawable.popup);
+        popupText.setTextColor(0xFF000000);
+        popupText.setText(nodeTitle);
+        mBaidumap.showInfoWindow(new InfoWindow(popupText, nodeLocation, 0));
     }
 
     @Override
@@ -149,10 +300,10 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
 
         if (result.error == SearchResult.ERRORNO.AMBIGUOUS_ROURE_ADDR) {
             // 起终点或途经点地址有岐义，通过以下接口获取建议查询信息
-            //result.getSuggestAddrInfo();
+            result.getSuggestAddrInfo();
             AlertDialog.Builder builder = new AlertDialog.Builder(RouteResultActivity.this);
             builder.setTitle("提示");
-            builder.setMessage("检索地址有歧义，请重新设置。\n可通过getSuggestAddrInfo()接口获得建议查询信息");
+            builder.setMessage("检索地址有歧义，请重新设置。");
             builder.setPositiveButton("确认", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
@@ -164,6 +315,10 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
         }
 
         if (result.error == SearchResult.ERRORNO.NO_ERROR) {
+            nodeIndex = -1;
+            mBtnPre.setVisibility(View.VISIBLE);
+            mBtnNext.setVisibility(View.VISIBLE);
+
             if (result.getRouteLines().size() > 1) {
                 nowResultwalk = result;
                 if (!hasShownDialogue) {
@@ -218,6 +373,9 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
             return;
         }
         if (result.error == SearchResult.ERRORNO.NO_ERROR) {
+            nodeIndex = -1;
+            mBtnPre.setVisibility(View.VISIBLE);
+            mBtnNext.setVisibility(View.VISIBLE);
 
             if (result.getRouteLines().size() > 1) {
                 nowResultransit = result;
@@ -277,6 +435,11 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
         }
 
         if (result.error == SearchResult.ERRORNO.NO_ERROR) {
+            nowResultmass = result;
+
+            nodeIndex = -1;
+            mBtnPre.setVisibility(View.VISIBLE);
+            mBtnNext.setVisibility(View.VISIBLE);
 
             if (!hasShownDialogue) {
                 // 列表选择
@@ -391,7 +554,7 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
             // result.getSuggestAddrInfo()
             AlertDialog.Builder builder = new AlertDialog.Builder(RouteResultActivity.this);
             builder.setTitle("提示");
-            builder.setMessage("检索地址有歧义，请重新设置。\n可通过getSuggestAddrInfo()接口获得建议查询信息");
+            builder.setMessage("检索地址有歧义，请重新设置。");
             builder.setPositiveButton("确认", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {

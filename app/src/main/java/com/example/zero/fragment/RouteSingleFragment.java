@@ -193,9 +193,9 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
     private void getDbData() {
         int size = 100;
         dbData = new ArrayList<>(size);
-        dbData.add(new RouteSearchBean(R.drawable.title_icon, "北京站",
-                "周围简介\n热门吃、喝、玩、乐", 99 + ""));
         dbData.add(new RouteSearchBean(R.drawable.title_icon, "北京南站",
+                "周围简介\n热门吃、喝、玩、乐", 99 + ""));
+        dbData.add(new RouteSearchBean(R.drawable.title_icon, "北京邮电大学",
                 "周围简介\n热门吃、喝、玩、乐", 99 + ""));
         for (int i = 0; i < size; i++) {
             dbData.add(new RouteSearchBean(R.drawable.title_icon, "站点" + (i + 1),
@@ -209,8 +209,8 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
     private void getHintData() {
         hintData = new ArrayList<>(hintSize);
 //        hintData.add("热门搜索站点");
-        hintData.add("北京站");
         hintData.add("北京南站");
+        hintData.add("北京邮电大学");
         for (int i = 1; i <= hintSize; i++) {
             hintData.add("站点" + i * 10);
         }
