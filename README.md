@@ -102,6 +102,12 @@ Android App GreenTravel
 		<th>个人中心——MsgActivity和SettingActivity</th>
 		<th>建议——店家关键字标签</th>
 	</tr>
+    <tr>
+		<th>170927</th>
+		<th>路线——单人搜索结果界面增加节点查看</th>
+		<th>个人中心——UserActivity界面完成</th>
+		<th>建议——上课</th>
+	</tr>
 </table>
 
 ## 遇到bug或难点
@@ -205,6 +211,12 @@ Android App GreenTravel
 		<th>个人中心——ScrollView滚动时无法滚动到最底部（未解决）</th>
 		<th>无</th>
 	</tr>
+    <tr>
+		<th>170927</th>
+		<th>路线——步行和骑行目的地需要写的很详细</th>
+		<th>个人中心——昨天发现页面无法滚动到底部，今天修改过界面布局，暂时不需要滚动了，该问题今后可能会出现</th>
+		<th></th>
+	</tr>
 </table>
 
 ## 参考
@@ -305,6 +317,12 @@ Android App GreenTravel
 		<th>170926</th>
 		<th>http://lbsyun.baidu.com/index.php?title=androidsdk/guide/retrieval</th>
 		<th>http://blog.csdn.net/codenoodles/article/details/50904274</th>
+		<th>无</th>
+	</tr>
+    <tr>
+		<th>170927</th>
+		<th>http://lbsyun.baidu.com/index.php?title=androidsdk/guide/retrieval</th>
+		<th>无</th>
 		<th>无</th>
 	</tr>
 </table>
