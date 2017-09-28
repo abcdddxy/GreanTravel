@@ -108,6 +108,12 @@ Android App GreenTravel
 		<th>个人中心——UserActivity界面完成</th>
 		<th>建议——上课</th>
 	</tr>
+    <tr>
+		<th>170928</th>
+		<th>路线——路线搜索框改为SearchPopView</th>
+		<th>个人中心——准备面试</th>
+		<th>建议——准备面试</th>
+	</tr>
 </table>
 
 ## 遇到bug或难点
@@ -217,6 +223,12 @@ Android App GreenTravel
 		<th>个人中心——昨天发现页面无法滚动到底部，今天修改过界面布局，暂时不需要滚动了，该问题今后可能会出现</th>
 		<th></th>
 	</tr>
+    <tr>
+		<th>170928</th>
+		<th>路线——重写对象不同</th>
+		<th>无</th>
+		<th>无</th>
+	</tr>
 </table>
 
 ## 参考
@@ -324,5 +336,9 @@ Android App GreenTravel
 		<th>http://lbsyun.baidu.com/index.php?title=androidsdk/guide/retrieval</th>
 		<th>无</th>
 		<th>无</th>
+	</tr>
+    <tr>
+		<th>170928</th>
+		<th colspan="3">无</th>
 	</tr>
 </table>
