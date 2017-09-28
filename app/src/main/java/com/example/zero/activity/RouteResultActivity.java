@@ -47,6 +47,7 @@ import com.baidu.mapapi.search.route.TransitRouteResult;
 import com.baidu.mapapi.search.route.WalkingRouteLine;
 import com.baidu.mapapi.search.route.WalkingRoutePlanOption;
 import com.baidu.mapapi.search.route.WalkingRouteResult;
+
 import com.example.zero.adapter.RouteLineAdapter;
 import com.example.zero.fragment.OverlayManager;
 import com.example.zero.greentravel.R;
@@ -56,6 +57,7 @@ import com.example.zero.util.MassTransitRouteOverlay;
 import com.example.zero.util.TransitRouteOverlay;
 import com.example.zero.util.WalkingRouteOverlay;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class RouteResultActivity extends AppCompatActivity implements BaiduMap.OnMapClickListener, OnGetRoutePlanResultListener {
@@ -75,8 +77,11 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
     BaiduMap mBaidumap = null;
 
     // 搜索相关
+    int JUD = 0; // 0单人，1多人
     String beginStation = null;
     String endStation = null;
+    ArrayList<String> beginStationList = null;
+    int beginNum = 0;
 
     // 搜索模块
     RoutePlanSearch mSearch = null;
@@ -123,8 +128,12 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
         if (mBundle.getString("origin").equals("Single")) {
             beginStation = mBundle.getString("beginStation");
             endStation = mBundle.getString("endStation");
+            JUD = 0;
         } else {
-            // TODO: 2017/9/25 多人搜索
+            beginStationList = mBundle.getStringArrayList("beginStationList");
+            endStation = mBundle.getString("endStation");
+            beginNum = mBundle.getInt("beginNum");
+            JUD = 1;
         }
     }
 
@@ -141,36 +150,53 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
         mBaidumap.clear();
 
         // 处理搜索按钮响应
-        PlanNode stNode = PlanNode.withCityNameAndPlaceName("北京", beginStation);
-        PlanNode enNode = PlanNode.withCityNameAndPlaceName("北京", endStation);
-        if (v.getId() == R.id.mass) {
-            PlanNode stMassNode = PlanNode.withCityNameAndPlaceName("北京", "天安门");
-            PlanNode enMassNode = PlanNode.withCityNameAndPlaceName("上海", "东方明珠");
+        if (JUD == 0) {
+            PlanNode stNode = PlanNode.withCityNameAndPlaceName("北京", beginStation);
+            PlanNode enNode = PlanNode.withCityNameAndPlaceName("北京", endStation);
+            if (v.getId() == R.id.mass) {
+                PlanNode stMassNode = PlanNode.withCityNameAndPlaceName("北京", "天安门");
+                PlanNode enMassNode = PlanNode.withCityNameAndPlaceName("上海", "东方明珠");
 
-            mSearch.masstransitSearch(new MassTransitRoutePlanOption().from(stMassNode).to(enMassNode));
-            nowSearchType = 0;
-        } else if (v.getId() == R.id.drive) {
-            mSearch.drivingSearch((new DrivingRoutePlanOption())
-                    .from(stNode).to(enNode));
-            nowSearchType = 1;
-        } else if (v.getId() == R.id.transit) {
-            mSearch.transitSearch((new TransitRoutePlanOption())
-                    .from(stNode).city("北京").to(enNode));
+                mSearch.masstransitSearch(new MassTransitRoutePlanOption().from(stMassNode).to(enMassNode));
+                nowSearchType = 0;
+            } else if (v.getId() == R.id.drive) {
+                mSearch.drivingSearch((new DrivingRoutePlanOption())
+                        .from(stNode).to(enNode));
+                nowSearchType = 1;
+            } else if (v.getId() == R.id.transit) {
+                mSearch.transitSearch((new TransitRoutePlanOption())
+                        .from(stNode).city("北京").to(enNode));
+                nowSearchType = 2;
+            } else if (v.getId() == R.id.walk) {
+                mSearch.walkingSearch((new WalkingRoutePlanOption())
+                        .from(stNode).to(enNode));
+                nowSearchType = 3;
+            } else if (v.getId() == R.id.bike) {
+                mSearch.bikingSearch((new BikingRoutePlanOption())
+                        .from(stNode).to(enNode));
+                nowSearchType = 4;
+            }
+        } else {
+            // TODO: 2017/9/27 多人搜索
+            ArrayList<PlanNode> stNodeList = new ArrayList<PlanNode>();
+            PlanNode enNode = PlanNode.withCityNameAndPlaceName("北京", endStation);
+            TransitRoutePlanOption transitRoutePlanOption = new TransitRoutePlanOption();
+            if (!beginStationList.get(0).equals("")) {
+//                stNodeList.add(PlanNode.withCityNameAndPlaceName("北京", beginStationList.get(0)));
+                mSearch.transitSearch(transitRoutePlanOption
+                        .from(PlanNode.withCityNameAndPlaceName("北京", beginStationList.get(0))).city("北京").to(enNode));
+            }
+            if (!beginStationList.get(1).equals("")) {
+//                stNodeList.add(PlanNode.withCityNameAndPlaceName("北京", beginStationList.get(1)));
+                mSearch.transitSearch(transitRoutePlanOption
+                        .from(PlanNode.withCityNameAndPlaceName("北京", beginStationList.get(1))).city("北京").to(enNode));
+            }
+            if (!beginStationList.get(2).equals("")) {
+//                stNodeList.add(PlanNode.withCityNameAndPlaceName("北京", beginStationList.get(2)));
+                mSearch.transitSearch(transitRoutePlanOption
+                        .from(PlanNode.withCityNameAndPlaceName("北京", beginStationList.get(2))).city("北京").to(enNode));
+            }
             nowSearchType = 2;
-        } else if (v.getId() == R.id.walk) {
-            PlanNode stNode2 = PlanNode.withCityNameAndPlaceName("北京", "西二旗地铁站");
-            PlanNode enNode2 = PlanNode.withCityNameAndPlaceName("北京", "百度科技园");
-
-            mSearch.walkingSearch((new WalkingRoutePlanOption())
-                    .from(stNode2).to(enNode2));
-            nowSearchType = 3;
-        } else if (v.getId() == R.id.bike) {
-            PlanNode stNode2 = PlanNode.withCityNameAndPlaceName("北京", "西二旗地铁站");
-            PlanNode enNode2 = PlanNode.withCityNameAndPlaceName("北京", "百度科技园");
-
-            mSearch.bikingSearch((new BikingRoutePlanOption())
-                    .from(stNode2).to(enNode2));
-            nowSearchType = 4;
         }
     }
 
@@ -373,40 +399,55 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
             return;
         }
         if (result.error == SearchResult.ERRORNO.NO_ERROR) {
-            nodeIndex = -1;
-            mBtnPre.setVisibility(View.VISIBLE);
-            mBtnNext.setVisibility(View.VISIBLE);
+            if (JUD == 0) {
+                nodeIndex = -1;
+                mBtnPre.setVisibility(View.VISIBLE);
+                mBtnNext.setVisibility(View.VISIBLE);
 
-            if (result.getRouteLines().size() > 1) {
-                nowResultransit = result;
-                if (!hasShownDialogue) {
-                    MyTransitDlg myTransitDlg = new MyTransitDlg(RouteResultActivity.this,
-                            result.getRouteLines(),
-                            RouteLineAdapter.Type.TRANSIT_ROUTE);
-                    myTransitDlg.setOnDismissListener(new DialogInterface.OnDismissListener() {
-                        @Override
-                        public void onDismiss(DialogInterface dialog) {
-                            hasShownDialogue = false;
-                        }
-                    });
-                    myTransitDlg.setOnItemInDlgClickLinster(new OnItemInDlgClickListener() {
-                        public void onItemClick(int position) {
+                if (result.getRouteLines().size() > 1) {
+                    nowResultransit = result;
+                    if (!hasShownDialogue) {
+                        MyTransitDlg myTransitDlg = new MyTransitDlg(RouteResultActivity.this,
+                                result.getRouteLines(),
+                                RouteLineAdapter.Type.TRANSIT_ROUTE);
+                        myTransitDlg.setOnDismissListener(new DialogInterface.OnDismissListener() {
+                            @Override
+                            public void onDismiss(DialogInterface dialog) {
+                                hasShownDialogue = false;
+                            }
+                        });
+                        myTransitDlg.setOnItemInDlgClickLinster(new OnItemInDlgClickListener() {
+                            public void onItemClick(int position) {
 
-                            route = nowResultransit.getRouteLines().get(position);
-                            TransitRouteOverlay overlay = new MyTransitRouteOverlay(mBaidumap);
-                            mBaidumap.setOnMarkerClickListener(overlay);
-                            routeOverlay = overlay;
-                            overlay.setData(nowResultransit.getRouteLines().get(position));
-                            overlay.addToMap();
-                            overlay.zoomToSpan();
-                        }
+                                route = nowResultransit.getRouteLines().get(position);
+                                TransitRouteOverlay overlay = new MyTransitRouteOverlay(mBaidumap);
+                                mBaidumap.setOnMarkerClickListener(overlay);
+                                routeOverlay = overlay;
+                                overlay.setData(nowResultransit.getRouteLines().get(position));
+                                overlay.addToMap();
+                                overlay.zoomToSpan();
+                            }
 
-                    });
-                    myTransitDlg.show();
-                    hasShownDialogue = true;
+                        });
+                        myTransitDlg.show();
+                        hasShownDialogue = true;
+                    }
+                } else if (result.getRouteLines().size() == 1) {
+                    // 直接显示
+                    route = result.getRouteLines().get(0);
+                    TransitRouteOverlay overlay = new MyTransitRouteOverlay(mBaidumap);
+                    mBaidumap.setOnMarkerClickListener(overlay);
+                    routeOverlay = overlay;
+                    overlay.setData(result.getRouteLines().get(0));
+                    overlay.addToMap();
+                    overlay.zoomToSpan();
+
+                } else {
+                    Log.d("route result", "结果数<0");
+                    return;
                 }
-            } else if (result.getRouteLines().size() == 1) {
-                // 直接显示
+            } else {
+                // TODO: 2017/9/28 多人搜索结果
                 route = result.getRouteLines().get(0);
                 TransitRouteOverlay overlay = new MyTransitRouteOverlay(mBaidumap);
                 mBaidumap.setOnMarkerClickListener(overlay);
@@ -414,10 +455,6 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
                 overlay.setData(result.getRouteLines().get(0));
                 overlay.addToMap();
                 overlay.zoomToSpan();
-
-            } else {
-                Log.d("route result", "结果数<0");
-                return;
             }
         }
     }

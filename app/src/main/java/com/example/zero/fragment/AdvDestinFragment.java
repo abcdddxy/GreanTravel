@@ -283,6 +283,11 @@ public class AdvDestinFragment extends Fragment implements SearchPopView.SearchP
         hintAdapter.notifyDataSetChanged();
     }
 
+    @Override
+    public boolean onHintClick(String text) {
+        return true;
+    }
+
     /**
      * 获取当前热门关键字
      * @return

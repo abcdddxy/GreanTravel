@@ -276,6 +276,13 @@ public class SearchPopView extends LinearLayout implements View.OnClickListener 
          * 提示框出现
          */
         void isFocus();
+
+        /**
+         * 提示框搜索项点击
+         *
+         * @return true 数据库存在
+         */
+        boolean onHintClick(String text);
     }
 
 }

@@ -3171,7 +3171,7 @@ containing a value of this type.
         public static final int route_iv_delete_simple=0x7f0c00ec;
         public static final int route_lv_list=0x7f0c00e6;
         public static final int route_lv_search_multi_results=0x7f0c00ad;
-        public static final int route_lv_search_single_results=0x7f0c00b5;
+        public static final int route_lv_search_single_results=0x7f0c00b6;
         public static final int route_lv_search_single_results2=0x7f0c00b7;
         public static final int route_rb_1=0x7f0c00e1;
         public static final int route_rb_2=0x7f0c00e2;
@@ -3185,7 +3185,7 @@ containing a value of this type.
         public static final int route_search_multi1=0x7f0c00af;
         public static final int route_search_multi2=0x7f0c00b0;
         public static final int route_search_single=0x7f0c00b4;
-        public static final int route_search_single2=0x7f0c00b6;
+        public static final int route_search_single2=0x7f0c00b5;
         public static final int sale_frag_content=0x7f0c00be;
         public static final int sale_frag_rg=0x7f0c00b9;
         public static final int sale_hot=0x7f0c00ba;
