@@ -114,6 +114,11 @@ Android App GreenTravel
 		<th>个人中心——准备面试</th>
 		<th>建议——准备面试</th>
 	</tr>
+    <tr>
+		<th>170929</th>
+		<th>路线——路线多人搜索界面开发完成</th>
+		<th colspan="2">准备面试，推迟合程序</th>
+	</tr>
 </table>
 
 ## 遇到bug或难点
@@ -229,6 +234,11 @@ Android App GreenTravel
 		<th>无</th>
 		<th>无</th>
 	</tr>
+    <tr>
+		<th>170929</th>
+		<th>路线——同时绘制多条线路</th>
+		<th colspan="2">无</th>
+	</tr>
 </table>
 
 ## 参考
@@ -340,5 +350,10 @@ Android App GreenTravel
     <tr>
 		<th>170928</th>
 		<th colspan="3">无</th>
+	</tr>
+    <tr>
+		<th>170929</th>
+		<th>http://blog.csdn.net/u014007478/article/details/20949281</th>
+		<th colspan="2">无</th>
 	</tr>
 </table>
