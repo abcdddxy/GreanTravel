@@ -312,7 +312,7 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
             lvResults2.setVisibility(View.VISIBLE);
         }
 
-        if (searchView.isFocus()) {
+        if (searchView.hasFocus()) {
             //第一次获取结果 还未配置适配器
             if (lvResults.getAdapter() == null) {
                 //获取搜索数据 设置适配器
@@ -323,7 +323,7 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
             }
         }
 
-        if (searchView2.isFocus()) {
+        if (searchView2.hasFocus()) {
             if (lvResults2.getAdapter() == null) {
                 //获取搜索数据 设置适配器
                 lvResults2.setAdapter(resultAdapter2);

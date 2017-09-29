@@ -6,25 +6,25 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1506597589917"
+    timestamp="1506602494573"
     token="2076091920399333621"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="301" />
+        duration="541" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="62" />
+        duration="200" />
     <task
         name="verifier"
-        duration="15" />
+        duration="83" />
 
     <artifact
-        location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\outputs\apk\app-debug.apk"
@@ -73,7 +73,15 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1506597509976"
+        timestamp="1506597589917"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1506602090891"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\outputs\apk\app-debug.apk"
@@ -81,10 +89,10 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1506597589917"
+        timestamp="1506602494573"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\outputs\apk\app-debug.apk"
