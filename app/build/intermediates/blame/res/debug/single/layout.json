@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adv_destin_item.xml",
+        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\layout\\adv_destin_item.xml"
+    },
+    {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_route.xml",
         "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\layout\\fragment_route.xml"
     },
@@ -54,6 +58,10 @@
     {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_adv.xml",
         "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\layout\\fragment_adv.xml"
+    },
+    {
+        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_user.xml",
+        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\layout\\activity_user.xml"
     },
     {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\route_search_item_list.xml",
@@ -180,6 +188,10 @@
         "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\layout\\fragment_adv_plan.xml"
     },
     {
+        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_setting.xml",
+        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\layout\\activity_setting.xml"
+    },
+    {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
         "source": "C:\\Users\\ZERO\\.android\\build-cache\\20b802f04cb23eeb21650f050e9498d4ff130b79\\output\\res\\layout\\design_navigation_item.xml"
     },
@@ -260,6 +272,10 @@
         "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
+        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_adv_search.xml",
+        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\layout\\activity_adv_search.xml"
+    },
+    {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_content.xml",
         "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\layout\\nav_content.xml"
     },
@@ -278,6 +294,10 @@
     {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
         "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_personal_info.xml",
+        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\layout\\fragment_personal_info.xml"
     },
     {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
@@ -318,5 +338,9 @@
     {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
         "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_msg.xml",
+        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\layout\\activity_msg.xml"
     }
 ]

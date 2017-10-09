@@ -55,6 +55,13 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.zero.activity.RouteResultActivity"></activity>
+
+        <activity android:name="com.example.zero.activity.SettingActivity"></activity>
+        <activity android:name="com.example.zero.activity.MsgActivity"></activity>
+        <activity android:name="com.example.zero.activity.UserActivity"></activity>
+
+        <activity android:name="com.example.zero.activity.AdvSearchActivity"></activity>
+
     </application>
 
 </manifest>

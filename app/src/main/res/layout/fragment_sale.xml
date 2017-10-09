@@ -23,11 +23,6 @@
             android:textColor="@drawable/sale_hot_rg_color_select"
             android:textSize="18sp" />
 
-        <!--<View-->
-        <!--android:layout_width="1px"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:background="#A9A9A9" />-->
-
         <RadioButton
             android:id="@+id/sale_my"
             android:layout_width="wrap_content"
