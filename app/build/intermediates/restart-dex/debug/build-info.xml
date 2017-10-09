@@ -6,23 +6,41 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1507516573898"
+    timestamp="1507518758114"
     token="2076091920399333621"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="20660" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="5691" />
     <task
         name="verifier"
-        duration="0" />
+        duration="4285" />
 
+    <artifact
+        location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
     <artifact
         location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\outputs\apk\app-debug.apk"
         type="SPLIT_MAIN" />
@@ -73,31 +91,31 @@
         timestamp="1507516276732"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
             location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1507518758114"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
+            location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
             location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1507516573898"
-        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
         <artifact
             location="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\outputs\apk\app-debug.apk"
             type="SPLIT_MAIN" />
