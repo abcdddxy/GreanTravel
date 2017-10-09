@@ -1,5 +1,6 @@
 package com.example.zero.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -13,15 +14,17 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.zero.activity.RouteResultActivity;
 import com.example.zero.adapter.RouteSearchAdapter;
 import com.example.zero.bean.RouteSearchBean;
 import com.example.zero.greentravel.R;
+import com.example.zero.view.SearchPopView;
 import com.example.zero.view.SearchView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RouteSingleFragment extends Fragment implements SearchView.SearchViewListener {
+public class RouteSingleFragment extends Fragment implements SearchPopView.SearchPopViewListener {
 
     /**
      * 搜索结果列表view
@@ -30,7 +33,7 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
     /**
      * 搜索view
      */
-    private SearchView searchView;
+    private SearchPopView searchView;
     /**
      * 搜索结果列表view
      */
@@ -38,7 +41,7 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
     /**
      * 搜索view
      */
-    private SearchView searchView2;
+    private SearchPopView searchView2;
     /**
      * 搜索按钮
      */
@@ -118,9 +121,9 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
      * 初始化视图
      */
     private void initViews() {
-        searchView = (SearchView) getView().findViewById(R.id.route_search_single);
+        searchView = (SearchPopView) getView().findViewById(R.id.route_search_single);
         lvResults = (ListView) getView().findViewById(R.id.route_lv_search_single_results);
-        searchView2 = (SearchView) getView().findViewById(R.id.route_search_single2);
+        searchView2 = (SearchPopView) getView().findViewById(R.id.route_search_single2);
         lvResults2 = (ListView) getView().findViewById(R.id.route_lv_search_single_results2);
         btnsearch = (Button) getView().findViewById(R.id.route_btn_single_search);
 
@@ -131,13 +134,26 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
             @Override
             public void onClick(View view) {
                 // TODO: 2017/9/11 具体搜索
-                Toast.makeText(getActivity(), "开始搜索", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "开始搜索", Toast.LENGTH_SHORT).show();
+                String beginStation = searchView.getText();
+                String endStation = searchView2.getText();
+                Bundle mBundle = new Bundle();
+                mBundle.putString("origin", "Single");
+                mBundle.putString("beginStation", beginStation);
+                mBundle.putString("endStation", endStation);
+                if ((!beginStation.equals("")) & (!endStation.equals(""))) {
+                    Intent intent = new Intent(getActivity(), RouteResultActivity.class);
+                    intent.putExtras(mBundle);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(getActivity(), "搜索框消息不完善，请填充完整后在开始搜索！", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
         //设置监听
-        searchView.setSearchViewListener(this);
-        searchView2.setSearchViewListener(this);
+        searchView.setSearchPopViewListener(this);
+        searchView2.setSearchPopViewListener(this);
         //设置adapter
         searchView.setTipsHintAdapter(hintAdapter);
         searchView.setAutoCompleteAdapter(autoCompleteAdapter);
@@ -178,6 +194,12 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
     private void getDbData() {
         int size = 100;
         dbData = new ArrayList<>(size);
+        dbData.add(new RouteSearchBean(R.drawable.title_icon, "北京南站地铁站",
+                "周围简介\n热门吃、喝、玩、乐", 99 + ""));
+        dbData.add(new RouteSearchBean(R.drawable.title_icon, "北京邮电大学西门",
+                "周围简介\n热门吃、喝、玩、乐", 99 + ""));
+        dbData.add(new RouteSearchBean(R.drawable.title_icon, "北京大学未名湖",
+                "周围简介\n热门吃、喝、玩、乐", 99 + ""));
         for (int i = 0; i < size; i++) {
             dbData.add(new RouteSearchBean(R.drawable.title_icon, "站点" + (i + 1),
                     "周围简介\n热门吃、喝、玩、乐", i * 20 + 2 + ""));
@@ -189,7 +211,10 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
      */
     private void getHintData() {
         hintData = new ArrayList<>(hintSize);
-        hintData.add("热门搜索站点");
+//        hintData.add("热门搜索站点");
+        hintData.add("北京南站地铁站");
+        hintData.add("北京邮电大学西门");
+        hintData.add("北京大学未名湖");
         for (int i = 1; i <= hintSize; i++) {
             hintData.add("站点" + i * 10);
         }
@@ -287,8 +312,8 @@ public class RouteSingleFragment extends Fragment implements SearchView.SearchVi
             lvResults2.setVisibility(View.VISIBLE);
         }
 
-        //第一次获取结果 还未配置适配器
         if (searchView.hasFocus()) {
+            //第一次获取结果 还未配置适配器
             if (lvResults.getAdapter() == null) {
                 //获取搜索数据 设置适配器
                 lvResults.setAdapter(resultAdapter);

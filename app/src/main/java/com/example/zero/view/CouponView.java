@@ -26,7 +26,7 @@ public class CouponView extends LinearLayout {
         super(context, attrs);
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mPaint.setDither(true);
-        mPaint.setColor(Color.parseColor("#D3D3D3"));
+        mPaint.setColor(Color.parseColor("#E6E6E6"));
         mPaint.setStyle(Paint.Style.FILL);
     }
 

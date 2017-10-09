@@ -48,7 +48,7 @@ public class FragmentController {
         fragments.add(new RouteFragment());
         fragments.add(new AdvFragment());
         fragments.add(new SaleFragment());
-        fragments.add(new MsgFragment());
+        fragments.add(new PersonalInfoFragment());
 
         FragmentTransaction ft = fm.beginTransaction();
         for(Fragment fragment : fragments) {

@@ -371,6 +371,11 @@ public class AdvPlanFragment extends Fragment implements SearchPopView.SearchPop
         hintAdapter.notifyDataSetChanged();
     }
 
+    @Override
+    public boolean onHintClick(String text) {
+        return true;
+    }
+
     /**
      * 获取时间段的
      */
