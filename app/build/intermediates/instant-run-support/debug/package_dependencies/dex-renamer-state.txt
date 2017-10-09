@@ -1,4 +1,4 @@
-#Sat Sep 23 10:07:49 CST 2017
+#Mon Sep 25 19:31:06 CST 2017
 file.2=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_d9522f25b3d132f033c95c82bc4958610d45315d\\classes.dex
 base.2=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_d9522f25b3d132f033c95c82bc4958610d45315d
 file.1=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_4711a043867508f4c13832e765f27aa89e19363c\\classes.dex
@@ -15,13 +15,16 @@ renamed.3=classes10.dex
 renamed.2=classes9.dex
 renamed.1=classes3.dex
 renamed.0=classes8.dex
-renamed.12=classes13.dex
+renamed.13=classes13.dex
+renamed.12=classes14.dex
 renamed.11=classes4.dex
 renamed.10=classes2.dex
-base.12=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-23.4.0_8e2e04df62dea9126e3258043908b5752dff7f9e
+base.13=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-23.4.0_8e2e04df62dea9126e3258043908b5752dff7f9e
+base.12=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\2\\BaiduLBS_Android_7d7a4383edd3f38fe7d71070359a63bcfc869b50
 base.11=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_4cac45c41f85afd8b179704b8a3e9d15604cbf20
 base.10=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_255478b959429f0abe8b856a7e1e1fa6799a9473
-file.12=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-23.4.0_8e2e04df62dea9126e3258043908b5752dff7f9e\\classes.dex
+file.13=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-23.4.0_8e2e04df62dea9126e3258043908b5752dff7f9e\\classes.dex
+file.12=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\2\\BaiduLBS_Android_7d7a4383edd3f38fe7d71070359a63bcfc869b50\\classes.dex
 file.11=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_4cac45c41f85afd8b179704b8a3e9d15604cbf20\\classes.dex
 file.10=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_255478b959429f0abe8b856a7e1e1fa6799a9473\\classes.dex
 file.9=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-23.4.0_6407bb4cfd197ccf72421eddabea828c05fd1ffb\\classes.dex

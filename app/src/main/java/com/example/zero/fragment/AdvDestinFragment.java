@@ -1,5 +1,6 @@
 package com.example.zero.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -8,12 +9,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import com.donkingliang.labels.LabelsView;
 
+import com.example.zero.activity.AdvSearchActivity;
 import com.example.zero.adapter.RouteSearchAdapter;
 import com.example.zero.bean.RouteSearchBean;
 import com.example.zero.greentravel.R;
@@ -32,6 +35,7 @@ public class AdvDestinFragment extends Fragment implements SearchPopView.SearchP
     private EditText editText;
     private LabelsView labelsView;
     private ArrayList<String> labels;
+    private Button searchButton;
 
 
     /**
@@ -139,6 +143,20 @@ public class AdvDestinFragment extends Fragment implements SearchPopView.SearchP
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Toast.makeText(getActivity(), "1-" + position + "", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        searchButton = (Button) getView().findViewById(R.id.destin_search_commit);
+        searchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(getActivity(), AdvSearchActivity.class);
+                //TODO 具体所需搜索信息
+                String data = searchPopView.getText() + editText.getText().toString();
+                intent.putExtra("position",searchPopView.getText());
+                intent.putExtra("keywords",editText.getText().toString());
+                startActivity(intent);
             }
         });
     }
@@ -297,5 +315,10 @@ public class AdvDestinFragment extends Fragment implements SearchPopView.SearchP
         labels.add("螺蛳粉");
         labels.add("火锅");
         return labels;
+    }
+
+    @Override
+    public boolean onHintClick(String text) {
+        return false;
     }
 }

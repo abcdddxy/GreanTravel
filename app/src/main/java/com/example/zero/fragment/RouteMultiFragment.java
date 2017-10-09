@@ -1,6 +1,7 @@
 package com.example.zero.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,16 +15,18 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.zero.activity.RouteResultActivity;
 import com.example.zero.adapter.RouteSearchAdapter;
 import com.example.zero.bean.RouteSearchBean;
 import com.example.zero.greentravel.R;
+import com.example.zero.view.SearchPopView;
 import com.example.zero.view.SearchView;
 import com.example.zero.view.SimpleSearchView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RouteMultiFragment extends Fragment implements SimpleSearchView.SimpleSearchViewListener, SearchView.SearchViewListener {
+public class RouteMultiFragment extends Fragment implements SearchPopView.SearchPopViewListener, SearchView.SearchViewListener {
     /**
      * 搜索view
      */
@@ -35,7 +38,7 @@ public class RouteMultiFragment extends Fragment implements SimpleSearchView.Sim
     /**
      * 起点搜索view
      */
-    private ArrayList<SimpleSearchView> searchViewList;
+    private ArrayList<SearchPopView> searchViewList;
     /**
      * 起点添加按钮
      */
@@ -53,6 +56,18 @@ public class RouteMultiFragment extends Fragment implements SimpleSearchView.Sim
      * 自动补全列表adapter
      */
     private ArrayAdapter<String> autoCompleteAdapter;
+    /**
+     * 自动补全列表adapter
+     */
+    private ArrayAdapter<String> autoCompleteAdapter0;
+    /**
+     * 自动补全列表adapter
+     */
+    private ArrayAdapter<String> autoCompleteAdapter1;
+    /**
+     * 自动补全列表adapter
+     */
+    private ArrayAdapter<String> autoCompleteAdapter2;
     /**
      * 搜索结果列表adapter
      */
@@ -130,10 +145,11 @@ public class RouteMultiFragment extends Fragment implements SimpleSearchView.Sim
         btnsearch = (Button) getView().findViewById(R.id.route_btn_multi_search);
 
         int size = 4;
-        searchViewList = new ArrayList<SimpleSearchView>(size);
-        searchViewList.add((SimpleSearchView) getView().findViewById(R.id.route_search_multi0));
-        searchViewList.add((SimpleSearchView) getView().findViewById(R.id.route_search_multi1));
-        searchViewList.add((SimpleSearchView) getView().findViewById(R.id.route_search_multi2));
+        searchViewList = new ArrayList<SearchPopView>(size);
+        searchViewList.add((SearchPopView) getView().findViewById(R.id.route_search_multi0));
+        searchViewList.add((SearchPopView) getView().findViewById(R.id.route_search_multi1));
+        searchViewList.add((SearchPopView) getView().findViewById(R.id.route_search_multi2));
+
         btnaddList = new ArrayList<Button>(size);
         btnaddList.add((Button) getView().findViewById(R.id.route_btn_add_multi0));
         btnaddList.add((Button) getView().findViewById(R.id.route_btn_add_multi1));
@@ -147,18 +163,48 @@ public class RouteMultiFragment extends Fragment implements SimpleSearchView.Sim
             @Override
             public void onClick(View view) {
                 // TODO: 2017/9/11 具体搜索
-                Toast.makeText(getActivity(), "开始搜索", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "开始搜索", Toast.LENGTH_SHORT).show();String beginStation = searchView.getText();
+                String endStation = endSearchView.getText();
+                ArrayList<String> beginStationList = new ArrayList<String>();
+                beginStationList.add(searchViewList.get(0).getText());
+                beginStationList.add(searchViewList.get(1).getText());
+                beginStationList.add(searchViewList.get(2).getText());
+                int beginNum = 0;
+                for (String str : beginStationList) {
+                    if (!str.equals("")) {
+                        beginNum++;
+                    }
+                }
+
+                Bundle mBundle = new Bundle();
+                mBundle.putString("origin", "Multi");
+                mBundle.putString("endStation", endStation);
+                mBundle.putStringArrayList("beginStationList", beginStationList);
+                mBundle.putInt("beginNum", beginNum);
+                if ((!endStation.equals("")) & (beginNum != 0)) {
+                    Intent intent = new Intent(getActivity(), RouteResultActivity.class);
+                    intent.putExtras(mBundle);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(getActivity(), "搜索框消息不完善，请填充完整后在开始搜索！", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
         //设置监听
         endSearchView.setSearchViewListener(this);
-        searchViewList.get(0).setSearchViewListener(this);
-        searchViewList.get(1).setSearchViewListener(this);
-        searchViewList.get(2).setSearchViewListener(this);
+        searchViewList.get(0).setSearchPopViewListener(this);
+        searchViewList.get(1).setSearchPopViewListener(this);
+        searchViewList.get(2).setSearchPopViewListener(this);
         //设置adapter
         endSearchView.setTipsHintAdapter(hintAdapter);
         endSearchView.setAutoCompleteAdapter(autoCompleteAdapter);
+        searchViewList.get(0).setTipsHintAdapter(hintAdapter);
+        searchViewList.get(1).setTipsHintAdapter(hintAdapter);
+        searchViewList.get(2).setTipsHintAdapter(hintAdapter);
+        searchViewList.get(0).setAutoCompleteAdapter(autoCompleteAdapter0);
+        searchViewList.get(1).setAutoCompleteAdapter(autoCompleteAdapter1);
+        searchViewList.get(2).setAutoCompleteAdapter(autoCompleteAdapter2);
 
         lvResults.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -188,6 +234,12 @@ public class RouteMultiFragment extends Fragment implements SimpleSearchView.Sim
     private void getDbData() {
         int size = 100;
         dbData = new ArrayList<>(size);
+        dbData.add(new RouteSearchBean(R.drawable.title_icon, "北京南站地铁站",
+                "周围简介\n热门吃、喝、玩、乐", 99 + ""));
+        dbData.add(new RouteSearchBean(R.drawable.title_icon, "北京邮电大学西门",
+                "周围简介\n热门吃、喝、玩、乐", 99 + ""));
+        dbData.add(new RouteSearchBean(R.drawable.title_icon, "北京大学未名湖",
+                "周围简介\n热门吃、喝、玩、乐", 99 + ""));
         for (int i = 0; i < size; i++) {
             dbData.add(new RouteSearchBean(R.drawable.title_icon, "站点" + (i + 1),
                     "周围简介\n热门吃、喝、玩、乐", i * 20 + 2 + ""));
@@ -199,7 +251,10 @@ public class RouteMultiFragment extends Fragment implements SimpleSearchView.Sim
      */
     private void getHintData() {
         hintData = new ArrayList<>(hintSize);
-        hintData.add("热门搜索站点");
+//        hintData.add("热门搜索站点");
+        hintData.add("北京南站地铁站");
+        hintData.add("北京邮电大学西门");
+        hintData.add("北京大学未名湖");
         for (int i = 1; i <= hintSize; i++) {
             hintData.add("站点" + i * 10);
         }
@@ -230,6 +285,24 @@ public class RouteMultiFragment extends Fragment implements SimpleSearchView.Sim
             autoCompleteAdapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, autoCompleteData);
         } else {
             autoCompleteAdapter.notifyDataSetChanged();
+        }
+
+        if (autoCompleteAdapter0 == null) {
+            autoCompleteAdapter0 = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, autoCompleteData);
+        } else {
+            autoCompleteAdapter0.notifyDataSetChanged();
+        }
+
+        if (autoCompleteAdapter1 == null) {
+            autoCompleteAdapter1 = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, autoCompleteData);
+        } else {
+            autoCompleteAdapter1.notifyDataSetChanged();
+        }
+
+        if (autoCompleteAdapter2 == null) {
+            autoCompleteAdapter2 = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, autoCompleteData);
+        } else {
+            autoCompleteAdapter2.notifyDataSetChanged();
         }
     }
 
@@ -277,12 +350,14 @@ public class RouteMultiFragment extends Fragment implements SimpleSearchView.Sim
         lvResults.setVisibility(View.VISIBLE);
 
         //第一次获取结果 还未配置适配器
-        if (lvResults.getAdapter() == null) {
-            //获取搜索数据 设置适配器
-            lvResults.setAdapter(resultAdapter);
-        } else {
-            //更新搜索数据
-            resultAdapter.notifyDataSetChanged();
+        if (endSearchView.isFocus()) {
+            if (lvResults.getAdapter() == null) {
+                //获取搜索数据 设置适配器
+                lvResults.setAdapter(resultAdapter);
+            } else {
+                //更新搜索数据
+                resultAdapter.notifyDataSetChanged();
+            }
         }
 
         Toast.makeText(getActivity(), "完成搜索", Toast.LENGTH_SHORT).show();
@@ -293,9 +368,20 @@ public class RouteMultiFragment extends Fragment implements SimpleSearchView.Sim
      */
     @Override
     public void onBack() {
-        lvResults.setVisibility(View.GONE);
-        autoCompleteAdapter.notifyDataSetChanged();
-        resultAdapter.notifyDataSetChanged();
+        if (endSearchView.hasFocus()) {
+            autoCompleteAdapter.notifyDataSetChanged();
+            resultAdapter.notifyDataSetChanged();
+            lvResults.setVisibility(View.GONE);
+        }
+        if(searchViewList.get(0).hasFocus()){
+            autoCompleteAdapter0.notifyDataSetChanged();
+        }
+        if(searchViewList.get(1).hasFocus()){
+            autoCompleteAdapter1.notifyDataSetChanged();
+        }
+        if(searchViewList.get(2).hasFocus()){
+            autoCompleteAdapter2.notifyDataSetChanged();
+        }
         hintAdapter.notifyDataSetChanged();
     }
 
@@ -304,9 +390,20 @@ public class RouteMultiFragment extends Fragment implements SimpleSearchView.Sim
      */
     @Override
     public void isFocus() {
-        lvResults.setVisibility(View.GONE);
-        autoCompleteAdapter.notifyDataSetChanged();
-        resultAdapter.notifyDataSetChanged();
+        if (endSearchView.hasFocus()) {
+            autoCompleteAdapter.notifyDataSetChanged();
+            resultAdapter.notifyDataSetChanged();
+            lvResults.setVisibility(View.GONE);
+        }
+        if(searchViewList.get(0).hasFocus()){
+            autoCompleteAdapter0.notifyDataSetChanged();
+        }
+        if(searchViewList.get(1).hasFocus()){
+            autoCompleteAdapter1.notifyDataSetChanged();
+        }
+        if(searchViewList.get(2).hasFocus()){
+            autoCompleteAdapter2.notifyDataSetChanged();
+        }
         hintAdapter.notifyDataSetChanged();
     }
 

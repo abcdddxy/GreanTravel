@@ -28,19 +28,19 @@
         android:layout_marginRight="60dp"
         android:layout_marginTop="180dp">
 
-        <com.example.zero.view.SimpleSearchView
+        <com.example.zero.view.SearchPopView
             android:id="@+id/route_search_multi0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.example.zero.view.SimpleSearchView
+        <com.example.zero.view.SearchPopView
             android:id="@+id/route_search_multi1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:visibility="gone" />
 
-        <com.example.zero.view.SimpleSearchView
+        <com.example.zero.view.SearchPopView
             android:id="@+id/route_search_multi2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

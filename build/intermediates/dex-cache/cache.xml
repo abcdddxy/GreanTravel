@@ -2,13 +2,202 @@
 <items version="2" >
 
     <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-library\1.3\4785a3c21320980282f9f33d0d1264a69040538f\hamcrest-library-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4785a3c21320980282f9f33d0d1264a69040538f">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\androidTest\debug\hamcrest-library-1.3_88ef04870873edc7c18938f7e4232ca7990766ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-integration\1.3\5de0c73fef18917cd85d0ab70bb23818685e4dfd\hamcrest-integration-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5de0c73fef18917cd85d0ab70bb23818685e4dfd">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\androidTest\debug\hamcrest-integration-1.3_488360c69918d928def3acb7462ac8de3ff7e678.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.android\build-cache\120097c1eb8a80ce8b3f8f4bb320f54c9dd42685\output\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_6407bb4cfd197ccf72421eddabea828c05fd1ffb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.android\build-cache\120097c1eb8a80ce8b3f8f4bb320f54c9dd42685\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\debug\classes_d9522f25b3d132f033c95c82bc4958610d45315d.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="0d810848264d78096ead0e1c1a8a1da3c5afac76">
+        sha1="0e5653a2c60b1c9786955b84c9f7c96895f3bd66">
         <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_2e67ac67286a89fd636512be2f4c5c9935303657\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.android\build-cache\708d12da1386c7bf474873d3c014f93706a7a8be\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\debug\classes_ad15824e9431cce3f444bcb36b01be5cf9fa8d28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.android\build-cache\490a45b2116d003abb89143592bed4a34fe9ccd0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\debug\classes_11f8a16380799fcc22879526949dc9c7db41540c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.android\build-cache\20b802f04cb23eeb21650f050e9498d4ff130b79\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\debug\classes_916f6fa69d5abebb0b2afd6edba4a5e6cdd56225.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.android\build-cache\9c46281ccee78d507d64432d332508560afbdfcf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d115b0e9e1501135fe91254ba884fcbd83d374c0">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\androidTest\debug\classes_0a26d45afff27f1718d1ddb163e0df64672fcadb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.gradle\caches\modules-2\files-2.1\com.squareup\javawriter\2.1.1\67ff45d9ae02e583d0f9b3432a5ebbe05c30c966\javawriter-2.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="67ff45d9ae02e583d0f9b3432a5ebbe05c30c966">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\androidTest\debug\javawriter-2.1.1_6c92b07f62cbd71b8834b2cb12659d38b45f493d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.android\build-cache\586f34610ffdd2a2f8c29ebb17d976922182e11c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7e11799d8a26bfa5d48acafe012ee5545b9bf468">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\androidTest\debug\classes_50889e8ec2491ac158494000386b8cbbe25bb4a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="42a25dc3219429f0e5d060061f71acb49bf010a0">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\androidTest\debug\hamcrest-core-1.3_9ef7b4ec0e347f6c06600622fed2245501261047.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\2.0.1\516c03b21d50a644d538de0f0369c620989cd8f0\jsr305-2.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="516c03b21d50a644d538de0f0369c620989cd8f0">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\androidTest\debug\jsr305-2.0.1_4ba72cf7867fb2b71d0c5c3fcb4dcb09562e7e25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.gradle\caches\modules-2\files-2.1\junit\junit\4.12\2973d150c0dc1fefe998f834810d68f278ea58ec\junit-4.12.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2973d150c0dc1fefe998f834810d68f278ea58ec">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\androidTest\debug\junit-4.12_b1f4be9c3662cf3d6a71bdffec28fc0fe3f32a6e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.android\build-cache\dcaec27c134b6a6262e0591fe9ab47ed79fb2dff\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="796f9229948e907471c5595fbe94655ccf03ff73">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\androidTest\debug\classes_8f35741bc59563adef9cadeb6fc7b0f06e8077df.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_8e2e04df62dea9126e3258043908b5752dff7f9e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\androidTest\debug\javax.inject-1_ce9efcab77a86d2e8d061c3a4984b327bb3c18d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.android\build-cache\82146fc3823e7ba498669b052ffc05f6d4c06766\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\debug\classes_255478b959429f0abe8b856a7e1e1fa6799a9473.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.android\build-cache\0c94df78f9ffe6565623c8c0c6bcb9e7e838858a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="84a5e720e441032fc979314a4539f3d40079801b">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\debug\classes_4cac45c41f85afd8b179704b8a3e9d15604cbf20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_5ed0aa49a29b8ed3f1d1956137b335ae0f516f0b.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\libs\BaiduLBS_Android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e78796be1b1ae15391b2213bd340bbf04cd85923">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\transforms\dex\debug\folders\1000\2\BaiduLBS_Android_7d7a4383edd3f38fe7d71070359a63bcfc869b50\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\libs\BaiduLBS_Android.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e78796be1b1ae15391b2213bd340bbf04cd85923">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\debug\BaiduLBS_Android_7d7a4383edd3f38fe7d71070359a63bcfc869b50.jar" />
     </item>
     <item
         is-multidex="true"
@@ -18,6 +207,69 @@
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_e4ab6b9e0ebcd876cd6409702ff6af38acbafcf6\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.android\build-cache\9ffea3f9a910093dbdc329af50e53148571cdbe2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fd822cc34025d1109e78eb7dfbcc4a5f28005309">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\debug\classes_956f1b6171df43d1e4441fb9999bf0a6beca6a79.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.gradle\caches\modules-2\files-2.1\javax.annotation\javax.annotation-api\1.2\479c1e06db31c432330183f5cae684163f186146\javax.annotation-api-1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="479c1e06db31c432330183f5cae684163f186146">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\androidTest\debug\javax.annotation-api-1.2_7ecd2fcfb77a974395c2113226c0da1869196539.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.android\build-cache\7491dd7e58f1bd3e8e8f450f3123b654acf9d0d4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\debug\classes_4711a043867508f4c13832e765f27aa89e19363c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.android\build-cache\a4afabe669c69b27fa75f2f077c872650e747ee7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\debug\classes_f4f3a110af408956dcaacdaa93d1a56017dec00b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.android\build-cache\97cad0aacf4a3757081c659cbabb861eb6f52b48\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\debug\classes_7f3cb10841306c7c0b9aafee357a83f86652b3ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.android\build-cache\c32b9e80f2431aa3ec3a8ff610a2801496f79b94\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a890ee8445927649d9ed50f625a315d8758688be">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\androidTest\debug\classes_adb841f2f0086662aa7b76d3703a3657b5c4005a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ZERO\.android\build-cache\65b438690aea4196b82b67ac7d019b111b7ba6ce\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="905f3e63973d47fedf2d945fa31d8c0f0c98816e">
+        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\pre-dexed\androidTest\debug\classes_eea54f99ed4220cdf89a7f0901e2431c434f12d3.jar" />
     </item>
 
 </items>
