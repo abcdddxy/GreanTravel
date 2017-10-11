@@ -182,6 +182,12 @@ public class AdvDestinFragment extends Fragment implements SearchPopView.SearchP
     private void getDbData() {
         int size = 100;
         dbData = new ArrayList<>(size);
+        dbData.add(new RouteSearchBean(R.drawable.title_icon, "北京南站地铁站",
+                "周围简介\n热门吃、喝、玩、乐", 99 + ""));
+        dbData.add(new RouteSearchBean(R.drawable.title_icon, "北京邮电大学西门",
+                "周围简介\n热门吃、喝、玩、乐", 99 + ""));
+        dbData.add(new RouteSearchBean(R.drawable.title_icon, "北京大学未名湖",
+                "周围简介\n热门吃、喝、玩、乐", 99 + ""));
         for (int i = 0; i < size; i++) {
             dbData.add(new RouteSearchBean(R.drawable.title_icon, "站点" + (i + 1),
                     "周围简介\n热门吃、喝、玩、乐", i * 20 + 2 + ""));
@@ -193,6 +199,10 @@ public class AdvDestinFragment extends Fragment implements SearchPopView.SearchP
      */
     private void getHintData() {
         hintData = new ArrayList<>(hintSize);
+//        hintData.add("热门搜索站点");
+        hintData.add("北京南站地铁站");
+        hintData.add("北京邮电大学西门");
+        hintData.add("北京大学未名湖");
         for (int i = 1; i <= hintSize; i++) {
             hintData.add("站点" + i * 10);
         }
