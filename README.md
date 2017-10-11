@@ -119,6 +119,16 @@ Android App GreenTravel
 		<th>路线——路线多人搜索界面开发完成</th>
 		<th colspan="2">准备面试，推迟合程序</th>
 	</tr>
+    <tr>
+		<th>171009</th>
+		<th colspan="3">第三次程序合并</th>
+	</tr>
+	<tr>
+	 	<th>171010</th>
+	 	<th>路线——整理相关代码</th>
+	 	<th>个人中心——添加用户登录界面和修改头像功能</th>
+	 	<th>建议——搜索排序栏多选框</th>
+	 </tr>
 </table>
 
 ## 遇到bug或难点
@@ -239,6 +249,16 @@ Android App GreenTravel
 		<th>路线——同时绘制多条线路</th>
 		<th colspan="2">无</th>
 	</tr>
+    <tr>
+		<th>171009</th>
+		<th colspan="3">暂时没有发现bug</th>
+	</tr>
+	<tr>
+	 	<th>171010</th>
+	 	<th>路线——注释不全面</th>
+	 	<th>个人中心——修改头像实现</th>
+	 	<th>建议——弹窗动画和官方效果差很多</th>
+	 </tr>
 </table>
 
 ## 参考
@@ -356,4 +376,14 @@ Android App GreenTravel
 		<th>http://blog.csdn.net/u014007478/article/details/20949281</th>
 		<th colspan="2">无</th>
 	</tr>
+    <tr>
+		<th>171009</th>
+		<th colspan="3">无</th>
+	</tr>
+	<tr>
+	 	<th>171010</th>
+	 	<th>无</th>
+	 	<th>http://blog.csdn.net/alanjet/article/details/52494996</th>
+	 	<th>无</th>
+	 </tr>
 </table>

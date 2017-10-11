@@ -1,6 +1,7 @@
 package com.example.zero.fragment;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -11,11 +12,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import com.example.zero.activity.AdvMapResultActivity;
+import com.example.zero.activity.AdvSearchActivity;
+import com.example.zero.activity.RouteResultActivity;
 import com.example.zero.adapter.RouteSearchAdapter;
 import com.example.zero.bean.RouteSearchBean;
 import com.example.zero.greentravel.R;
@@ -24,6 +29,8 @@ import com.example.zero.view.SearchPopView;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+
+import static com.example.zero.greentravel.R.id.editText;
 
 /**
  * Created by shuwan122 on 2017/9/7.
@@ -38,6 +45,7 @@ public class AdvPlanFragment extends Fragment implements SearchPopView.SearchPop
     private int minute1;
     private int hour2;
     private int minute2;
+    private Button searchButton;
 
     /**
      * 搜索结果列表view
@@ -158,6 +166,28 @@ public class AdvPlanFragment extends Fragment implements SearchPopView.SearchPop
                 Toast.makeText(getActivity(), "2-" + position + "", Toast.LENGTH_SHORT).show();
             }
         });
+
+        searchButton = (Button) getView().findViewById(R.id.plan_search_commit);
+        searchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(getActivity(), AdvSearchActivity.class);
+                //TODO 具体所需搜索信息
+                String beginStation = searchPopView1.getText();
+                String endStation = searchPopView2.getText();
+                Bundle mBundle = new Bundle();
+                mBundle.putString("beginStation", beginStation);
+                mBundle.putString("endStation", endStation);
+                if ((!beginStation.equals("")) & (!endStation.equals(""))) {
+                    Intent intent2 = new Intent(getActivity(), AdvMapResultActivity.class);
+                    intent2.putExtras(mBundle);
+                    startActivity(intent2);
+                } else {
+                    Toast.makeText(getActivity(), "搜索框消息不完善，请填充完整后在开始搜索！", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
     }
 
     /**
@@ -181,6 +211,12 @@ public class AdvPlanFragment extends Fragment implements SearchPopView.SearchPop
     private void getDbData() {
         int size = 100;
         dbData = new ArrayList<>(size);
+        dbData.add(new RouteSearchBean(R.drawable.title_icon, "北京南站地铁站",
+                "周围简介\n热门吃、喝、玩、乐", 99 + ""));
+        dbData.add(new RouteSearchBean(R.drawable.title_icon, "北京邮电大学西门",
+                "周围简介\n热门吃、喝、玩、乐", 99 + ""));
+        dbData.add(new RouteSearchBean(R.drawable.title_icon, "北京大学未名湖",
+                "周围简介\n热门吃、喝、玩、乐", 99 + ""));
         for (int i = 0; i < size; i++) {
             dbData.add(new RouteSearchBean(R.drawable.title_icon, "站点" + (i + 1),
                     "周围简介\n热门吃、喝、玩、乐", i * 20 + 2 + ""));
@@ -192,6 +228,9 @@ public class AdvPlanFragment extends Fragment implements SearchPopView.SearchPop
      */
     private void getHintData() {
         hintData = new ArrayList<>(hintSize);
+        hintData.add("北京南站地铁站");
+        hintData.add("北京邮电大学西门");
+        hintData.add("北京大学未名湖");
         for (int i = 1; i <= hintSize; i++) {
             hintData.add("站点" + i * 10);
         }
