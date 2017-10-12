@@ -129,6 +129,18 @@ Android App GreenTravel
 	 	<th>个人中心——添加用户登录界面和修改头像功能</th>
 	 	<th>建议——搜索排序栏多选框</th>
 	 </tr>
+	<tr>
+		<th>171011</th>
+		<th>路线——路线搜索功能完成</th>
+		<th>个人中心——清除缓存功能实现</th>
+		<th>建议——搜索排序栏多选框</th>
+	</tr>
+	<tr>
+		<th>171012</th>
+		<th>路线——搜索结果接口编写</th>
+		<th>个人中心——新消息推送功能实现，并写了自动下载安装包工具类DownloadApkService</th>
+		<th>建议——搜索排序栏多选框</th>
+	</tr>
 </table>
 
 ## 遇到bug或难点
@@ -259,6 +271,17 @@ Android App GreenTravel
 	 	<th>个人中心——修改头像实现</th>
 	 	<th>建议——弹窗动画和官方效果差很多</th>
 	 </tr>
+	<tr>
+		<th>171011</th>
+		<th>无</th>
+		<th>个人中心——无</th>
+		<th>标签打开后不能恢复之前的设置（未解决）</th>
+	</tr>
+	<tr>
+		<th>171012</th>
+		<th>路线——多条路径同时绘制会变慢</th>
+		<th>个人中心——网上的自动更新安装包的代码学习中...<br>NavigationService一直显示小图标不合法（后来不知道改了哪里就好了）</th>
+		<th></th>
 </table>
 
 ## 参考
@@ -386,4 +409,16 @@ Android App GreenTravel
 	 	<th>http://blog.csdn.net/alanjet/article/details/52494996</th>
 	 	<th>无</th>
 	 </tr>
+    <tr>
+		<th>171011</th>
+		<th>无</th>
+		<th>http://www.jianshu.com/p/f68287377f38</th>
+		<th>无</th>
+	</tr>
+	<tr>
+		<th>171012</th>
+		<th>http://blog.csdn.net/qq_33000225/article/details/53540263</th>
+		<th>http://www.cnblogs.com/_ymw/p/4151542.html<br>http://blog.csdn.net/luoyingbiao/article/details/55504491</th>
+		<th>http://www.cnblogs.com/itmanxgl/p/8b99b41e7df097c5b3b58fa259ee41a6.html</th>
+	</tr>
 </table>
