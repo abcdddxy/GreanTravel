@@ -141,6 +141,12 @@ Android App GreenTravel
 		<th>个人中心——新消息推送功能实现，并写了自动下载安装包工具类DownloadApkService</th>
 		<th>建议——搜索排序栏多选框</th>
 	</tr>
+	<tr>
+	 	<th>171013</th>
+	 	<th>路线——调研界面样式</th>
+	 	<th>个人中心——添加检查更新功能，“关于”APP介绍界面完成（调用默认浏览器打开链接），点击“位置服务”跳转应用详情界面，但是存在小bug未解决</th>
+	 	<th>设置——登录注册界面</th>
+	 </tr>
 </table>
 
 ## 遇到bug或难点
@@ -281,7 +287,13 @@ Android App GreenTravel
 		<th>171012</th>
 		<th>路线——多条路径同时绘制会变慢</th>
 		<th>个人中心——网上的自动更新安装包的代码学习中...<br>NavigationService一直显示小图标不合法（后来不知道改了哪里就好了）</th>
-		<th></th>
+		<th>无</th>
+	<tr>
+	 	<th>171013</th>
+	 	<th>无</th>
+	 	<th>个人中心——查询应用是否获得位置权限时，一直出错，未找到原因</th>
+	 	<th>验证码发送机制实现复杂</th>
+	 </tr>
 </table>
 
 ## 参考
@@ -421,4 +433,11 @@ Android App GreenTravel
 		<th>http://www.cnblogs.com/_ymw/p/4151542.html<br>http://blog.csdn.net/luoyingbiao/article/details/55504491</th>
 		<th>http://www.cnblogs.com/itmanxgl/p/8b99b41e7df097c5b3b58fa259ee41a6.html</th>
 	</tr>
+	<tr>
+	 	<th>171013</th>
+	 	<th>http://blog.csdn.net/gaolei1201/article/details/50512265</th>
+	 	<th>http://blog.csdn.net/wenzhi20102321/article/details/62044892</th>
+	 	<th>http://blog.csdn.net/zhang31jian/article/details/23258065保存设置<br>
+		http://blog.csdn.net/wk843620202/article/details/50960904图片式验证码<br></th>
+	 </tr>
 </table>
