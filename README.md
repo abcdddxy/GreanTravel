@@ -147,6 +147,12 @@ Android App GreenTravel
 	 	<th>个人中心——添加检查更新功能，“关于”APP介绍界面完成（调用默认浏览器打开链接），点击“位置服务”跳转应用详情界面，但是存在小bug未解决</th>
 	 	<th>设置——登录注册界面</th>
 	 </tr>
+	<tr>
+	 	<th>171016</th>
+	 	<thl路线——修复真机调试结果界面都变化的bug</th>
+	 	<th>个人中心——我的收藏和帮助与反馈界面布局基本完成</th>
+	 	<th>设置——登录注册信息修改</th>
+	 </tr>
 </table>
 
 ## 遇到bug或难点
@@ -294,6 +300,12 @@ Android App GreenTravel
 	 	<th>个人中心——查询应用是否获得位置权限时，一直出错，未找到原因</th>
 	 	<th>验证码发送机制实现复杂</th>
 	 </tr>
+	<tr>
+	 	<th>171016</th>
+	 	<th>路线——不理解真机调试和模拟器调试出现区别的底层原因</th>
+	 	<th>个人中心——仅wifi下加载图片功能还未实现（网络图片加载封装的这一部分比较复杂）</th>
+	 	<th>Activity通信找接受对象</th>
+	 </tr>
 </table>
 
 ## 参考
@@ -439,5 +451,12 @@ Android App GreenTravel
 	 	<th>http://blog.csdn.net/wenzhi20102321/article/details/62044892</th>
 	 	<th>http://blog.csdn.net/zhang31jian/article/details/23258065保存设置<br>
 		http://blog.csdn.net/wk843620202/article/details/50960904图片式验证码<br></th>
+	 </tr>
+	<tr>
+	 	<th>171016</th>
+	 	<th>无</th>
+	 	<th>http://www.jianshu.com/p/e26130a93289</th>
+	 	<th>http://blog.csdn.net/sunchaoenter/article/details/6612039<br>
+		https://www.pocketdigi.com/20130619/1117.html<br></th>
 	 </tr>
 </table>
