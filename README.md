@@ -153,6 +153,10 @@ Android App GreenTravel
 	 	<th>个人中心——我的收藏和帮助与反馈界面布局基本完成</th>
 	 	<th>设置——登录注册信息修改</th>
 	 </tr>
+    <tr>
+		<th>171017</th>
+		<th colspan="3">第四次程序合并</th>
+	</tr>
 </table>
 
 ## 遇到bug或难点
@@ -306,6 +310,10 @@ Android App GreenTravel
 	 	<th>个人中心——仅wifi下加载图片功能还未实现（网络图片加载封装的这一部分比较复杂）</th>
 	 	<th>Activity通信找接受对象</th>
 	 </tr>
+    <tr>
+		<th>171017</th>
+		<th colspan="3">暂时没有发现bug</th>
+	</tr>
 </table>
 
 ## 参考
@@ -459,4 +467,8 @@ Android App GreenTravel
 	 	<th>http://blog.csdn.net/sunchaoenter/article/details/6612039<br>
 		https://www.pocketdigi.com/20130619/1117.html<br></th>
 	 </tr>
+    <tr>
+		<th>171017</th>
+		<th colspan="3">无</th>
+	</tr>
 </table>
