@@ -1,31 +1,15 @@
 [
     {
-        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\destin_red32.png",
-        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\destin_red32.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\search_delete.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\search_delete.png"
     },
     {
         "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable-hdpi/msg.png",
         "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable-hdpi/msg.png"
     },
     {
-        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\plan_red32.png",
-        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\plan_red32.png"
-    },
-    {
-        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\msg.png",
-        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\msg.png"
-    },
-    {
-        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\destin_gray32.png",
-        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\destin_gray32.png"
-    },
-    {
         "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable-hdpi/search_delete.png",
         "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable-hdpi/search_delete.png"
-    },
-    {
-        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\plan_gray32.png",
-        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\plan_gray32.png"
     },
     {
         "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable-hdpi/add.png",
@@ -36,6 +20,14 @@
         "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable-hdpi/notice.png"
     },
     {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\destin_red32.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\destin_red32.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\plan_red32.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\plan_red32.png"
+    },
+    {
         "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\route_find.png",
         "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\route_find.png"
     },
@@ -44,8 +36,8 @@
         "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable-hdpi/plan_red32.png"
     },
     {
-        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\add.png",
-        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\add.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\destin_gray32.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\destin_gray32.png"
     },
     {
         "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable-hdpi/destin_gray32.png",
@@ -60,18 +52,6 @@
         "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable-hdpi/destin_red32.png"
     },
     {
-        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\notice.png",
-        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\notice.png"
-    },
-    {
-        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\search_delete.png",
-        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\search_delete.png"
-    },
-    {
-        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\search_back.png",
-        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\search_back.png"
-    },
-    {
         "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable-hdpi/route_find.png",
         "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable-hdpi/route_find.png"
     },
@@ -80,12 +60,28 @@
         "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\task.png"
     },
     {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable-hdpi/title_more.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable-hdpi/title_more.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\msg.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\msg.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\plan_gray32.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\plan_gray32.png"
+    },
+    {
         "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\title_more.png",
         "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\title_more.png"
     },
     {
-        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable-hdpi/title_more.png",
-        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable-hdpi/title_more.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\add.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\add.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\notice.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\notice.png"
     },
     {
         "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable-hdpi/search_back.png",
@@ -94,5 +90,9 @@
     {
         "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable-hdpi/task.png",
         "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable-hdpi/task.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\search_back.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\search_back.png"
     }
 ]
