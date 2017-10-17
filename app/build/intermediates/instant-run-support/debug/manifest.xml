@@ -62,8 +62,21 @@
         <activity android:name="com.example.zero.activity.SettingActivity" />
         <activity android:name="com.example.zero.activity.MsgActivity" />
         <activity android:name="com.example.zero.activity.UserActivity" />
+        <activity android:name="com.example.zero.activity.HelpFeedbackActivity" />
+        <activity android:name="com.example.zero.activity.FavorActivity" />
+        <activity android:name="com.example.zero.activity.AboutActivity" />
+        <activity android:name="com.example.zero.activity.LoginActivity" />
+        <activity
+            android:name="com.example.zero.activity.RegisterActivity"
+            android:windowSoftInputMode="stateVisible" />
         <activity android:name="com.example.zero.activity.AdvSearchActivity" />
         <activity android:name="com.example.zero.activity.AdvMapResultActivity" />
+
+        <service android:name="com.example.zero.util.NotificationService" >
+            <intent-filter>
+                <action android:name="MSG_SERVICE" />
+            </intent-filter>
+        </service>
 
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"

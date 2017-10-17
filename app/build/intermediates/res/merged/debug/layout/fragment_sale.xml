@@ -46,21 +46,16 @@
             android:layout_width="0dp"
             android:layout_height="2dp"
             android:layout_weight="1"
-            android:background="#FF0000" />
+            android:background="@color/red" />
 
         <View
             android:id="@+id/sale_my_line"
             android:layout_width="0dp"
             android:layout_height="2dp"
             android:layout_weight="1"
-            android:background="#FFFFFF" />
+            android:background="@color/white" />
 
     </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2px"
-        android:background="#A9A9A9" />
 
     <FrameLayout
         android:id="@+id/sale_frag_content"

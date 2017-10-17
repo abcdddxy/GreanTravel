@@ -1,8 +1,5 @@
 package com.example.zero.bean;
 
-import android.graphics.drawable.Drawable;
-import android.widget.ImageView;
-
 /**
  * Created by jojo on 2017/9/11.
  */

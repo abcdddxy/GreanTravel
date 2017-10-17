@@ -10,7 +10,11 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.zero.activity.FavorActivity;
+import com.example.zero.activity.HelpFeedbackActivity;
+import com.example.zero.activity.LoginActivity;
 import com.example.zero.activity.MsgActivity;
+import com.example.zero.activity.RegisterActivity;
 import com.example.zero.activity.SettingActivity;
 import com.example.zero.activity.UserActivity;
 import com.example.zero.greentravel.R;
@@ -20,20 +24,23 @@ import com.example.zero.greentravel.R;
  */
 
 public class PersonalInfoFragment extends Fragment {
-
     private View person_frag;
     private Context context;
     private TextView setting;
     private LinearLayout msg;
     private LinearLayout user;
+    private TextView login, register, user_name;
+    private LinearLayout favor;
+    private LinearLayout help_feedback;
+
+    private static final int START_LOGIN_ACTIVITY = 1;
+    private static final int START_REGISTER_ACTIVITY = 2;
 
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
+
         person_frag = inflater.inflate(R.layout.fragment_personal_info, container, false);
         innitView();
-        /**
-         *  设置activity监听
-         */
         setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,9 +49,6 @@ public class PersonalInfoFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        /**
-         *  UserActivity监听
-         */
         user.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,14 +57,43 @@ public class PersonalInfoFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        /**
-         *  我的消息activity监听
-         */
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(getActivity(), LoginActivity.class);
+                startActivityForResult(intent, START_LOGIN_ACTIVITY);
+            }
+        });
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(getActivity(), RegisterActivity.class);
+                startActivityForResult(intent, START_REGISTER_ACTIVITY);
+            }
+        });
         msg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(getActivity(), MsgActivity.class);
+                startActivity(intent);
+            }
+        });
+        favor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(getActivity(), FavorActivity.class);
+                startActivity(intent);
+            }
+        });
+        help_feedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(getActivity(), HelpFeedbackActivity.class);
                 startActivity(intent);
             }
         });
@@ -71,7 +104,32 @@ public class PersonalInfoFragment extends Fragment {
     public void innitView() {
         setting = (TextView) person_frag.findViewById(R.id.setting);
         user = (LinearLayout) person_frag.findViewById(R.id.user_info);
+        login = (TextView) person_frag.findViewById(R.id.login);
+        register = (TextView) person_frag.findViewById(R.id.register);
+        user_name = (TextView) person_frag.findViewById(R.id.user_name);
         msg = (LinearLayout) person_frag.findViewById(R.id.msg);
+        favor = (LinearLayout) person_frag.findViewById(R.id.favor);
+        help_feedback = (LinearLayout) person_frag.findViewById(R.id.help_feedback);
     }
 
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == -1) {
+            switch (requestCode) {
+                case START_LOGIN_ACTIVITY:
+                    user_name.setText(data.getStringExtra("User name"));
+                    user_name.setVisibility(View.VISIBLE);
+                    login.setVisibility(View.GONE);
+                    register.setVisibility(View.GONE);
+                    break;
+                case START_REGISTER_ACTIVITY:
+                    user_name.setText(data.getStringExtra("User name"));
+                    user_name.setVisibility(View.VISIBLE);
+                    login.setVisibility(View.GONE);
+                    register.setVisibility(View.GONE);
+                    break;
+            }
+        }
+    }
 }

@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="#1296db"
+        android:background="@color/nav_head"
         android:orientation="horizontal">
 
         <TextView
@@ -48,7 +48,7 @@
                 android:id="@+id/user_info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#1296db"
+                android:background="@color/nav_head"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -60,15 +60,37 @@
                     android:padding="3dp"
                     android:src="@drawable/personal_img" />
 
-                <TextView
-                    android:id="@+id/username"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:text="用户名"
-                    android:textColor="@color/white" />
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="登录  /"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="  注册"
+                        android:textColor="@color/white" />
+                </LinearLayout>
 
                 <ImageView
                     android:id="@+id/user_arrow"
@@ -102,7 +124,7 @@
                         android:drawablePadding="10dp"
                         android:gravity="center_vertical"
                         android:text="我的消息"
-                        android:textColor="#000000" />
+                        android:textColor="@color/black" />
 
                     <ImageView
                         style="@style/arrow_right_gray"
@@ -125,7 +147,7 @@
                         android:drawablePadding="10dp"
                         android:gravity="center_vertical"
                         android:text="我的收藏"
-                        android:textColor="#000000" />
+                        android:textColor="@color/black" />
 
                     <ImageView
                         style="@style/arrow_right_gray"
@@ -148,30 +170,7 @@
                         android:drawablePadding="10dp"
                         android:gravity="center_vertical"
                         android:text="常用联系人"
-                        android:textColor="#000000" />
-
-                    <ImageView
-                        style="@style/arrow_right_gray"
-                        android:layout_marginRight="5dp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/locations"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:orientation="horizontal"
-                    android:padding="15dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:drawableLeft="@drawable/location"
-                        android:drawablePadding="10dp"
-                        android:gravity="center_vertical"
-                        android:text="常用地点"
-                        android:textColor="#000000" />
+                        android:textColor="@color/black" />
 
                     <ImageView
                         style="@style/arrow_right_gray"
@@ -203,7 +202,7 @@
                         android:drawablePadding="10dp"
                         android:gravity="center_vertical"
                         android:text="扫一扫"
-                        android:textColor="#000000" />
+                        android:textColor="@color/black" />
 
                     <ImageView
                         style="@style/arrow_right_gray"
@@ -227,7 +226,7 @@
                         android:drawablePadding="10dp"
                         android:gravity="center_vertical"
                         android:text="帮助与反馈"
-                        android:textColor="#000000" />
+                        android:textColor="@color/black" />
 
                     <ImageView
                         style="@style/arrow_right_gray"

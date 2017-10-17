@@ -29,7 +29,7 @@ public class SaleFragmentController {
      */
     private static SaleFragmentController controller;
 
-    public static SaleFragmentController getInstance(Fragment parentFragment, int containerId) {
+    public static SaleFragmentController getInstance(SaleFragment parentFragment, int containerId) {
         if (controller == null) {
             controller = new SaleFragmentController(parentFragment, containerId);
         }
@@ -38,7 +38,6 @@ public class SaleFragmentController {
 
     private SaleFragmentController(Fragment fragment, int containerId) {
         this.containerId = containerId;
-        //fragment嵌套fragment，调用getChildFragmentManager
         fm = fragment.getChildFragmentManager();
         initFragment();
     }
@@ -60,6 +59,7 @@ public class SaleFragmentController {
 
     /**
      * 显示Fragment
+     *
      * @param position Fragment位置
      */
     public void showFragment(int position) {

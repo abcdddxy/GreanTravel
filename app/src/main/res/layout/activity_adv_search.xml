@@ -20,6 +20,7 @@
         android:background="@color/nav_gray"/>
 
     <LinearLayout
+        android:id="@+id/adv_spinner_set"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:orientation="horizontal">
@@ -28,7 +29,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1.0"
-            android:layout_margin="10dp"
+            android:padding="10dp"
             android:drawableRight="@drawable/more_unfold"
             android:text="全市"
             android:textColor="#af000000"
@@ -44,7 +45,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1.0"
-            android:layout_margin="10dp"
+            android:padding="10dp"
             android:drawableRight="@drawable/more_unfold"
             android:text="综合排序"
             android:textColor="#af000000"
@@ -62,7 +63,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1.0"
-            android:layout_margin="10dp"
+            android:padding="10dp"
             android:drawableRight="@drawable/more_unfold"
             android:text="更多"
             android:textColor="#af000000"

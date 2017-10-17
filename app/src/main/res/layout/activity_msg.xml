@@ -22,7 +22,7 @@
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:layout_marginLeft="5dp"
-            android:background="#A9A9A9" />
+            android:background="@color/divideLine" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -30,7 +30,7 @@
             android:layout_marginLeft="20dp"
             android:gravity="center_vertical"
             android:text="我的消息"
-            android:textColor="#000000" />
+            android:textColor="@color/black" />
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
