@@ -1,38 +1,74 @@
 [
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color\\abc_secondary_text_material_light.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/color/abc_secondary_text_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color\\abc_search_url_text.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color\\switch_thumb_material_light.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/color/switch_thumb_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color\\abc_search_url_text.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color\\abc_primary_text_material_light.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color\\switch_thumb_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color\\abc_primary_text_material_dark.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/color/abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color\\switch_thumb_material_dark.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/color/abc_primary_text_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color\\abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color\\abc_secondary_text_material_dark.xml"
     }
 ]

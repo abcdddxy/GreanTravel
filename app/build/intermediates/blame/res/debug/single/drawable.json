@@ -1,398 +1,794 @@
 [
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/rating_bar.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/rating_bar.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\settings.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\settings.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\20b802f04cb23eeb21650f050e9498d4ff130b79\\output\\res\\drawable\\design_snackbar_background.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_dialog_material_background_light.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\entertainment_checked.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\entertainment_checked.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\entertainment_checked.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\entertainment_checked.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tao.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\tao.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\star_gray.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\star_gray.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_textfield_search_material.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\edit.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\edit.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\edit.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\edit.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/route_search_background.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/route_search_background.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\star_gray.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\star_gray.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/advice.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/advice.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\food_checked.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\food_checked.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\personal_img_shape_corner.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\personal_img_shape_corner.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shopping.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\shopping.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\personal_img_shape_corner.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\personal_img_shape_corner.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/cinema.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/cinema.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\people.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\people.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\people.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\people.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rating_bar.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\rating_bar.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rating_bar.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\rating_bar.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\toggle_button_select.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\toggle_button_select.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/person.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/person.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/toggle_button_select.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/toggle_button_select.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/location.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/location.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cinema.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\cinema.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cinema.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\cinema.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sale_hot_rg_color_select.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\sale_hot_rg_color_select.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/zara.jpg",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/zara.jpg"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\adv_label_text_color.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\adv_label_text_color.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/mcdonald.jpg",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/mcdonald.jpg"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\favor_rg_shape_corner_left.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\favor_rg_shape_corner_left.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/adv_label_background.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/adv_label_background.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\help_feedback_rg_color_select.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\help_feedback_rg_color_select.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sale_hot_rg_color_select.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\sale_hot_rg_color_select.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\adv_label_background.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\adv_label_background.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\favor_rg_shape_corner_left.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\favor_rg_shape_corner_left.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notice_fill.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\notice_fill.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/user_fill.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/user_fill.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\scan.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\scan.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notice_fill.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\notice_fill.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/adv_label_text_color.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/adv_label_text_color.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\location.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\location.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/shopping_checked.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/shopping_checked.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\adv_label_text_color_small.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\adv_label_text_color_small.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\location.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\location.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\identify.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\identify.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\adv_label_text_color_small.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\adv_label_text_color_small.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\weibo.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\weibo.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_seekbar_track_material.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\route_result_next.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\route_result_next.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_dialog_material_background_light.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_dialog_material_background_light.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/back_arrow_white.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/back_arrow_white.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\radio_button_style.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\radio_button_style.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\travel.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\travel.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\travel.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\travel.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/lock_fill.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/lock_fill.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\popup.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\popup.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/sale_hot_rg_color_select.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/sale_hot_rg_color_select.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back_arrow_white.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\back_arrow_white.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/edit.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/edit.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\kfc.jpg",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\kfc.jpg"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back_arrow_white.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\back_arrow_white.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\user_fill.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\user_fill.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/adv_time_corner.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/adv_time_corner.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\msg_shape_corner.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\msg_shape_corner.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\kfc.jpg",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\kfc.jpg"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\route.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\route.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\route.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\route.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\personal_img.jpg",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\personal_img.jpg"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\personal_img.jpg",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\personal_img.jpg"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\haidilao.jpg",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\haidilao.jpg"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\haidilao.jpg",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\haidilao.jpg"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/sale_img1.jpg",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/sale_img1.jpg"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\zhifubao.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\zhifubao.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/Users/shanao/.android/build-cache/3fc03c50c4de663ca73f4204654a834fb979aabd/output/res/drawable/design_fab_background.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\delete_fill.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\delete_fill.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\arrow_right_white.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\arrow_right_white.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\arrow_right_white.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\arrow_right_white.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sale_img1.jpg",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\sale_img1.jpg"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\favor_rg_shape_corner_right.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\favor_rg_shape_corner_right.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/travel.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/travel.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sale_img1.jpg",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\sale_img1.jpg"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lock_fill.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\lock_fill.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lock_fill.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\lock_fill.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/food.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/food.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/route_result_next.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/route_result_next.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sale_img2.jpg",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\sale_img2.jpg"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/popup.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/popup.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_text_cursor_material.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sale_button_get_shape.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\sale_button_get_shape.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ktv.jpg",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\ktv.jpg"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/weixin.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/weixin.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_st.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\icon_st.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sale_button_get_shape.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\sale_button_get_shape.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/personal_img.jpg",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/personal_img.jpg"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\more_unfold.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\more_unfold.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_st.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\icon_st.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/sale_img3.jpg",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/sale_img3.jpg"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\zara.jpg",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\zara.jpg"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_btn_check_material.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\friend.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\friend.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\weixin.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\weixin.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/icon_st.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/icon_st.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\route_result_pre.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\route_result_pre.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\more.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\more.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/favor.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/favor.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\route_result_pre.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\route_result_pre.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/scan.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/scan.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\divide_line.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\divide_line.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\travel_checked.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\travel_checked.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\travel_checked.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\travel_checked.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back_arrow_blue.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\back_arrow_blue.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back_arrow_blue.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\back_arrow_blue.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/tao.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/tao.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\person.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\person.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_dialog_material_background_dark.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_dialog_material_background_dark.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\person.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\person.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\route_search_background.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\route_search_background.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_dialog_material_background_dark.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\qq.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\qq.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/sale_img2.jpg",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/sale_img2.jpg"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/haidilao.jpg",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/haidilao.jpg"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\favor_rg_text_color_select.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\favor_rg_text_color_select.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/shopping.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/shopping.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\entertainment.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\entertainment.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shopping_checked.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\shopping_checked.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\20b802f04cb23eeb21650f050e9498d4ff130b79\\output\\res\\drawable\\design_fab_background.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\20b802f04cb23eeb21650f050e9498d4ff130b79\\output\\res\\drawable\\design_fab_background.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\item_label.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\item_label.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/adv_label_text_color_small.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/adv_label_text_color_small.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\adv_label_background_small.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\adv_label_background_small.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\item_label.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\item_label.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\food.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\food.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\adv_label_background_small.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\adv_label_background_small.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\adv_time_corner.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\adv_time_corner.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/favor_rg_shape_corner_right.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/favor_rg_shape_corner_right.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\adv_time_corner.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\adv_time_corner.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sale_button_use_shape.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\sale_button_use_shape.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/icon_en.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/icon_en.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sale_img3.jpg",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\sale_img3.jpg"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/star_yellow.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/star_yellow.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mcdonald.jpg",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\mcdonald.jpg"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\msg_item.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\msg_item.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\advice.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\advice.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_en.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\icon_en.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_btn_radio_material.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\arrow_right_gray.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\arrow_right_gray.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_en.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\icon_en.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\favor.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\favor.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\arrow_right_gray.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\arrow_right_gray.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\star_yellow.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\star_yellow.png"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\favor.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\favor.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/favor_rg_text_color_select.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/favor_rg_text_color_select.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\star_yellow.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\star_yellow.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sale.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\sale.png"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\settings.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\settings.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/notice_fill.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/notice_fill.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/sale.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/sale.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/personal_img_shape_corner.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/personal_img_shape_corner.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\20b802f04cb23eeb21650f050e9498d4ff130b79\\output\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tao.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\tao.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\food_checked.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\food_checked.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shopping.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\shopping.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/msg_shape_corner.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/msg_shape_corner.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\toggle_button_select.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\toggle_button_select.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/identify.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/identify.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/entertainment.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/entertainment.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/back_arrow_blue.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/back_arrow_blue.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\help_feedback_rg_color_select.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\help_feedback_rg_color_select.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\adv_label_text_color.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\adv_label_text_color.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\adv_label_background.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\adv_label_background.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\scan.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\scan.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/arrow_right_gray.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/arrow_right_gray.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\identify.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\identify.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\weibo.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\weibo.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/route.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/route.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/arrow_right_white.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/arrow_right_white.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\route_result_next.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\route_result_next.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/sale_button_use_shape.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/sale_button_use_shape.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\radio_button_style.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\radio_button_style.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/adv_label_background_small.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/adv_label_background_small.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/settings.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/settings.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\popup.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\popup.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/qq.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/qq.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/travel_checked.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/travel_checked.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/food_checked.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/food_checked.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\user_fill.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\user_fill.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\msg_shape_corner.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\msg_shape_corner.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/ktv.jpg",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/ktv.jpg"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/route_result_pre.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/route_result_pre.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\zhifubao.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\zhifubao.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/msg_item.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/msg_item.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/help_feedback_rg_color_select.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/help_feedback_rg_color_select.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/sale_button_get_shape.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/sale_button_get_shape.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\delete_fill.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\delete_fill.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/kfc.jpg",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/kfc.jpg"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\favor_rg_shape_corner_right.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\favor_rg_shape_corner_right.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/favor_rg_shape_corner_left.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/favor_rg_shape_corner_left.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/weibo.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/weibo.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sale_img2.jpg",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\sale_img2.jpg"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ktv.jpg",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\ktv.jpg"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\more_unfold.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\more_unfold.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/more_unfold.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/more_unfold.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/delete_fill.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/delete_fill.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/Users/shanao/.android/build-cache/3fc03c50c4de663ca73f4204654a834fb979aabd/output/res/drawable/design_snackbar_background.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/radio_button_style.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/radio_button_style.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/friend.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/friend.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\zara.jpg",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\zara.jpg"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\weixin.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\weixin.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\friend.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\friend.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/divide_line.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/divide_line.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\more.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\more.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/people.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/people.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\divide_line.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\divide_line.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/item_label.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/item_label.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/more.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/more.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\route_search_background.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\route_search_background.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\qq.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\qq.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\favor_rg_text_color_select.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\favor_rg_text_color_select.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\entertainment.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\entertainment.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shopping_checked.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\shopping_checked.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/star_gray.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/star_gray.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\food.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\food.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sale_button_use_shape.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\sale_button_use_shape.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sale_img3.jpg",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\sale_img3.jpg"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mcdonald.jpg",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\mcdonald.jpg"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/entertainment_checked.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/entertainment_checked.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\msg_item.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\msg_item.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/zhifubao.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/drawable/zhifubao.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\advice.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\advice.png"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sale.png",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\sale.png"
     }
 ]

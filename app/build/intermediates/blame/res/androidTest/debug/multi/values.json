@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,31 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "C:\\Users\\ZERO\\.android\\build-cache\\586f34610ffdd2a2f8c29ebb17d976922182e11c\\output\\res\\values\\values.xml",
+                    "file": "/Users/shanao/.android/build-cache/9369abc1e6b60f52c06b97557f0fa3c23ccb62c4/output/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 45,
+                        "endOffset": 270
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 45,
+                    "endOffset": 96
+                },
+                "from": {
+                    "file": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\586f34610ffdd2a2f8c29ebb17d976922182e11c\\output\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
