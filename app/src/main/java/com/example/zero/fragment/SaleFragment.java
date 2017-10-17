@@ -5,7 +5,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.example.zero.greentravel.R;
@@ -23,7 +22,6 @@ public class SaleFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_sale, container, false);
         hot = (View) view.findViewById(R.id.sale_hot_line);
         my = (View) view.findViewById(R.id.sale_my_line);
@@ -36,12 +34,12 @@ public class SaleFragment extends Fragment {
                 switch (checkedId) {
                     case R.id.sale_hot:
                         controller.showFragment(0);
-                        hot.setBackgroundColor(getResources().getColor(R.color.checkedColor, null));
+                        hot.setBackgroundColor(getResources().getColor(R.color.red, null));
                         my.setBackgroundColor(getResources().getColor(R.color.white, null));
                         break;
                     case R.id.sale_my:
                         controller.showFragment(1);
-                        my.setBackgroundColor(getResources().getColor(R.color.checkedColor, null));
+                        my.setBackgroundColor(getResources().getColor(R.color.red, null));
                         hot.setBackgroundColor(getResources().getColor(R.color.white, null));
                     default:
                         break;

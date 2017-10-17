@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginLeft="10dp"
-        android:text="ZERO"
+        android:text="@string/title_title"
         android:textColor="#FFF"
         android:textSize="24sp" />
 
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginLeft="40dp"
-        android:text="MORE"
+        android:text="@string/title_more"
         android:textColor="#FFF" />
 
 </LinearLayout>

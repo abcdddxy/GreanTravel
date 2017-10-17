@@ -6,7 +6,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.example.zero.adapter.MsgAdapter;
 import com.example.zero.bean.MsgBean;
@@ -19,7 +18,6 @@ import java.util.List;
  * 消息activity
  */
 public class MsgActivity extends AppCompatActivity {
-
     private RecyclerView msg_recv;
     private ImageView backArrow;
     private List<MsgBean> dataList = new ArrayList<>();

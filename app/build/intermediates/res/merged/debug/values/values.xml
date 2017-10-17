@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="blocks">
-    <item>全市</item>
-    <item>越秀区</item>
-    <item>海珠区</item>
-    <item>荔湾区</item>
-    <item>天河区</item>
-    <item>白云区</item>
-    <item>黄埔区</item>
-    <item>花都区</item>
-    <item>番禺区</item>
-    <item>萝岗区</item>
-    <item>南沙区</item>
-</string-array>
+        <item>全市</item>
+        <item>越秀区</item>
+        <item>海珠区</item>
+        <item>荔湾区</item>
+        <item>天河区</item>
+        <item>白云区</item>
+        <item>黄埔区</item>
+        <item>花都区</item>
+        <item>番禺区</item>
+        <item>萝岗区</item>
+        <item>南沙区</item>
+    </string-array>
     <string-array name="mores">
         <item>更多</item>
         <item>可团购</item>
@@ -21,7 +21,7 @@
         <item>可排号</item>
     </string-array>
     <string-array name="prefers">
-        <item>综合</item>
+        <item>综合排序</item>
         <item>距离优先</item>
         <item>热门优先</item>
         <item>冷门优先</item>
@@ -140,6 +140,7 @@
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
+    <color name="black">#000000</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -152,6 +153,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
+    <color name="deep_orange">#A0522D</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
     <color name="design_fab_shadow_mid_color">#14000000</color>
     <color name="design_fab_shadow_start_color">#44000000</color>
@@ -175,6 +177,8 @@
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
+    <color name="mapBackground">#AAAAAA</color>
+    <color name="mapText">#00ffff</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -188,6 +192,8 @@
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
     <color name="nav_gray">#959595</color>
+    <color name="nav_head">#1296db</color>
+    <color name="orange">#CD853F</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
@@ -199,6 +205,7 @@
     <color name="red">#FF0000</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
+    <color name="searchViewBackground">#eb4f38</color>
     <color name="secondColor">#E91E63</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
     <color name="secondary_text_default_material_light">#8a000000</color>
@@ -209,6 +216,7 @@
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <color name="thirdColor">#FF5722</color>
+    <color name="transparent_red">#BFFF0000</color>
     <color name="white">#FFFFFF</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
     <declare-styleable name="ActionBarLayout"><attr name="android:layout_gravity"/></declare-styleable>
@@ -460,9 +468,15 @@
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="icon">icon</string>
+    <string name="lv_result_content">Content</string>
+    <string name="lv_result_title">Title</string>
     <string name="main_button_multi">多人</string>
     <string name="main_button_single">单人</string>
+    <string name="route_search_btn">开  始  搜  索</string>
+    <string name="route_select">请点击选择所需路线，在地图中绘制</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="title_more">MORE</string>
+    <string name="title_title">ZERO</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
@@ -476,6 +490,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/white</item>
+        <item name="android:listDivider">@drawable/divide_line</item>
     </style>
     <style name="BadgeText" parent="TextAppearance.AppCompat.Body2">
         <item name="android:textSize">@dimen/badge_text_size</item>
@@ -1913,16 +1928,8 @@
         <item name="android:src">@drawable/arrow_right_white</item>
     </style>
     <style name="ratingBar" parent="@android:style/Widget.RatingBar">
-               
-
-        <item name="android:progressDrawable">
-            @drawable/rating_bar
-        </item>
-               
-
+        <item name="android:progressDrawable">@drawable/rating_bar</item>
         <item name="android:minHeight">16dp</item>
-               
-
         <item name="android:maxHeight">16dp</item>
     </style>
 </resources>

@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/white</item>
+        <item name="android:listDivider">@drawable/divide_line</item>
     </style>
 
     <style name="arrow_right_white">
@@ -32,20 +33,15 @@
         <item name="android:src">@drawable/back_arrow_white</item>
     </style>
 
-    <style
-        name="ratingBar"
-        parent="@android:style/Widget.RatingBar">
-               
-
-        <item name="android:progressDrawable">
-            @drawable/rating_bar
-        </item>
-               
-
+    <style name="ratingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar</item>
         <item name="android:minHeight">16dp</item>
-               
-
         <item name="android:maxHeight">16dp</item>
     </style>
+
+    <!--<style name="popwin_anim_style">-->
+        <!--<item name="android:windowEnterAnimation">@anim/menushow</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/menuhide</item>-->
+    <!--</style>-->
 
 </resources>

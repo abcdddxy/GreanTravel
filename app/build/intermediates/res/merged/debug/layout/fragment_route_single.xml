@@ -43,8 +43,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="#A8A8A8"
-        android:text="开  始  搜  索"
-        android:textColor="#000000"
+        android:text="@string/route_search_btn"
+        android:textColor="@color/black"
         android:textSize="24sp" />
 
 </FrameLayout>

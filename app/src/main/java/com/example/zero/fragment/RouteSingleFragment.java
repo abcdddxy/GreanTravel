@@ -85,6 +85,14 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
      */
     private List<RouteSearchBean> resultData;
     /**
+     * 搜索过程中自动补全数据
+     */
+    private List<String> autoCompleteData2;
+    /**
+     * 搜索结果的数据
+     */
+    private List<RouteSearchBean> resultData2;
+    /**
      * 默认提示框显示项的个数
      */
     private static int DEFAULT_HINT_SIZE = 4;
@@ -234,8 +242,23 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
             autoCompleteData.clear();
             for (int i = 0, count = 0; i < dbData.size()
                     && count < hintSize; i++) {
-                if (dbData.get(i).getTitle().contains(text.trim())) {
+                if (dbData.get(i).getTitle().contains(searchView.getText().trim())) {
                     autoCompleteData.add(dbData.get(i).getTitle());
+                    count++;
+                }
+            }
+        }
+
+        if (autoCompleteData2 == null) {
+            //初始化
+            autoCompleteData2 = new ArrayList<>(hintSize);
+        } else {
+            // 根据text获取autodata
+            autoCompleteData2.clear();
+            for (int i = 0, count = 0; i < dbData.size()
+                    && count < hintSize; i++) {
+                if (dbData.get(i).getTitle().contains(searchView2.getText().trim())) {
+                    autoCompleteData2.add(dbData.get(i).getTitle());
                     count++;
                 }
             }
@@ -250,7 +273,7 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
         }
 
         if (autoCompleteAdapter2 == null) {
-            autoCompleteAdapter2 = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, autoCompleteData);
+            autoCompleteAdapter2 = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, autoCompleteData2);
         } else {
             if (searchView2.hasFocus()) {
                 autoCompleteAdapter2.notifyDataSetChanged();
@@ -269,8 +292,20 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
         } else {
             resultData.clear();
             for (int i = 0; i < dbData.size(); i++) {
-                if (dbData.get(i).getTitle().equals(text.trim())) {
+                if (dbData.get(i).getTitle().equals(searchView.getText().trim())) {
                     resultData.add(dbData.get(i));
+                }
+            }
+        }
+
+        if (resultData2 == null) {
+            // 初始化
+            resultData2 = new ArrayList<>();
+        } else {
+            resultData2.clear();
+            for (int i = 0; i < dbData.size(); i++) {
+                if (dbData.get(i).getTitle().equals(searchView2.getText().trim())) {
+                    resultData2.add(dbData.get(i));
                 }
             }
         }
@@ -280,7 +315,7 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
         }
 
         if (resultAdapter2 == null) {
-            resultAdapter2 = new RouteSearchAdapter(getActivity(), resultData, R.layout.route_search_item_list);
+            resultAdapter2 = new RouteSearchAdapter(getActivity(), resultData2, R.layout.route_search_item_list);
         }
         Log.d(TAG, "getResultData: finish");
     }

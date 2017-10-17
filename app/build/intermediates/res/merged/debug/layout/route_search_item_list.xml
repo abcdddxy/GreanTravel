@@ -18,7 +18,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
         android:layout_toRightOf="@id/item_search_iv_icon"
-        android:text="Title"
+        android:text="@string/lv_result_title"
         android:textColor="#000"
         android:textSize="24sp" />
 
@@ -31,7 +31,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="50dp"
         android:layout_toRightOf="@id/item_search_iv_icon"
-        android:text="content"
+        android:text="@string/lv_result_content"
         android:textColor="#777"
         android:textSize="20sp" />
 
@@ -42,7 +42,7 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:singleLine="true"
-        android:text="Title"
+        android:text="@string/lv_result_title"
         android:textColor="#ff1232"
         android:textSize="1sp"
         android:visibility="invisible"/>

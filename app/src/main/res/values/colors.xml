@@ -7,6 +7,12 @@
     <color name="nav_gray">#959595</color>
     <!--白色-->
     <color name="white">#FFFFFF</color>
+    <!--黑色-->
+    <color name="black">#000000</color>
+
+    <!--搜索框-->
+    <color name="searchViewBackground">#eb4f38</color>
+
     <!--nav颜色-->
     <color name="firstColor">#00BCD4</color>
     <color name="secondColor">#E91E63</color>
@@ -14,11 +20,22 @@
     <color name="fourthColor">#4CAF50</color>
 
     <color name="checkedColor">#FF0000</color>
+
+    <!--地图-->
+    <color name="mapText">#00ffff</color>
+    <color name="mapBackground">#AAAAAA</color>
+
+    <!--分隔线灰色-->
+    <color name="divideLine">#A9A9A9</color>
+    <!--界面背景色-->
+    <color name="background">#E6E6E6</color>
     <!--红色-->
     <color name="red">#FF0000</color>
-
-    <color name="divideLine">#A9A9A9</color>
-
-    <color name="background">#E6E6E6</color>
+    <color name="transparent_red">#BFFF0000</color>
+    <!--橙色-->
+    <color name="orange">#CD853F</color>
+    <color name="deep_orange">#A0522D</color>
+    <!--顶部导航栏蓝色-->
+    <color name="nav_head">#1296db</color>
 
 </resources>

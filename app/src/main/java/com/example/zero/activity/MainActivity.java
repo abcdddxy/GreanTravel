@@ -8,7 +8,6 @@ import android.util.Log;
 import android.widget.LinearLayout;
 
 import com.baidu.mapapi.SDKInitializer;
-import com.baidu.mapapi.VersionInfo;
 
 import com.ashokvarma.bottomnavigation.BadgeItem;
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
@@ -29,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
      */
     private BottomNavigationBar bottom_navigation_bar_container;
 
-    private BottomNavigationItem msgItem;
+    private BottomNavigationItem personItem;
     private BottomNavigationItem adviceItem;
     private BottomNavigationItem routeItem;
     private BottomNavigationItem salesItem;
@@ -82,10 +81,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
         routeItem = new BottomNavigationItem(R.drawable.route, "路线");
         adviceItem = new BottomNavigationItem(R.drawable.advice, "建议");
         salesItem = new BottomNavigationItem(R.drawable.sale, "促销");
-        msgItem = new BottomNavigationItem(R.drawable.msg, "消息");
-        msgItem.setBadgeItem(badgeItem);
+        personItem = new BottomNavigationItem(R.drawable.person, "个人");
+        personItem.setBadgeItem(badgeItem);
 
-        bottom_navigation_bar_container.addItem(routeItem).addItem(adviceItem).addItem(salesItem).addItem(msgItem);
+        bottom_navigation_bar_container.addItem(routeItem).addItem(adviceItem).addItem(salesItem).addItem(personItem);
         bottom_navigation_bar_container.initialise();
         bottom_navigation_bar_container.setTabSelectedListener(this);
 
@@ -119,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
 
             case 3:
                 fragmentController.showFragment(3);
-                getSupportActionBar().setTitle("消息");
+                getSupportActionBar().setTitle("个人");
                 break;
         }
     }

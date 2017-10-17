@@ -119,6 +119,40 @@ Android App GreenTravel
 		<th>路线——路线多人搜索界面开发完成</th>
 		<th colspan="2">准备面试，推迟合程序</th>
 	</tr>
+    <tr>
+		<th>171009</th>
+		<th colspan="3">第三次程序合并</th>
+	</tr>
+	<tr>
+	 	<th>171010</th>
+	 	<th>路线——整理相关代码</th>
+	 	<th>个人中心——添加用户登录界面和修改头像功能</th>
+	 	<th>建议——搜索排序栏多选框</th>
+	 </tr>
+	<tr>
+		<th>171011</th>
+		<th>路线——路线搜索功能完成</th>
+		<th>个人中心——清除缓存功能实现</th>
+		<th>建议——搜索排序栏多选框</th>
+	</tr>
+	<tr>
+		<th>171012</th>
+		<th>路线——搜索结果接口编写</th>
+		<th>个人中心——新消息推送功能实现，并写了自动下载安装包工具类DownloadApkService</th>
+		<th>建议——搜索排序栏多选框</th>
+	</tr>
+	<tr>
+	 	<th>171013</th>
+	 	<th>路线——调研界面样式</th>
+	 	<th>个人中心——添加检查更新功能，“关于”APP介绍界面完成（调用默认浏览器打开链接），点击“位置服务”跳转应用详情界面，但是存在小bug未解决</th>
+	 	<th>设置——登录注册界面</th>
+	 </tr>
+	<tr>
+	 	<th>171016</th>
+	 	<thl路线——修复真机调试结果界面都变化的bug</th>
+	 	<th>个人中心——我的收藏和帮助与反馈界面布局基本完成</th>
+	 	<th>设置——登录注册信息修改</th>
+	 </tr>
 </table>
 
 ## 遇到bug或难点
@@ -239,6 +273,39 @@ Android App GreenTravel
 		<th>路线——同时绘制多条线路</th>
 		<th colspan="2">无</th>
 	</tr>
+    <tr>
+		<th>171009</th>
+		<th colspan="3">暂时没有发现bug</th>
+	</tr>
+	<tr>
+	 	<th>171010</th>
+	 	<th>路线——注释不全面</th>
+	 	<th>个人中心——修改头像实现</th>
+	 	<th>建议——弹窗动画和官方效果差很多</th>
+	 </tr>
+	<tr>
+		<th>171011</th>
+		<th>无</th>
+		<th>个人中心——无</th>
+		<th>标签打开后不能恢复之前的设置（未解决）</th>
+	</tr>
+	<tr>
+		<th>171012</th>
+		<th>路线——多条路径同时绘制会变慢</th>
+		<th>个人中心——网上的自动更新安装包的代码学习中...<br>NavigationService一直显示小图标不合法（后来不知道改了哪里就好了）</th>
+		<th>无</th>
+	<tr>
+	 	<th>171013</th>
+	 	<th>无</th>
+	 	<th>个人中心——查询应用是否获得位置权限时，一直出错，未找到原因</th>
+	 	<th>验证码发送机制实现复杂</th>
+	 </tr>
+	<tr>
+	 	<th>171016</th>
+	 	<th>路线——不理解真机调试和模拟器调试出现区别的底层原因</th>
+	 	<th>个人中心——仅wifi下加载图片功能还未实现（网络图片加载封装的这一部分比较复杂）</th>
+	 	<th>Activity通信找接受对象</th>
+	 </tr>
 </table>
 
 ## 参考
@@ -356,4 +423,40 @@ Android App GreenTravel
 		<th>http://blog.csdn.net/u014007478/article/details/20949281</th>
 		<th colspan="2">无</th>
 	</tr>
+    <tr>
+		<th>171009</th>
+		<th colspan="3">无</th>
+	</tr>
+	<tr>
+	 	<th>171010</th>
+	 	<th>无</th>
+	 	<th>http://blog.csdn.net/alanjet/article/details/52494996</th>
+	 	<th>无</th>
+	 </tr>
+    <tr>
+		<th>171011</th>
+		<th>无</th>
+		<th>http://www.jianshu.com/p/f68287377f38</th>
+		<th>无</th>
+	</tr>
+	<tr>
+		<th>171012</th>
+		<th>http://blog.csdn.net/qq_33000225/article/details/53540263</th>
+		<th>http://www.cnblogs.com/_ymw/p/4151542.html<br>http://blog.csdn.net/luoyingbiao/article/details/55504491</th>
+		<th>http://www.cnblogs.com/itmanxgl/p/8b99b41e7df097c5b3b58fa259ee41a6.html</th>
+	</tr>
+	<tr>
+	 	<th>171013</th>
+	 	<th>http://blog.csdn.net/gaolei1201/article/details/50512265</th>
+	 	<th>http://blog.csdn.net/wenzhi20102321/article/details/62044892</th>
+	 	<th>http://blog.csdn.net/zhang31jian/article/details/23258065保存设置<br>
+		http://blog.csdn.net/wk843620202/article/details/50960904图片式验证码<br></th>
+	 </tr>
+	<tr>
+	 	<th>171016</th>
+	 	<th>无</th>
+	 	<th>http://www.jianshu.com/p/e26130a93289</th>
+	 	<th>http://blog.csdn.net/sunchaoenter/article/details/6612039<br>
+		https://www.pocketdigi.com/20130619/1117.html<br></th>
+	 </tr>
 </table>

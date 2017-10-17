@@ -9,8 +9,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="请点击选择所需路线，在地图中绘制"
-        android:textColor="#00ffff"
+        android:text="@string/route_select"
+        android:textColor="@color/mapText"
         android:padding="15dp"/>
 
 
@@ -20,9 +20,9 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:padding="15dp"
-        android:divider="#00ffff"
+        android:divider="@color/mapText"
         android:dividerHeight="1px"
-        android:background="#AAAAAA">
+        android:background="@color/mapBackground">
     </ListView>
 
 </LinearLayout>
