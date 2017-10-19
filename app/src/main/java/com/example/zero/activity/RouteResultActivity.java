@@ -92,6 +92,9 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
     DrivingRouteResult nowResultdrive = null;
     MassTransitRouteResult nowResultmass = null;
 
+    // 路线节点
+    private List<String> mPathList = new ArrayList<String>();
+
     int nowSearchType = -1; // 当前节点
 
     boolean hasShownDialogue = false;
@@ -153,6 +156,7 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
         if (JUD == 0) {
             PlanNode stNode = PlanNode.withCityNameAndPlaceName("北京", beginStation);
             PlanNode enNode = PlanNode.withCityNameAndPlaceName("北京", endStation);
+
             if (v.getId() == R.id.mass) {
                 PlanNode stMassNode = PlanNode.withCityNameAndPlaceName("北京", "天安门");
                 PlanNode enMassNode = PlanNode.withCityNameAndPlaceName("上海", "东方明珠");
@@ -176,6 +180,67 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
                         .from(stNode).to(enNode));
                 nowSearchType = 4;
             }
+
+            // TODO: 2017/10/17 pathList规划路线
+//            PlanNode mStNode = PlanNode.withCityNameAndPlaceName("北京", mPathList.get(0));
+//            PlanNode mEnNode = PlanNode.withCityNameAndPlaceName("北京", mPathList.get(1));
+//
+//            if (v.getId() == R.id.mass) {
+//                PlanNode stMassNode = PlanNode.withCityNameAndPlaceName("北京", "天安门");
+//                PlanNode enMassNode = PlanNode.withCityNameAndPlaceName("上海", "东方明珠");
+//
+//                mSearch.masstransitSearch(new MassTransitRoutePlanOption().from(stMassNode).to(enMassNode));
+//                nowSearchType = 0;
+//            } else if (v.getId() == R.id.drive) {
+//                DrivingRoutePlanOption drivingRoutePlanOption = new DrivingRoutePlanOption();
+//                if (mPathList.size() > 1) {
+//                    for (int i = 0; i < mPathList.size() - 1; i++) {
+//                        mSearch.drivingSearch(drivingRoutePlanOption
+//                                .from(PlanNode.withCityNameAndPlaceName("北京", mPathList.get(i)))
+//                                .to(PlanNode.withCityNameAndPlaceName("北京", mPathList.get(i + 1))));
+//                    }
+//                } else {
+//                    Toast.makeText(RouteResultActivity.this, "路线结果太少，请重新搜索。", Toast.LENGTH_SHORT).show();
+//                }
+//                nowSearchType = 1;
+//            } else if (v.getId() == R.id.transit) {
+//                TransitRoutePlanOption transitRoutePlanOption = new TransitRoutePlanOption();
+//                if (mPathList.size() > 1) {
+//                    for (int i = 0; i < mPathList.size() - 1; i++) {
+//                        mSearch.transitSearch(transitRoutePlanOption
+//                                .from(PlanNode.withCityNameAndPlaceName("北京", mPathList.get(i)))
+//                                .city("北京")
+//                                .to(PlanNode.withCityNameAndPlaceName("北京", mPathList.get(i + 1))));
+//                    }
+//                } else {
+//                    Toast.makeText(RouteResultActivity.this, "路线结果太少，请重新搜索。", Toast.LENGTH_SHORT).show();
+//                }
+//                nowSearchType = 2;
+//            } else if (v.getId() == R.id.walk) {
+//                WalkingRoutePlanOption walkingRoutePlanOption = new WalkingRoutePlanOption();
+//                if (mPathList.size() > 1) {
+//                    for (int i = 0; i < mPathList.size() - 1; i++) {
+//                        mSearch.walkingSearch(walkingRoutePlanOption
+//                                .from(PlanNode.withCityNameAndPlaceName("北京", mPathList.get(i)))
+//                                .to(PlanNode.withCityNameAndPlaceName("北京", mPathList.get(i + 1))));
+//                    }
+//                } else {
+//                    Toast.makeText(RouteResultActivity.this, "路线结果太少，请重新搜索。", Toast.LENGTH_SHORT).show();
+//                }
+//                nowSearchType = 3;
+//            } else if (v.getId() == R.id.bike) {
+//                BikingRoutePlanOption bikingRoutePlanOption = new BikingRoutePlanOption();
+//                if (mPathList.size() > 1) {
+//                    for (int i = 0; i < mPathList.size() - 1; i++) {
+//                        mSearch.bikingSearch(bikingRoutePlanOption
+//                                .from(PlanNode.withCityNameAndPlaceName("北京", mPathList.get(i)))
+//                                .to(PlanNode.withCityNameAndPlaceName("北京", mPathList.get(i + 1))));
+//                    }
+//                } else {
+//                    Toast.makeText(RouteResultActivity.this, "路线结果太少，请重新搜索。", Toast.LENGTH_SHORT).show();
+//                }
+//                nowSearchType = 4;
+//            }
         } else {
             ArrayList<PlanNode> stNodeList = new ArrayList<PlanNode>();
             PlanNode enNode = PlanNode.withCityNameAndPlaceName("北京", endStation);

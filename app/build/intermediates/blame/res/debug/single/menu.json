@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\menu\\nav_menu.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\menu\\nav_menu.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/menu/nav_menu.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/src/main/res/menu/nav_menu.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\menu\\nav_menu.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\menu\\nav_menu.xml"
     }
 ]
