@@ -157,6 +157,12 @@ Android App GreenTravel
 		<th>171017</th>
 		<th colspan="3">第四次程序合并</th>
 	</tr>
+	<tr>
+	 	<th>171019</th>
+	 	<th>路线——增加交换功能</th>
+	 	<th>个人中心——修改头像和开启位置权限的bug解决了，实现了一个recyclerview的item点击事件的demo</th>
+	 	<th>建议——站点商家混合部分完成</th>
+	 </tr>
 </table>
 
 ## 遇到bug或难点
@@ -314,6 +320,12 @@ Android App GreenTravel
 		<th>171017</th>
 		<th colspan="3">暂时没有发现bug</th>
 	</tr>
+	<tr>
+	 	<th>171019</th>
+	 	<th>路线——单人多人模式切换</th>
+	 	<th>个人中心——recyclerview没有官方的监听事件方法，只有一个addOnItemTouchListener的接口，需要自己实现点击事件的监听</th>
+	 	<th>多种视图继承关系复杂</th>
+	 </tr>
 </table>
 
 ## 参考
@@ -471,4 +483,10 @@ Android App GreenTravel
 		<th>171017</th>
 		<th colspan="3">无</th>
 	</tr>
+	<tr>
+	 	<th>171019</th>
+	 	<th>http://104zz.iteye.com/blog/1685425</th>
+	 	<th>https://segmentfault.com/a/1190000005176416<br>http://www.jb51.net/article/103467.html</th>
+	 	<th>http://blog.csdn.net/lmj623565791/article/details/51118836</th>
+	 </tr>
 </table>
