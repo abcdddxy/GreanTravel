@@ -2,31 +2,13 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.1"
-        sha1="6cb8eac0fd0e7b238def9bac107d1d1a866438af">
-        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_2e67ac67286a89fd636512be2f4c5c9935303657\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\libs\BaiduLBS_Android.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/shanao/Desktop/ZERO&apos;s bug/GreenTravel/app/libs/BaiduLBS_Android.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.1"
         sha1="e78796be1b1ae15391b2213bd340bbf04cd85923">
-        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\transforms\dex\debug\folders\1000\2\BaiduLBS_Android_7d7a4383edd3f38fe7d71070359a63bcfc869b50\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.1"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_e4ab6b9e0ebcd876cd6409702ff6af38acbafcf6\classes.dex" />
+        <dex dex="/Users/shanao/Desktop/ZERO&apos;s bug/GreenTravel/app/build/intermediates/pre-dexed/debug/BaiduLBS_Android_1d4647887aa342503165a396f4de70a09344d712.jar" />
     </item>
 
 </items>

@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
-        "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color-v23\\abc_color_highlight_material.xml"
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/shanao/.android/build-cache/2f80c3d06658ee97cddd21328a1b60d3e4146cec/output/res/color-v23/abc_color_highlight_material.xml"
     }
 ]
