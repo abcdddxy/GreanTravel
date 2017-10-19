@@ -20,7 +20,7 @@
         android:layout_toRightOf="@id/item_search_iv_icon"
         android:text="@string/lv_result_title"
         android:textColor="#000"
-        android:textSize="24sp" />
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/item_search_tv_content"
@@ -33,7 +33,7 @@
         android:layout_toRightOf="@id/item_search_iv_icon"
         android:text="@string/lv_result_content"
         android:textColor="#777"
-        android:textSize="20sp" />
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/item_search_tv_comments"
@@ -44,8 +44,7 @@
         android:singleLine="true"
         android:text="@string/lv_result_title"
         android:textColor="#ff1232"
-        android:textSize="1sp"
-        android:visibility="invisible"/>
+        android:textSize="18sp"/>
 
 
 </RelativeLayout>

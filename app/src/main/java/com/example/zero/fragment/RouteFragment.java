@@ -2,14 +2,19 @@ package com.example.zero.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.PopupMenu;
 import android.view.LayoutInflater;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.example.zero.greentravel.R;
+import com.example.zero.view.TitleRouteLayout;
 
 /**
  * Created by zero on 2017/8/7.
@@ -25,7 +30,9 @@ public class RouteFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_route, container, false);
         controller = RouteFragmentController.getInstance(this, R.id.route_frg_content);
+
         controller.showFragment(0);
+
         rGroup = (RadioGroup) view.findViewById(R.id.route_rg);
         rGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

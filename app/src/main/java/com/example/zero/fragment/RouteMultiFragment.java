@@ -46,7 +46,7 @@ public class RouteMultiFragment extends Fragment implements SearchPopView.Search
     /**
      * 搜索按钮
      */
-    private Button btnsearch;
+    private Button btnSearch;
 
     /**
      * 热搜框列表adapter
@@ -142,7 +142,7 @@ public class RouteMultiFragment extends Fragment implements SearchPopView.Search
     private void initViews() {
         endSearchView = (SearchView) getView().findViewById(R.id.route_search_multi);
         lvResults = (ListView) getView().findViewById(R.id.route_lv_search_multi_results);
-        btnsearch = (Button) getView().findViewById(R.id.route_btn_multi_search);
+        btnSearch = (Button) getView().findViewById(R.id.route_btn_multi_search);
 
         int size = 4;
         searchViewList = new ArrayList<SearchPopView>(size);
@@ -159,7 +159,7 @@ public class RouteMultiFragment extends Fragment implements SearchPopView.Search
         searchViewList.get(1).setHintText("情输入起点：");
         searchViewList.get(2).setHintText("情输入起点：");
 
-        btnsearch.setOnClickListener(new View.OnClickListener() {
+        btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // TODO: 2017/9/11 具体搜索
@@ -327,6 +327,15 @@ public class RouteMultiFragment extends Fragment implements SearchPopView.Search
         }
     }
 
+    private void cvSearchBtn() {
+        if ((lvResults.getVisibility() == View.VISIBLE) && ((!searchViewList.get(0).getText().equals("") |
+                (!searchViewList.get(1).getText().equals("")) | (!searchViewList.get(2).getText().equals(""))))) {
+            btnSearch.setVisibility(View.VISIBLE);
+        } else {
+            btnSearch.setVisibility(View.GONE);
+        }
+    }
+
     /**
      * 当搜索框文本改变时触发的回调 ,更新自动补全数据
      *
@@ -336,6 +345,7 @@ public class RouteMultiFragment extends Fragment implements SearchPopView.Search
     public void onRefreshAutoComplete(String text) {
         //更新数据
         getAutoCompleteData(text);
+        cvSearchBtn();
     }
 
     /**
@@ -359,6 +369,7 @@ public class RouteMultiFragment extends Fragment implements SearchPopView.Search
                 resultAdapter.notifyDataSetChanged();
             }
         }
+        cvSearchBtn();
 
         Toast.makeText(getActivity(), "完成搜索", Toast.LENGTH_SHORT).show();
     }
@@ -373,16 +384,17 @@ public class RouteMultiFragment extends Fragment implements SearchPopView.Search
             resultAdapter.notifyDataSetChanged();
             lvResults.setVisibility(View.GONE);
         }
-        if(searchViewList.get(0).hasFocus()){
+        if (searchViewList.get(0).hasFocus()) {
             autoCompleteAdapter0.notifyDataSetChanged();
         }
-        if(searchViewList.get(1).hasFocus()){
+        if (searchViewList.get(1).hasFocus()) {
             autoCompleteAdapter1.notifyDataSetChanged();
         }
-        if(searchViewList.get(2).hasFocus()){
+        if (searchViewList.get(2).hasFocus()) {
             autoCompleteAdapter2.notifyDataSetChanged();
         }
         hintAdapter.notifyDataSetChanged();
+        cvSearchBtn();
     }
 
     /**
@@ -395,16 +407,17 @@ public class RouteMultiFragment extends Fragment implements SearchPopView.Search
             resultAdapter.notifyDataSetChanged();
             lvResults.setVisibility(View.GONE);
         }
-        if(searchViewList.get(0).hasFocus()){
+        if (searchViewList.get(0).hasFocus()) {
             autoCompleteAdapter0.notifyDataSetChanged();
         }
-        if(searchViewList.get(1).hasFocus()){
+        if (searchViewList.get(1).hasFocus()) {
             autoCompleteAdapter1.notifyDataSetChanged();
         }
-        if(searchViewList.get(2).hasFocus()){
+        if (searchViewList.get(2).hasFocus()) {
             autoCompleteAdapter2.notifyDataSetChanged();
         }
         hintAdapter.notifyDataSetChanged();
+        cvSearchBtn();
     }
 
     /**
@@ -422,6 +435,7 @@ public class RouteMultiFragment extends Fragment implements SearchPopView.Search
             }
         }
         hintAdapter.notifyDataSetChanged();
+        cvSearchBtn();
         return JUD;
     }
 }

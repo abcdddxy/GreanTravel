@@ -15,6 +15,10 @@ public class RouteSearchAdapter extends CommonAdapter<RouteSearchBean> {
         super(context, data, layoutId);
     }
 
+//    public RouteSearchAdapter(Context context, List<RouteSearchBean> data, int layoutId, String title, String content, String comments) {
+//        super(context, data, layoutId, title, content, comments);
+//    }
+
     @Override
     public void convert(ViewHolder holder, int position) {
         holder.setImageResource(R.id.item_search_iv_icon,mData.get(position).getIconId())
@@ -22,4 +26,6 @@ public class RouteSearchAdapter extends CommonAdapter<RouteSearchBean> {
                 .setText(R.id.item_search_tv_content,mData.get(position).getContent())
                 .setText(R.id.item_search_tv_comments,mData.get(position).getComments());
     }
+
+
 }

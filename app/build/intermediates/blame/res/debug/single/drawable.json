@@ -12,6 +12,10 @@
         "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
+        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\single_model.png",
+        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\single_model.png"
+    },
+    {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
         "source": "C:\\Users\\ZERO\\.android\\build-cache\\20b802f04cb23eeb21650f050e9498d4ff130b79\\output\\res\\drawable\\design_snackbar_background.xml"
     },
@@ -28,12 +32,12 @@
         "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\edit.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\edit.png"
-    },
-    {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\star_gray.png",
         "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\star_gray.png"
+    },
+    {
+        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\edit.png",
+        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\edit.png"
     },
     {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\food_checked.png",
@@ -92,12 +96,12 @@
         "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\help_feedback_rg_color_select.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\adv_label_background.xml",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\adv_label_background.xml"
-    },
-    {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notice_fill.png",
         "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\notice_fill.png"
+    },
+    {
+        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\adv_label_background.xml",
+        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\adv_label_background.xml"
     },
     {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\scan.png",
@@ -108,12 +112,12 @@
         "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\location.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\location.png"
-    },
-    {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\adv_label_text_color_small.xml",
         "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\adv_label_text_color_small.xml"
+    },
+    {
+        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\location.png",
+        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\location.png"
     },
     {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\identify.png",
@@ -134,6 +138,10 @@
     {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\radio_button_style.xml",
         "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\radio_button_style.xml"
+    },
+    {
+        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\multi_model.png",
+        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\multi_model.png"
     },
     {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
@@ -236,6 +244,10 @@
         "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\ktv.jpg"
     },
     {
+        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\search_change.png",
+        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\search_change.png"
+    },
+    {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
         "source": "C:\\Users\\ZERO\\.android\\build-cache\\490a45b2116d003abb89143592bed4a34fe9ccd0\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
@@ -256,12 +268,12 @@
         "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\zara.jpg"
     },
     {
-        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\friend.png",
-        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\friend.png"
-    },
-    {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\weixin.png",
         "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\weixin.png"
+    },
+    {
+        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\friend.png",
+        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable\\friend.png"
     },
     {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",

@@ -78,6 +78,8 @@
             </intent-filter>
         </service>
 
+        <activity android:name="com.example.zero.activity.RouteDrawerActivity" />
+
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
             android:authorities="com.example.zero.greentravel.com.android.tools.fd.runtime.InstantRunContentProvider"

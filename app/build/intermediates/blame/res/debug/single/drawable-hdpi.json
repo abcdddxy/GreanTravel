@@ -8,6 +8,10 @@
         "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\notice.png"
     },
     {
+        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\toggle_close.png",
+        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\toggle_close.png"
+    },
+    {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\search_delete.png",
         "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\search_delete.png"
     },
@@ -42,6 +46,10 @@
     {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\route_find.png",
         "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\route_find.png"
+    },
+    {
+        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\toggle_open.png",
+        "source": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\src\\main\\res\\drawable-hdpi\\toggle_open.png"
     },
     {
         "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\add.png",

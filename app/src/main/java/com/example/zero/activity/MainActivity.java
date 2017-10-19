@@ -1,10 +1,12 @@
 package com.example.zero.activity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.LinearLayout;
 
 import com.baidu.mapapi.SDKInitializer;
@@ -16,6 +18,8 @@ import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.example.zero.fragment.FragmentController;
 
 import com.example.zero.greentravel.R;
+import com.example.zero.view.TitleLayout;
+import com.example.zero.view.TitleRouteLayout;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationBar.OnTabSelectedListener {
 
@@ -33,6 +37,12 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
     private BottomNavigationItem routeItem;
     private BottomNavigationItem salesItem;
     private BadgeItem badgeItem;
+
+    /**
+     * 标题栏
+     */
+    private TitleLayout titleLayout;
+    private TitleRouteLayout titleRouteLayout;
 
     /**
      * Fragment控制类
@@ -60,6 +70,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
     private void initView() {
         bottom_nav_content = (LinearLayout) findViewById(R.id.bottom_nav_content);
         bottom_navigation_bar_container = (BottomNavigationBar) findViewById(R.id.bottom_navigation_bar_container);
+
+        titleLayout = (TitleLayout) findViewById(R.id.main_title);
+        titleRouteLayout = (TitleRouteLayout) findViewById(R.id.route_title);
 
     }
 
@@ -104,16 +117,22 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
             case 0:
                 fragmentController.showFragment(0);
                 getSupportActionBar().setTitle("路线");
+                titleLayout.setVisibility(View.GONE);
+                titleRouteLayout.setVisibility(View.VISIBLE);
                 break;
 
             case 1:
                 fragmentController.showFragment(1);
                 getSupportActionBar().setTitle("建议");
+                titleLayout.setVisibility(View.VISIBLE);
+                titleRouteLayout.setVisibility(View.GONE);
                 break;
 
             case 2:
                 fragmentController.showFragment(2);
                 getSupportActionBar().setTitle("促销");
+                titleLayout.setVisibility(View.VISIBLE);
+                titleRouteLayout.setVisibility(View.GONE);
                 break;
 
             case 3:

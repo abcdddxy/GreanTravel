@@ -45,7 +45,11 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
     /**
      * 搜索按钮
      */
-    private Button btnsearch;
+    private Button btnSearch;
+    /**
+     * 交换按钮
+     */
+    private Button btnChange;
 
     /**
      * 热搜框列表adapter
@@ -133,12 +137,13 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
         lvResults = (ListView) getView().findViewById(R.id.route_lv_search_single_results);
         searchView2 = (SearchPopView) getView().findViewById(R.id.route_search_single2);
         lvResults2 = (ListView) getView().findViewById(R.id.route_lv_search_single_results2);
-        btnsearch = (Button) getView().findViewById(R.id.route_btn_single_search);
+        btnSearch = (Button) getView().findViewById(R.id.route_btn_single_search);
+        btnChange = (Button) getView().findViewById(R.id.search_btn_change);
 
         searchView.setHintText("请输入起点：");
         searchView2.setHintText("请输入终点：");
 
-        btnsearch.setOnClickListener(new View.OnClickListener() {
+        btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // TODO: 2017/9/11 具体搜索
@@ -156,6 +161,64 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
                 } else {
                     Toast.makeText(getActivity(), "搜索框消息不完善，请填充完整后在开始搜索！", Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+
+        btnChange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String text1 = searchView.getText();
+                String text2 = searchView2.getText();
+
+                searchView.setJUD(false);
+                searchView2.setJUD(false);
+
+                searchView.setText(text2);
+                searchView2.setText(text1);
+
+                if (resultData == null) {
+                    // 初始化
+                    resultData = new ArrayList<>();
+                } else {
+                    resultData.clear();
+                    for (int i = 0; i < dbData.size(); i++) {
+                        if (dbData.get(i).getTitle().equals(searchView.getText().trim())) {
+                            resultData.add(dbData.get(i));
+                        }
+                    }
+                }
+
+                if (resultData2 == null) {
+                    // 初始化
+                    resultData2 = new ArrayList<>();
+                } else {
+                    resultData2.clear();
+                    for (int i = 0; i < dbData.size(); i++) {
+                        if (dbData.get(i).getTitle().equals(searchView2.getText().trim())) {
+                            resultData2.add(dbData.get(i));
+                        }
+                    }
+                }
+
+                if (lvResults.getAdapter() == null) {
+                    //获取搜索数据 设置适配器
+                    resultAdapter.getItem(0).setComments("起点");
+                    lvResults.setAdapter(resultAdapter);
+                } else {
+                    //更新搜索数据
+                    resultAdapter.getItem(0).setComments("起点");
+                    resultAdapter.notifyDataSetChanged();
+                }
+                if (lvResults2.getAdapter() == null) {
+                    //获取搜索数据 设置适配器
+                    resultAdapter2.getItem(0).setComments("终点");
+                    lvResults2.setAdapter(resultAdapter2);
+                } else {
+                    //更新搜索数据
+                    resultAdapter2.getItem(0).setComments("终点");
+                    resultAdapter2.notifyDataSetChanged();
+                }
+                cvSearchBtn();
             }
         });
 
@@ -320,6 +383,14 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
         Log.d(TAG, "getResultData: finish");
     }
 
+    private void cvSearchBtn() {
+        if ((lvResults.getVisibility() == View.VISIBLE) && (lvResults2.getVisibility() == View.VISIBLE)) {
+            btnSearch.setVisibility(View.VISIBLE);
+        } else {
+            btnSearch.setVisibility(View.GONE);
+        }
+    }
+
     /**
      * 当搜索框文本改变时触发的回调 ,更新自动补全数据
      *
@@ -328,7 +399,14 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
     @Override
     public void onRefreshAutoComplete(String text) {
         //更新数据
+        if (searchView.getText().equals("")) {
+            searchView.setJUD(false);
+        }
+        if (searchView2.getText().equals("")) {
+            searchView2.setJUD(false);
+        }
         getAutoCompleteData(text);
+        cvSearchBtn();
     }
 
     /**
@@ -339,6 +417,8 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
     @Override
     public void onSearch(String text) {
         //更新result数据
+        searchView.setJUD(false);
+        searchView2.setJUD(false);
         getResultData(text);
         if (!searchView.getText().equals("")) {
             lvResults.setVisibility(View.VISIBLE);
@@ -349,6 +429,7 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
 
         if (searchView.hasFocus()) {
             //第一次获取结果 还未配置适配器
+            resultAdapter.getItem(0).setComments("起点");
             if (lvResults.getAdapter() == null) {
                 //获取搜索数据 设置适配器
                 lvResults.setAdapter(resultAdapter);
@@ -359,6 +440,7 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
         }
 
         if (searchView2.hasFocus()) {
+            resultAdapter2.getItem(0).setComments("终点");
             if (lvResults2.getAdapter() == null) {
                 //获取搜索数据 设置适配器
                 lvResults2.setAdapter(resultAdapter2);
@@ -368,6 +450,8 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
             }
         }
 
+        cvSearchBtn();
+
         Toast.makeText(getActivity(), "完成搜索", Toast.LENGTH_SHORT).show();
     }
 
@@ -376,6 +460,8 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
      */
     @Override
     public void onBack() {
+        searchView.setJUD(true);
+        searchView2.setJUD(true);
         Log.d(TAG, "onBack: start");
         if (searchView.getText().equals("")) {
             autoCompleteAdapter.notifyDataSetChanged();
@@ -388,6 +474,7 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
             lvResults2.setVisibility(View.GONE);
         }
         hintAdapter.notifyDataSetChanged();
+        cvSearchBtn();
         Log.d(TAG, "onBack: finish");
     }
 
@@ -396,6 +483,8 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
      */
     @Override
     public void isFocus() {
+        searchView.setJUD(true);
+        searchView2.setJUD(true);
         Log.d(TAG, "isFocus: start");
         if (searchView.hasFocus()) {
             autoCompleteAdapter.notifyDataSetChanged();
@@ -408,6 +497,7 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
             lvResults2.setVisibility(View.GONE);
         }
         hintAdapter.notifyDataSetChanged();
+        cvSearchBtn();
         Log.d(TAG, "isFocus: finish");
     }
 
@@ -419,13 +509,16 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
      */
     @Override
     public boolean onHintClick(String text) {
-        boolean JUD = false;
+        searchView.setJUD(true);
+        searchView2.setJUD(true);
+        boolean JUD2 = false;
         for (int i = 0; i < dbData.size(); i++) {
             if (dbData.get(i).getTitle().equals(text.trim())) {
-                JUD = true;
+                JUD2 = true;
             }
         }
         hintAdapter.notifyDataSetChanged();
-        return JUD;
+        cvSearchBtn();
+        return JUD2;
     }
 }

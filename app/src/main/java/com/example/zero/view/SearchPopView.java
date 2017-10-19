@@ -22,6 +22,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListPopupWindow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.zero.greentravel.R;
 
@@ -60,6 +61,10 @@ public class SearchPopView extends LinearLayout implements View.OnClickListener 
      * 搜索回调接口
      */
     private SearchPopViewListener mListener;
+    /**
+     * 是否显示pop
+     */
+    private boolean JUD;
 
     /**
      * 设置搜索回调接口
@@ -104,6 +109,8 @@ public class SearchPopView extends LinearLayout implements View.OnClickListener 
                 return true;
             }
         });
+
+        JUD = true;
 
         int w = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED);
         int h = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED);
@@ -150,6 +157,10 @@ public class SearchPopView extends LinearLayout implements View.OnClickListener 
         popupWindow.setAdapter(adapter);
     }
 
+    public void setJUD(boolean B){
+        JUD = B;
+    }
+
     /**
      * 设置自动补全adapter
      */
@@ -177,7 +188,8 @@ public class SearchPopView extends LinearLayout implements View.OnClickListener 
                 if (mListener != null) {
                     mListener.onRefreshAutoComplete(charSequence + "");
                 }
-                if (mAutoCompleteAdapter.getCount() != 0) {
+                if ((mAutoCompleteAdapter.getCount() != 0) && JUD) {
+//                    Toast.makeText(getContext(), "11111", Toast.LENGTH_SHORT).show();
                     popupWindow.show();
                 }
             } else {
@@ -200,7 +212,8 @@ public class SearchPopView extends LinearLayout implements View.OnClickListener 
             case R.id.route_et_search:
                 mListener.isFocus();
                 if (!popupWindow.isShowing() && ((etInput.getText().toString().equals("") && mHintAdapter.getCount() != 0)
-                        || ((!etInput.getText().toString().equals("")) && mAutoCompleteAdapter.getCount() != 0))) {
+                        || ((!etInput.getText().toString().equals("")) && mAutoCompleteAdapter.getCount() != 0)) && JUD) {
+//                    Toast.makeText(getContext(), "22222", Toast.LENGTH_SHORT).show();
                     popupWindow.show();
                 }
                 break;
@@ -223,10 +236,19 @@ public class SearchPopView extends LinearLayout implements View.OnClickListener 
     /**
      * 返回输入框文本内容
      *
-     * @return
+     * @return String
      */
     public String getText() {
         return etInput.getText().toString();
+    }
+
+    /**
+     * 设置输入框文本内容
+     *
+     * @return String
+     */
+    public void setText(String str) {
+        etInput.setText(str);
     }
 
     /**

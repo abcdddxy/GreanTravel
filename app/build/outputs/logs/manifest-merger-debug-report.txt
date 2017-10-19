@@ -151,42 +151,46 @@ ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidM
 	android:name
 		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:62:19-72
 activity#com.example.zero.activity.HelpFeedbackActivity
-ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:64:9-92
+ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:63:9-83
 	android:name
-		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:64:19-80
+		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:63:19-80
 activity#com.example.zero.activity.FavorActivity
-ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:65:9-85
+ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:64:9-76
+	android:name
+		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:64:19-73
+activity#com.example.zero.activity.AboutActivity
+ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:65:9-76
 	android:name
 		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:65:19-73
-activity#com.example.zero.activity.AboutActivity
-ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:66:9-85
+activity#com.example.zero.activity.LoginActivity
+ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:66:9-76
 	android:name
 		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:66:19-73
-activity#com.example.zero.activity.LoginActivity
-ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:67:9-85
-	android:name
-		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:67:19-73
 activity#com.example.zero.activity.RegisterActivity
-ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:68:9-70:67
+ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:67:9-69:58
 	android:windowSoftInputMode
-		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:70:13-55
+		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:69:13-55
 	android:name
-		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:69:13-70
+		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:68:13-70
 activity#com.example.zero.activity.AdvSearchActivity
-ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:72:9-80
+ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:70:9-80
 	android:name
-		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:72:19-77
+		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:70:19-77
 activity#com.example.zero.activity.AdvMapResultActivity
-ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:73:9-92
+ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:71:9-83
 	android:name
-		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:73:19-80
+		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:71:19-80
 service#com.example.zero.util.NotificationService
-ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:75:9-79:19
+ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:73:9-77:19
 	android:name
-		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:75:18-74
+		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:73:18-74
 intent-filter#MSG_SERVICE
-ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:76:13-78:29
+ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:74:13-76:29
 action#MSG_SERVICE
-ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:77:17-54
+ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:75:17-54
 	android:name
-		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:77:25-51
+		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:75:25-51
+activity#com.example.zero.activity.RouteDrawerActivity
+ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:79:9-91
+	android:name
+		ADDED from C:\Users\ZERO\AndroidStudioProjects\GreenTravel\app\src\main\AndroidManifest.xml:79:19-79

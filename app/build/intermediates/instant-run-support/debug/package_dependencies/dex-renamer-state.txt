@@ -1,4 +1,4 @@
-#Mon Sep 25 19:31:06 CST 2017
+#Thu Oct 19 20:38:10 CST 2017
 file.2=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_d9522f25b3d132f033c95c82bc4958610d45315d\\classes.dex
 base.2=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_d9522f25b3d132f033c95c82bc4958610d45315d
 file.1=C\:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_4711a043867508f4c13832e765f27aa89e19363c\\classes.dex
