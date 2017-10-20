@@ -163,6 +163,12 @@ Android App GreenTravel
 	 	<th>个人中心——修改头像和开启位置权限的bug解决了，实现了一个recyclerview的item点击事件的demo</th>
 	 	<th>建议——站点商家混合部分完成</th>
 	 </tr>
+	<tr>
+	 	<th>171020</th>
+	 	<th>路线——地图样式修改与滑动搜索页面添加</th>
+	 	<th>个人中心——recyclerview的item点击事件和item内部控件的点击事件</th>
+	 	<th>建议——站点商家混合部分完成 商量接口</th>
+	 </tr>
 </table>
 
 ## 遇到bug或难点
@@ -326,6 +332,12 @@ Android App GreenTravel
 	 	<th>个人中心——recyclerview没有官方的监听事件方法，只有一个addOnItemTouchListener的接口，需要自己实现点击事件的监听</th>
 	 	<th>多种视图继承关系复杂</th>
 	 </tr>
+	<tr>
+	 	<th>171020</th>
+	 	<th>路线——重写滑动界面函数及接口</th>
+	 	<th>个人中心——利用addOnItemTouchListener方式实现item点击事件时会出现item点击事件和item内部控件的点击事件冲突的情况，只能在adapter内部给item绑定监听事件</th>
+	 	<th>站点展开收起toggle图片显示错误，多个站点图片都被改变</th>
+	 </tr>
 </table>
 
 ## 参考
@@ -488,5 +500,11 @@ Android App GreenTravel
 	 	<th>http://104zz.iteye.com/blog/1685425</th>
 	 	<th>https://segmentfault.com/a/1190000005176416<br>http://www.jb51.net/article/103467.html</th>
 	 	<th>http://blog.csdn.net/lmj623565791/article/details/51118836</th>
+	 </tr>
+	<tr>
+	 	<th>171020</th>
+	 	<th>http://blog.csdn.net/wingichoy/article/details/50583022</th>
+	 	<th>http://blog.csdn.net/raphets/article/details/51254538<br>http://blog.csdn.net/zglslyg/article/details/46401295</th>
+	 	<th>无</th>
 	 </tr>
 </table>

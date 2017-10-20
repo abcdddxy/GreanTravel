@@ -1,10 +1,6 @@
 [
     {
-        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
-        "source": "/Users/shanao/.android/build-cache/3fc03c50c4de663ca73f4204654a834fb979aabd/output/res/layout-sw600dp-v13/design_layout_snackbar.xml"
-    },
-    {
-        "merged": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
-        "source": "/Users/shanao/Desktop/ZERO's bug/GreenTravel/C:\\Users\\ZERO\\.android\\build-cache\\20b802f04cb23eeb21650f050e9498d4ff130b79\\output\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+        "merged": "C:\\Users\\ZERO\\AndroidStudioProjects\\GreenTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\ZERO\\.android\\build-cache\\20b802f04cb23eeb21650f050e9498d4ff130b79\\output\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
     }
 ]

@@ -6,90 +6,108 @@
 
     <!-- TODO: 路线单人模式 -->
 
-    <!--<LinearLayout-->
-        <!--android:layout_width="50dp"-->
-        <!--android:layout_height="115dp"-->
-        <!--android:layout_gravity="left"-->
-        <!--android:background="@color/searchViewBackground">-->
-
-        <!--<Button-->
-            <!--android:layout_width="30dp"-->
-            <!--android:layout_height="40dp"-->
-            <!--android:layout_gravity="center"-->
-            <!--android:background="@drawable/single_model" />-->
-    <!--</LinearLayout>-->
-
-    <LinearLayout
+    <com.example.zero.view.WrappingSlidingDrawer
+        android:id="@+id/route_drawer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="40dp"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <com.example.zero.view.SearchPopView
-                android:id="@+id/route_search_single"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <com.example.zero.view.SearchPopView
-                android:id="@+id/route_search_single2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="40dp"
-        android:layout_height="115dp"
-        android:layout_gravity="right"
-        android:background="@color/searchViewBackground">
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:content="@+id/drawer_content"
+        android:handle="@+id/drawer_handle">
 
         <Button
-            android:id="@+id/search_btn_change"
-            android:layout_width="30dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:background="@drawable/search_change" />
-    </LinearLayout>
+            android:id="@+id/drawer_handle"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="@drawable/drawer_up" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="115dp"
-        android:layout_marginRight="15dp"
-        android:orientation="vertical">
-
-        <ListView
-            android:id="@+id/route_lv_search_single_results"
+        <FrameLayout
+            android:id="@+id/drawer_content"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="gone" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <ListView
-            android:id="@+id/route_lv_search_single_results2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="gone" />
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    <Button
-        android:id="@+id/route_btn_single_search"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_gravity="bottom|right"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="#1874CD"
-        android:paddingLeft="12dp"
-        android:paddingRight="12dp"
-        android:text="@string/route_search_btn"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:visibility="gone"/>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:orientation="vertical">
+
+                        <com.example.zero.view.SearchPopView
+                            android:id="@+id/route_search_single"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <com.example.zero.view.SearchPopView
+                            android:id="@+id/route_search_single2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="115dp"
+                        android:layout_gravity="right"
+                        android:background="@color/searchViewBackground">
+
+                        <Button
+                            android:id="@+id/search_btn_change"
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/search_change" />
+                    </LinearLayout>
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/route_lv_search_single_results"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <ListView
+                        android:id="@+id/route_lv_search_single_results2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/route_btn_single_search"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#1874CD"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:text="@string/route_search_btn"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </com.example.zero.view.WrappingSlidingDrawer>
+
 
 </FrameLayout>
+

@@ -109,7 +109,8 @@ public class AdvMapResultActivity extends AppCompatActivity implements BaiduMap.
         // 初始化地图
         mMapView = (MapView) findViewById(R.id.route_result_map2);
         mBaidumap = mMapView.getMap();
-
+        mBaidumap.setMapType(BaiduMap.MAP_TYPE_SATELLITE);
+        mBaidumap.setTrafficEnabled(true);
 
         mBtnPre = (Button) findViewById(R.id.route_result_pre2);
         mBtnNext = (Button) findViewById(R.id.route_result_next2);

@@ -34,7 +34,15 @@ android {
         testCompile 'junit:junit:4.12'
     }
 }
+
 dependencies {
     compile files('libs/BaiduLBS_Android.jar')
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
 }
+
+//dependencies {
+//    repositories {
+//        mavenCentral()
+//    }
+//    compile 'com.sothree.slidinguppanel:library:3.4.0'
+//}

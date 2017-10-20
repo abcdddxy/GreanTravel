@@ -13,6 +13,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.SlidingDrawer;
 import android.widget.Toast;
 
 import com.example.zero.activity.RouteResultActivity;
@@ -26,11 +27,11 @@ import com.example.zero.view.SimpleSearchView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RouteMultiFragment extends Fragment implements SearchPopView.SearchPopViewListener, SearchView.SearchViewListener {
+public class RouteMultiFragment extends Fragment implements SearchPopView.SearchPopViewListener{
     /**
      * 搜索view
      */
-    private SearchView endSearchView;
+    private SearchPopView endSearchView;
     /**
      * 搜索结果列表view
      */
@@ -47,6 +48,15 @@ public class RouteMultiFragment extends Fragment implements SearchPopView.Search
      * 搜索按钮
      */
     private Button btnSearch;
+    /**
+     * 抽屉按钮
+     */
+    private Button btnDrawer;
+    /**
+     * 抽屉
+     */
+    private SlidingDrawer slidingDrawer;
+
 
     /**
      * 热搜框列表adapter
@@ -140,7 +150,7 @@ public class RouteMultiFragment extends Fragment implements SearchPopView.Search
      * 初始化视图
      */
     private void initViews() {
-        endSearchView = (SearchView) getView().findViewById(R.id.route_search_multi);
+        endSearchView = (SearchPopView) getView().findViewById(R.id.route_search_multi);
         lvResults = (ListView) getView().findViewById(R.id.route_lv_search_multi_results);
         btnSearch = (Button) getView().findViewById(R.id.route_btn_multi_search);
 
@@ -192,7 +202,7 @@ public class RouteMultiFragment extends Fragment implements SearchPopView.Search
         });
 
         //设置监听
-        endSearchView.setSearchViewListener(this);
+        endSearchView.setSearchPopViewListener(this);
         searchViewList.get(0).setSearchPopViewListener(this);
         searchViewList.get(1).setSearchPopViewListener(this);
         searchViewList.get(2).setSearchPopViewListener(this);
@@ -225,6 +235,44 @@ public class RouteMultiFragment extends Fragment implements SearchPopView.Search
             public void onClick(View view) {
                 searchViewList.get(2).setVisibility(View.VISIBLE);
             }
+        });
+
+        btnDrawer = (Button) getView().findViewById(R.id.drawer_multi_handle);
+        slidingDrawer = (SlidingDrawer) getView().findViewById(R.id.route_multi_drawer);
+
+        //完全打开
+        slidingDrawer.setOnDrawerOpenListener(new SlidingDrawer.OnDrawerOpenListener() {
+            @Override
+            public void onDrawerOpened() {
+                btnDrawer.setBackgroundResource(R.drawable.drawer_down);
+            }
+        });
+
+        //完全关闭
+        slidingDrawer.setOnDrawerCloseListener(new SlidingDrawer.OnDrawerCloseListener() {
+            @Override
+            public void onDrawerClosed() {
+                btnDrawer.setBackgroundResource(R.drawable.drawer_up);
+            }
+        });
+
+        slidingDrawer.setOnDrawerScrollListener(new SlidingDrawer.OnDrawerScrollListener() {
+            //开始滚动时的操作
+            @Override
+            public void onScrollStarted() {
+                btnDrawer.setBackgroundResource(R.drawable.drawer_loading);
+            }
+
+            //结束滚动时的操作
+            @Override
+            public void onScrollEnded() {
+                if (slidingDrawer.isOpened()) {
+                    btnDrawer.setBackgroundResource(R.drawable.drawer_down);
+                } else {
+                    btnDrawer.setBackgroundResource(R.drawable.drawer_up);
+                }
+            }
+
         });
     }
 
@@ -363,9 +411,11 @@ public class RouteMultiFragment extends Fragment implements SearchPopView.Search
         if (endSearchView.isFocus()) {
             if (lvResults.getAdapter() == null) {
                 //获取搜索数据 设置适配器
+                resultAdapter.getItem(0).setComments("起点");
                 lvResults.setAdapter(resultAdapter);
             } else {
                 //更新搜索数据
+                resultAdapter.getItem(0).setComments("起点");
                 resultAdapter.notifyDataSetChanged();
             }
         }

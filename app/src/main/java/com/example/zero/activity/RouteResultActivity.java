@@ -5,6 +5,10 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,16 +18,24 @@ import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.baidu.location.BDLocation;
+import com.baidu.location.BDLocationListener;
+import com.baidu.location.LocationClient;
+import com.baidu.location.LocationClientOption;
 import com.baidu.mapapi.map.BaiduMap;
 import com.baidu.mapapi.map.BitmapDescriptor;
 import com.baidu.mapapi.map.BitmapDescriptorFactory;
 import com.baidu.mapapi.map.InfoWindow;
 import com.baidu.mapapi.map.MapPoi;
+import com.baidu.mapapi.map.MapStatus;
 import com.baidu.mapapi.map.MapStatusUpdateFactory;
 import com.baidu.mapapi.map.MapView;
+import com.baidu.mapapi.map.MyLocationConfiguration;
+import com.baidu.mapapi.map.MyLocationData;
 import com.baidu.mapapi.model.LatLng;
 import com.baidu.mapapi.search.core.RouteLine;
 import com.baidu.mapapi.search.core.SearchResult;
@@ -60,7 +72,7 @@ import com.example.zero.util.WalkingRouteOverlay;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RouteResultActivity extends AppCompatActivity implements BaiduMap.OnMapClickListener, OnGetRoutePlanResultListener {
+public class RouteResultActivity extends AppCompatActivity implements BaiduMap.OnMapClickListener, OnGetRoutePlanResultListener, SensorEventListener {
 
     // 路线节点
     // 浏览路线节点相关
@@ -70,7 +82,6 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
     RouteLine route = null;
     MassTransitRouteLine massroute = null;
     OverlayManager routeOverlay = null;
-    boolean useDefaultIcon = false;
     private TextView popupText = null; // 泡泡view
 
     MapView mMapView = null;// 地图View
@@ -91,6 +102,23 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
     TransitRouteResult nowResultransit = null;
     DrivingRouteResult nowResultdrive = null;
     MassTransitRouteResult nowResultmass = null;
+
+    // 定位相关
+    LocationClient mLocClient;
+    public MyLocationListenner myListener = new MyLocationListenner();
+    private MyLocationConfiguration.LocationMode mCurrentMode;
+    BitmapDescriptor mCurrentMarker;
+    private SensorManager mSensorManager;
+    private Double lastX = 0.0;
+    private int mCurrentDirection = 0;
+    private double mCurrentLat = 0.0;
+    private double mCurrentLon = 0.0;
+    private float mCurrentAccracy;
+
+    // UI相关
+    Button requestLocButton;
+    boolean isFirstLoc = true; // 是否首次定位
+    private MyLocationData locData;
 
     // 路线节点
     private List<String> mPathList = new ArrayList<String>();
@@ -116,6 +144,36 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
         mMapView = (MapView) findViewById(R.id.route_result_map);
         mBaidumap = mMapView.getMap();
 
+        //定位
+        requestLocButton = (Button) findViewById(R.id.route_result_location);
+        mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);//获取传感器管理服务
+        mCurrentMode = MyLocationConfiguration.LocationMode.FOLLOWING;
+
+        View.OnClickListener btnClickListener = new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(RouteResultActivity.this, "Location", Toast.LENGTH_SHORT).show();
+                mBaidumap.setMyLocationConfiguration(new MyLocationConfiguration(mCurrentMode, true, mCurrentMarker));
+                MapStatus.Builder builder = new MapStatus.Builder();
+                builder.overlook(0);
+                mBaidumap.animateMapStatus(MapStatusUpdateFactory.newMapStatus(builder.build()));
+            }
+        };
+        requestLocButton.setOnClickListener(btnClickListener);
+
+        // 开启定位图层
+        mBaidumap.setMyLocationEnabled(true);
+//        mBaidumap.setMapType(BaiduMap.MAP_TYPE_SATELLITE);
+        mBaidumap.setTrafficEnabled(true);
+
+        // 定位初始化
+        mLocClient = new LocationClient(this);
+        mLocClient.registerLocationListener(myListener);
+        LocationClientOption option = new LocationClientOption();
+        option.setOpenGps(true); // 打开gps
+        option.setCoorType("bd09ll"); // 设置坐标类型
+        option.setScanSpan(1000);
+        mLocClient.setLocOption(option);
+        mLocClient.start();
 
         mBtnPre = (Button) findViewById(R.id.route_result_pre);
         mBtnNext = (Button) findViewById(R.id.route_result_next);
@@ -128,11 +186,17 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
         mSearch = RoutePlanSearch.newInstance();
         mSearch.setOnGetRoutePlanResultListener(this);
 
-        if (mBundle.getString("origin").equals("Single")) {
+        if (mBundle.getString("origin").
+
+                equals("Single"))
+
+        {
             beginStation = mBundle.getString("beginStation");
             endStation = mBundle.getString("endStation");
             JUD = 0;
-        } else {
+        } else
+
+        {
             beginStationList = mBundle.getStringArrayList("beginStationList");
             endStation = mBundle.getString("endStation");
             beginNum = mBundle.getInt("beginNum");
@@ -145,6 +209,7 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
      *
      * @param v
      */
+
     public void searchButtonProcess(View v) {
         // 重置浏览节点的路线数据
         route = null;
@@ -892,15 +957,52 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
     protected void onResume() {
         mMapView.onResume();
         super.onResume();
+        //为系统的方向传感器注册监听器
+        mSensorManager.registerListener(this, mSensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION),
+                SensorManager.SENSOR_DELAY_UI);
+    }
+
+    @Override
+    protected void onStop() {
+        //取消注册传感器监听
+        mSensorManager.unregisterListener(this);
+        super.onStop();
     }
 
     @Override
     protected void onDestroy() {
+        // 退出时销毁定位
+        mLocClient.stop();
+        // 关闭定位图层
+        mBaidumap.setMyLocationEnabled(false);
         if (mSearch != null) {
             mSearch.destroy();
         }
         mMapView.onDestroy();
+
+        mMapView = null;
         super.onDestroy();
+    }
+
+    @Override
+    public void onSensorChanged(SensorEvent sensorEvent) {
+        double x = sensorEvent.values[SensorManager.DATA_X];
+        if (Math.abs(x - lastX) > 1.0) {
+            mCurrentDirection = (int) x;
+            locData = new MyLocationData.Builder()
+                    .accuracy(mCurrentAccracy)
+                    // 此处设置开发者获取到的方向信息，顺时针0-360
+                    .direction(mCurrentDirection).latitude(mCurrentLat)
+                    .longitude(mCurrentLon).build();
+            mBaidumap.setMyLocationData(locData);
+        }
+        lastX = x;
+
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int i) {
+
     }
 
     // 响应DLg中的List item 点击
@@ -957,5 +1059,39 @@ public class RouteResultActivity extends AppCompatActivity implements BaiduMap.O
             onItemInDlgClickListener = itemListener;
         }
 
+    }
+
+    /**
+     * 定位SDK监听函数
+     */
+    public class MyLocationListenner implements BDLocationListener {
+
+        @Override
+        public void onReceiveLocation(BDLocation location) {
+            // map view 销毁后不在处理新接收的位置
+            if (location == null || mMapView == null) {
+                return;
+            }
+            mCurrentLat = location.getLatitude();
+            mCurrentLon = location.getLongitude();
+            mCurrentAccracy = location.getRadius();
+            locData = new MyLocationData.Builder()
+                    .accuracy(location.getRadius())
+                    // 此处设置开发者获取到的方向信息，顺时针0-360
+                    .direction(mCurrentDirection).latitude(location.getLatitude())
+                    .longitude(location.getLongitude()).build();
+            mBaidumap.setMyLocationData(locData);
+            if (isFirstLoc) {
+                isFirstLoc = false;
+                LatLng ll = new LatLng(location.getLatitude(),
+                        location.getLongitude());
+                MapStatus.Builder builder = new MapStatus.Builder();
+                builder.target(ll).zoom(18.0f);
+                mBaidumap.animateMapStatus(MapStatusUpdateFactory.newMapStatus(builder.build()));
+            }
+        }
+
+        public void onReceivePoi(BDLocation poiLocation) {
+        }
     }
 }

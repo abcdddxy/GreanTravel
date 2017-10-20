@@ -1,6 +1,7 @@
 package com.example.zero.fragment;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -11,7 +12,10 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.SlidingDrawer;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.zero.activity.RouteResultActivity;
@@ -23,6 +27,8 @@ import com.example.zero.view.SearchView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.example.zero.greentravel.R.id.textView;
 
 public class RouteSingleFragment extends Fragment implements SearchPopView.SearchPopViewListener {
 
@@ -50,6 +56,14 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
      * 交换按钮
      */
     private Button btnChange;
+    /**
+     * 抽屉按钮
+     */
+    private Button btnDrawer;
+    /**
+     * 抽屉
+     */
+    private SlidingDrawer slidingDrawer;
 
     /**
      * 热搜框列表adapter
@@ -147,7 +161,7 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
             @Override
             public void onClick(View view) {
                 // TODO: 2017/9/11 具体搜索
-//                Toast.makeText(getActivity(), "开始搜索", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "开始搜索", Toast.LENGT H_SHORT).show();
                 String beginStation = searchView.getText();
                 String endStation = searchView2.getText();
                 Bundle mBundle = new Bundle();
@@ -242,6 +256,44 @@ public class RouteSingleFragment extends Fragment implements SearchPopView.Searc
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Toast.makeText(getActivity(), "2-" + position + "", Toast.LENGTH_SHORT).show();
             }
+        });
+
+        btnDrawer = (Button) getView().findViewById(R.id.drawer_handle);
+        slidingDrawer = (SlidingDrawer) getView().findViewById(R.id.route_drawer);
+
+        //完全打开
+        slidingDrawer.setOnDrawerOpenListener(new SlidingDrawer.OnDrawerOpenListener() {
+            @Override
+            public void onDrawerOpened() {
+                btnDrawer.setBackgroundResource(R.drawable.drawer_down);
+            }
+        });
+
+        //完全关闭
+        slidingDrawer.setOnDrawerCloseListener(new SlidingDrawer.OnDrawerCloseListener() {
+            @Override
+            public void onDrawerClosed() {
+                btnDrawer.setBackgroundResource(R.drawable.drawer_up);
+            }
+        });
+
+        slidingDrawer.setOnDrawerScrollListener(new SlidingDrawer.OnDrawerScrollListener() {
+            //开始滚动时的操作
+            @Override
+            public void onScrollStarted() {
+                btnDrawer.setBackgroundResource(R.drawable.drawer_loading);
+            }
+
+            //结束滚动时的操作
+            @Override
+            public void onScrollEnded() {
+                if (slidingDrawer.isOpened()) {
+                    btnDrawer.setBackgroundResource(R.drawable.drawer_down);
+                } else {
+                    btnDrawer.setBackgroundResource(R.drawable.drawer_up);
+                }
+            }
+
         });
     }
 

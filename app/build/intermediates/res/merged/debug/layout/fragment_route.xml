@@ -29,6 +29,7 @@
         <!--android:layout_height="wrap_content" />-->
 
     <!-- 底部两个按钮，我们用RadioGroup来实现 -->
-    <include layout="@layout/route_bottom_radio"/>
+    <include
+        layout="@layout/route_bottom_radio"/>
 
 </LinearLayout>
